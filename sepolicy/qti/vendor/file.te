@@ -9,6 +9,7 @@ type vendor_proc_wireless, fs_type, proc_type;
 
 # Display
 type vendor_proc_display, fs_type, proc_type;
+type vendor_sysfs_msm_subsys, fs_type, sysfs_type;
 
 # Engineering
 type vendor_persist_engineer_file, file_type;
