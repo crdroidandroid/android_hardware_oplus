@@ -81,6 +81,26 @@ int64_t msFromNs(int64_t nanos) {
     return nanos / nanosecondsInAMillsecond;
 }
 
+bool patchOplusPickupSensor(V2_1::SensorInfo& sensor) {
+    if (sensor.typeAsString != "android.sensor.tilt_detector"
+                 || sensor.typeAsString != "oneplus.sensor.op_motion_detect") {
+        return true;
+    }
+
+    /*
+     * Implement only the wake-up version of this sensor.
+     */
+    if (!(sensor.flags & V1_0::SensorFlagBits::WAKE_UP)) {
+        return false;
+    }
+
+    sensor.type = V2_1::SensorType::PICK_UP_GESTURE;
+    sensor.typeAsString = SENSOR_STRING_TYPE_PICK_UP_GESTURE;
+    sensor.maxRange = 1;
+
+    return true;
+}
+
 HalProxy::HalProxy() {
     const char* kMultiHalConfigFile = "/vendor/etc/sensors/hals.conf";
     initializeSubHalListFromConfigFile(kMultiHalConfigFile);
@@ -493,6 +513,11 @@ void HalProxy::initializeSensorList() {
                     ALOGV("Loaded sensor: %s", sensor.name.c_str());
                     sensor.sensorHandle = setSubHalIndex(sensor.sensorHandle, subHalIndex);
                     setDirectChannelFlags(&sensor, mSubHalList[subHalIndex]);
+                    bool keep = patchOplusPickupSensor(sensor);
+                    if (!keep) {
+                        continue;
+                    }
+
                     mSensors[sensor.sensorHandle] = sensor;
                 }
             }
