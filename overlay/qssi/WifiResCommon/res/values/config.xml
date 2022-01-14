@@ -66,4 +66,7 @@
          immediately after the country code is sent to the driver (if the method returns a
          success). -->
     <bool translatable="false" name="config_wifiDriverSupportedNl80211RegChangedEvent">true</bool>
+
+    <!-- Indicate the device support request channel on Wi-Fi Aware data-path. -->
+    <bool name="config_wifiSupportChannelOnDataPath">true</bool>
 </resources>
