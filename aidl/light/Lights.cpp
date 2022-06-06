@@ -20,11 +20,6 @@ static const std::string kAllBacklightPaths[] = {
     "/sys/class/leds/lcd-backlight/brightness",
 };
 
-static const std::string kAllButtonsPaths[] = {
-    "/sys/class/leds/button-backlight/brightness",
-    "/sys/class/leds/button-backlight1/brightness",
-};
-
 enum led_type {
     RED,
     GREEN,
@@ -44,7 +39,6 @@ static LED kLEDs[MAX_LEDS] = {
 
 static const HwLight kBacklightHwLight = AutoHwLight(LightType::BACKLIGHT);
 static const HwLight kBatteryHwLight = AutoHwLight(LightType::BATTERY);
-static const HwLight kButtonsHwLight = AutoHwLight(LightType::BUTTONS);
 static const HwLight kNotificationHwLight = AutoHwLight(LightType::NOTIFICATIONS);
 
 Lights::Lights() {
@@ -56,16 +50,6 @@ Lights::Lights() {
         mLights.push_back(kBacklightHwLight);
         break;
     }
-
-    for (auto& buttons : kAllButtonsPaths) {
-        if (!fileWriteable(buttons))
-            continue;
-
-        mButtonsPaths.push_back(buttons);
-    }
-
-    if (!mButtonsPaths.empty())
-        mLights.push_back(kButtonsHwLight);
 
     mWhiteLED = kLEDs[WHITE].exists();
 
@@ -79,10 +63,6 @@ ndk::ScopedAStatus Lights::setLightState(int32_t id, const HwLightState& state) 
         case LightType::BACKLIGHT:
             if (!mBacklightPath.empty())
                 writeToFile(mBacklightPath, colorToBrightness(state.color));
-            break;
-        case LightType::BUTTONS:
-            for (auto& buttons : mButtonsPaths)
-                writeToFile(buttons, isLit(state.color));
             break;
         case LightType::BATTERY:
         case LightType::NOTIFICATIONS:

@@ -29,7 +29,6 @@ private:
     std::vector<HwLight> mLights;
 
     std::string mBacklightPath;
-    std::vector<std::string> mButtonsPaths;
     bool mWhiteLED;
 
     std::mutex mLEDMutex;
