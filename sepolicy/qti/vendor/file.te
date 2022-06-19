@@ -24,5 +24,8 @@ type vendor_sysfs_sensor_fb, fs_type, sysfs_type;
 # Ultrasound
 type vendor_proc_ultrasound, fs_type, proc_type;
 
+# USB fast charge
+type sysfs_fastcharge, fs_type, sysfs_type;
+
 # Versioning
 type vendor_proc_oplus_version, fs_type, proc_type;
