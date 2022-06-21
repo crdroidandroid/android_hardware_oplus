@@ -273,4 +273,7 @@
          empty string is passed in -->
     <string name="config_wlan_network_service_package">vendor.qti.iwlan</string>
 
+    <!-- Whether device has warp charging support -->
+    <bool name="config_hasWarpCharger">true</bool>
+
 </resources>
