@@ -5,3 +5,7 @@ rw_dir_file(system_server, vendor_proc_display)
 rw_dir_file(system_server, vendor_proc_oplus_version)
 
 rw_dir_file(system_server, vendor_proc_wireless)
+
+r_dir_file(system_server, vendor_sysfs_battery_supply)
+
+r_dir_file(system_server, vendor_sysfs_usb_supply)
