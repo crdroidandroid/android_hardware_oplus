@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2016 The OmniROM Project
+                   2022 The Evolution X Project
+                   2018-2021 crDroid Android Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/org.lineageos.settings"
+    android.title="@string/oplus_extras_title">
+
+    <!-- Start of alert slider Category -->
+    <PreferenceCategory
+        android:key="slider"
+        android:title="@string/notification_slider_category_title">
+
+        <ListPreference
+            android:key="slider_usage"
+            android:dialogTitle="@string/notification_slider_usage_title"
+            android:title="@string/notification_slider_usage_title"
+            android:entries="@array/notification_slider_usage_entries"
+            android:entryValues="@array/notification_slider_usage_entry_values"
+            android:summary="%s" />
+
+        <ListPreference
+            android:key="action_top_position"
+            android:dialogTitle="@string/notification_slider_selection_dialog_title"
+            android:title="@string/notification_slider_top_position"
+            android:summary="%s" />
+
+        <ListPreference
+            android:key="action_middle_position"
+            android:dialogTitle="@string/notification_slider_selection_dialog_title"
+            android:title="@string/notification_slider_middle_position"
+            android:summary="%s" />
+
+        <ListPreference
+            android:key="action_bottom_position"
+            android:dialogTitle="@string/notification_slider_selection_dialog_title"
+            android:title="@string/notification_slider_bottom_position"
+            android:summary="%s" />
+    </PreferenceCategory>
+
+    <!-- Start of CPU Category -->
+    <PreferenceCategory
+        android:key="cpu"
+        android:title="@string/cpu_title">
+
+        <SwitchPreference
+            android:key="power_efficient_workqueue"
+            android:title="@string/power_efficient_workqueue_title"
+            android:summary="@string/power_efficient_workqueue_summary" />
+
+        <SwitchPreference
+            android:key="touchboost"
+            android:title="@string/touchboost_title"
+            android:summary="@string/touchboost_summary" />
+    </PreferenceCategory>
+
+    <!-- Start of display Category -->
+    <PreferenceCategory
+        android:key="display"
+        android:title="@string/display_title">
+
+        <Preference
+            android:key="per_app_colorspace"
+            android:title="@string/colorspace_title"
+            android:summary="@string/colorspace_summary"
+            android:persistent="false" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="org.lineageos.settings"
+                    android:targetClass="org.lineageos.settings.colorspace.ColorSpaceActivity" />
+        </Preference>
+
+        <Preference
+            android:key="per_app_refresh_rate"
+            android:title="@string/refresh_title"
+            android:summary="@string/refresh_summary"
+            android:persistent="false" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="org.lineageos.settings"
+                    android:targetClass="org.lineageos.settings.refreshrate.RefreshActivity" />
+        </Preference>
+
+        <SwitchPreference
+            android:key="dc"
+            android:title="@string/dc_mode_title"
+            android:summary="@string/dc_mode_summary" />
+
+        <SwitchPreference
+            android:key="hbm"
+            android:title="@string/hbm_mode_title"
+            android:summary="@string/hbm_mode_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="auto_hbm"
+            android:title="@string/auto_hbm_title"
+            android:summary="@string/auto_hbm_summary" />
+
+        <org.lineageos.settings.preferences.AutoHBMThresholdPreference
+            android:key="auto_hbm_threshold"
+            android:title="@string/auto_hbm_threshold_title"
+            android:summary="@string/auto_hbm_threshold_summary" />
+
+        <Preference
+            android:key="hbm_info"
+            android:icon="@drawable/ic_info_outline"
+            android:summary="@string/hbm_mode_warning" 
+            android:persistent="false" />
+    </PreferenceCategory>
+
+    <!-- Start of filesystem Category -->
+    <PreferenceCategory
+        android:key="filesystem"
+        android:title="@string/filesystem_title">
+
+        <SwitchPreference
+            android:key="fsync"
+            android:defaultValue="true"
+            android:title="@string/fsync_title"
+            android:summary="@string/fsync_summary" />
+
+        <Preference
+            android:key="fsync_info"
+            android:icon="@drawable/ic_info_outline"
+            android:summary="@string/fsync_warning"
+            android:persistent="false" />
+    </PreferenceCategory>
+
+    <!-- Start of GPU Category -->
+    <PreferenceCategory
+        android:key="gpu"
+        android:title="@string/gpu_title">
+
+        <org.lineageos.settings.preferences.AdrenoBoostPreference
+            android:key="adrenoboost"
+            android:title="@string/adrenoboost_title"
+            android:summary="@string/adrenoboost_summary" />
+    </PreferenceCategory>
+
+    <!-- Start of fps Category -->
+    <PreferenceCategory
+        android:key="fps"
+        android:title="@string/fps_title">
+
+        <SwitchPreference
+            android:key="fps_info"
+            android:title="@string/fps_info_title"
+            android:summary="@string/fps_info_summary"
+            android:persistent="true" />
+
+        <ListPreference
+            android:key="fps_info_position"
+            android:defaultValue="0"
+            android:title="@string/fps_info_position_title"
+            android:summary="%s"
+            android:entries="@array/fps_info_position_entries"
+            android:entryValues="@array/fps_info_position_values" />
+
+        <ListPreference
+            android:key="fps_info_color"
+            android:defaultValue="0"
+            android:title="@string/fps_info_color_title"
+            android:summary="%s"
+            android:entries="@array/fps_info_color_entries"
+            android:entryValues="@array/fps_info_color_values" />
+
+        <org.lineageos.settings.preferences.CustomSeekBarPreference
+            android:key="fps_info_text_size"
+            android:title="@string/fps_info_text_size_title"
+            android:persistent="true"
+            android:max="9"
+            android:min="1"
+            settings:units=""
+            android:defaultValue="3" />
+    </PreferenceCategory>
+
+    <!-- Start of power Category -->
+    <PreferenceCategory
+        android:key="power"
+        android:title="@string/category_power">
+
+        <SwitchPreference
+            android:key="powershare_mode"
+            android:title="@string/powershare_mode_title"
+            android:summary="@string/powershare_mode_summary" />
+
+        <SwitchPreference
+            android:key="quiet_mode"
+            android:title="@string/quiet_mode_title"
+            android:summary="@string/quiet_mode_summary" />
+    </PreferenceCategory>
+
+    <!-- Start of touchscreen Category -->
+    <PreferenceCategory
+        android:key="touchscreen"
+        android:title="@string/touchscreen_title">
+
+        <SwitchPreference
+            android:key="game_mode"
+            android:title="@string/game_mode_title"
+            android:summary="@string/game_mode_summary" />
+
+        <Preference
+            android:key="game_mode_warning"
+            android:icon="@drawable/ic_info_outline"
+            android:summary="@string/game_mode_warning"
+            android:persistent="false" />
+
+        <SwitchPreference
+            android:key="tp_edge_limit"
+            android:title="@string/tp_edge_limit_mode_title"
+            android:summary="@string/tp_edge_limit_mode_summary" />
+    </PreferenceCategory>
+
+    <!-- Start of UiBench Category -->
+    <PreferenceCategory
+        android:key="uibench"
+        android:title="@string/category_uibench">
+
+        <Preference
+            android:key="jitter"
+            android:title="@string/jitter_test_title"
+            android:summary="@string/jitter_test_summary"
+            android:persistent="false" >
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="org.lineageos.settings"
+                    android:targetClass="org.lineageos.settings.uibench.JitterTestActivity" />
+        </Preference>
+    </PreferenceCategory>
+
+    <!-- Start of usb Category -->
+    <PreferenceCategory
+        android:key="usb"
+        android:title="@string/usb_title">
+
+        <SwitchPreference
+            android:key="otg"
+            android:title="@string/otg_title"
+            android:summary="@string/otg_summary" />
+
+        <SwitchPreference
+            android:key="usb2_fast_charge"
+            android:title="@string/usb2_fc_title"
+            android:summary="@string/usb2_fc_summary" />
+
+        <Preference
+            android:key="usb2_info"
+            android:icon="@drawable/ic_info_outline"
+            android:summary="@string/usb2_fc_warning"
+            android:persistent="false" />
+    </PreferenceCategory>
+
+    <!-- Start of vibrator Category -->
+    <PreferenceCategory
+        android:key="vibrator"
+        android:title="@string/category_vibrator">
+
+        <org.lineageos.settings.preferences.VibratorStrengthPreference
+            android:key="vib_strength"
+            android:title="@string/vib_strength_title"
+            android:summary="@string/vib_strength_summary" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

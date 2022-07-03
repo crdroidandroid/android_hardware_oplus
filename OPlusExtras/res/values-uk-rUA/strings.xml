@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 The Evolution X Project
+                   2018-2021 crDroid Android Project
+                   2019 Havoc-OS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- OPlus Extras -->
+    <string name="oplus_extras_title">Додаткові налаштування</string>
+    <string name="oplus_extras_summary">Налаштування специфічних параметрів пристрою</string>
+    <string name="oplus_extras_warning_title">Попередження</string>
+    <string name="oplus_extras_warning_text">Більшість цих функцій покладаються на особливі вузли ядра для функціонування. Встановляючи користувацьке ядро, ви ризикуєте втратити доступ до деяких функцій. Ви попереджені!</string>
+    <string name="oplus_extras_dialog">ОК</string>
+    <!-- Alert slider -->
+    <string name="notification_slider_category_title">Повзунок сповіщень</string>
+    <string name="notification_slider_title">Налаштування повзунка сповіщень</string>
+    <string name="notification_slider_selection_dialog_title">Дії</string>
+    <string name="notification_slider_top_position">Зверху</string>
+    <string name="notification_slider_middle_position">Посередині</string>
+    <string name="notification_slider_bottom_position">Знизу</string>
+    <string name="notification_slider_mode_total_silence">Повна тиша</string>
+    <string name="notification_slider_mode_alarms_only">Лише будильник</string>
+    <string name="notification_slider_mode_priority_only">Лише важливі</string>
+    <string name="notification_slider_mode_none">Все</string>
+    <string name="notification_slider_usage_title">Використовувати повзунок для</string>
+    <string name="notification_slider_for_notification">Повідомлення</string>
+    <string name="notification_slider_for_flashlight">Ліхтарик</string>
+    <string name="notification_slider_for_brightness">Яскравість</string>
+    <string name="notification_slider_for_rotation">Поворот екрану</string>
+    <string name="notification_slider_for_ringer">Дзвінок</string>
+    <string name="notification_slider_for_notification_ringer">Сповіщення та дзвінок</string>
+    <string name="notification_slider_for_refresh">Частота оновлення</string>
+    <string name="notification_slider_flashlight_off">Вимк.</string>
+    <string name="notification_slider_flashlight_on">Увімк.</string>
+    <string name="notification_slider_flashlight_blink">Блимати</string>
+    <string name="notification_slider_brightness_auto">Авто</string>
+    <string name="notification_slider_brightness_brightest">Найяскравіше</string>
+    <string name="notification_slider_brightness_darkest">Найтемніше</string>
+    <string name="notification_slider_rotation_auto">Авто</string>
+    <string name="notification_slider_rotation_portrait">Портретна</string>
+    <string name="notification_slider_rotation_landscape_90">Ландшафт (90°)</string>
+    <string name="notification_slider_rotation_landscape_270">Ландшафт (270°)</string>
+    <string name="notification_slider_ringer_normal">Звичайний</string>
+    <string name="notification_slider_ringer_vibrate">Вібрація</string>
+    <string name="notification_slider_ringer_silent">Без звуку</string>
+    <string name="notification_slider_refresh_auto">Автоматично</string>
+    <string name="notification_slider_refresh_min">Мінімально</string>
+    <string name="notification_slider_refresh_max">Максимально</string>
+    <!-- Display -->
+    <string name="display_title">Дисплей</string>
+    <string name="dc_mode_title">DC Dimming</string>
+    <string name="dc_mode_summary">Зменшити підсвічування, знизивши споживання постійного струму</string>
+    <string name="hbm_mode_title">Режим високої яскравості</string>
+    <string name="hbm_mode_summary">Ввімкнути максимальну яскравість</string>
+    <string name="hbm_mode_warning">Довгий час використання режиму високої яскравості може пошкодити дисплей</string>
+    <string name="auto_hbm_title">Автоматичний режим високої яскравості</string>
+    <string name="auto_hbm_summary">Вмикати максимальну яскравість на сонці</string>
+    <string name="auto_hbm_threshold_summary">поріг (lux)</string>
+    <string name="refresh_title">Максимальна частота оновлення</string>
+    <string name="refresh_summary">Налаштувати швидкість оновлення по окремому додатку</string>
+    <string name="refresh_default">За замовчуванням</string>
+    <string name="refresh_standard">Стандартна</string>
+    <string name="refresh_extreme">Максимальна</string>
+    <!-- CPU -->
+    <string name="cpu_title">ЦП</string>
+    <string name="power_efficient_workqueue_title">Енергоефективна робоча черга</string>
+    <string name="power_efficient_workqueue_summary">Заощаджуйте енергію шляхом перепланування роботи з ядром, що вже не працює</string>
+    <string name="touchboost_title">Touchboost</string>
+    <string name="touchboost_summary">Викор. підсилювати частоту ЦП на сенсорному екрані</string>
+    <!-- Filesystem -->
+    <string name="filesystem_title">Файлова система</string>
+    <string name="fsync_title">Fsync</string>
+    <string name="fsync_summary">fsync вимкнути/увімкнути</string>
+    <string name="fsync_warning">Вимкнення fsync може пришвидшити продуктивність ризику, внаслідок виникнення потенційних втрат даних у разі краху системи</string>
+    <!-- FPS Info -->
+    <string name="fps_title">Виміряні FPS</string>
+    <string name="fps_info_title">Зображення FPS</string>
+    <string name="fps_info_summary">Показувати лічильник FPS на екрані</string>
+    <string name="fps_info_color_title">Колір тексту</string>
+    <string name="fps_info_color_green">Зелений</string>
+    <string name="fps_info_color_red">Червоний</string>
+    <string name="fps_info_color_magenta">Пурпурний</string>
+    <string name="fps_info_color_blue">Синій</string>
+    <string name="fps_info_color_cyan">Блакитний</string>
+    <string name="fps_info_color_yellow">Жовтий</string>
+    <string name="fps_info_color_black">Чорний</string>
+    <string name="fps_info_color_white">Білий</string>
+    <string name="fps_info_color_gray">Сірий</string>
+    <string name="fps_info_color_ltgray">Світло-сірий</string>
+    <string name="fps_info_color_dkgray">Темно-сірий</string>
+    <string name="fps_info_color_accent">Слідувати системі</string>
+    <string name="fps_info_position_title">Позиція на екрані</string>
+    <string name="fps_info_position_top_left">Зверху ліворуч</string>
+    <string name="fps_info_position_top_center">Зверху по центру</string>
+    <string name="fps_info_position_top_right">Зверху праворуч</string>
+    <string name="fps_info_position_bottom_left">Внизу ліворуч</string>
+    <string name="fps_info_position_bottom_center">Внизу по центру</string>
+    <string name="fps_info_position_bottom_right">Внизу праворуч</string>
+    <string name="fps_info_position_center_left">По центру зліва</string>
+    <string name="fps_info_position_center_center">По центру</string>
+    <string name="fps_info_position_center_right">Праворуч по центру</string>
+    <string name="fps_info_text_size_title">Розмір тексту</string>
+    <!-- GPU -->
+    <string name="gpu_title">Графічний процесор</string>
+    <string name="adrenoboost_title">Adrenoboost</string>
+    <string name="adrenoboost_summary">Вимкнене, світло, середне, агресивне</string>
+    <!-- Power -->
+    <string name="category_power">Живлення</string>
+    <string name="powershare_mode_title">Бездротовий зворотний заряд</string>
+    <string name="powershare_mode_summary">Увімкнути зворотний бездротовий заряд</string>
+    <string name="quiet_mode_title">Тихий режим</string>
+    <string name="quiet_mode_summary">Увімкнути режим тиші для бездротового зарядного пристрою OEM</string>
+    <!-- Touchscreen -->
+    <string name="touchscreen_title">Сенсорний екран</string>
+    <string name="game_mode_title">Ігровий режим</string>
+    <string name="game_mode_warning">Може збільшити витрати заряду батареї</string>
+    <string name="tp_edge_limit_mode_title">TP Ліміт</string>
+    <string name="tp_edge_limit_mode_summary">Вимкніть обмеження краю сенсорних панелей</string>
+    <!-- UiBench -->
+    <string name="category_uibench">UiBench</string>
+    <string name="jitter_test_title">Тремтіння</string>
+    <string name="jitter_test_summary">Розрахувати тремтіння візуалізації</string>
+    <!-- USB -->
+    <string name="usb_title">USB</string>
+    <string name="otg_title">USB-OTG</string>
+    <string name="otg_summary">Увімкнути режим USB \"на ходу\"</string>
+    <string name="usb2_fc_title">Швидке заряджання USB 2.0</string>
+    <string name="usb2_fc_summary">Примусове швидке заряджання до 900mA в режимі USB 2.0</string>
+    <string name="usb2_fc_warning">Заважає Dash/Warp заряджанню; вмикайте лише тоді, коли це потрібно</string>
+    <!-- Vibrator -->
+    <string name="category_vibrator">Вібрація</string>
+    <string name="vib_strength_title">Загальна</string>
+    <string name="vib_strength_summary">Задати силу вібрації</string>
+</resources>

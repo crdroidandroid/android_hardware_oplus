@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 The Evolution X Project
+                   2018-2021 crDroid Android Project
+                   2019 Havoc-OS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- OPlus Extras -->
+    <string name="oplus_extras_title">OPlus Extrák</string>
+    <string name="oplus_extras_summary">Itt állíthat be OnePlus specifikus lehetőségeket</string>
+    <string name="oplus_extras_warning_title">Figyelmeztetés</string>
+    <string name="oplus_extras_warning_text">Ezen szolgáltatások többsége a helyes működéshez meghatározott kernelbázisokra támaszkodik. Amennyiben Ön egyéni kernelt flessel, azt kockáztatja, hogy elveszíti a hozzáférést bizonyos funkciókhoz. Mi előre szóltunk!</string>
+    <string name="oplus_extras_dialog">OK</string>
+    <!-- Alert slider -->
+    <string name="notification_slider_category_title">Értesítőcsúszka</string>
+    <string name="notification_slider_title">A csúszka beállításai</string>
+    <string name="notification_slider_selection_dialog_title">Művelet</string>
+    <string name="notification_slider_top_position">Felső pozíció</string>
+    <string name="notification_slider_middle_position">Középső pozíció</string>
+    <string name="notification_slider_bottom_position">Alsó pozíció</string>
+    <string name="notification_slider_mode_total_silence">Teljes némítás</string>
+    <string name="notification_slider_mode_alarms_only">Csak az ébresztések</string>
+    <string name="notification_slider_mode_priority_only">Csak a fontosak</string>
+    <string name="notification_slider_mode_none">Az összes</string>
+    <string name="notification_slider_usage_title">Mire fogja használni a csúszkát</string>
+    <string name="notification_slider_for_notification">Értesítések</string>
+    <string name="notification_slider_for_flashlight">Zseblámpa</string>
+    <string name="notification_slider_for_brightness">Fényerő</string>
+    <string name="notification_slider_for_rotation">Elforgatás</string>
+    <string name="notification_slider_for_ringer">Csengés</string>
+    <string name="notification_slider_for_notification_ringer">Értesítések és csengés</string>
+    <string name="notification_slider_for_refresh">Frissítési gyakoriság</string>
+    <string name="notification_slider_flashlight_off">Ki</string>
+    <string name="notification_slider_flashlight_on">Be</string>
+    <string name="notification_slider_flashlight_blink">Villogás</string>
+    <string name="notification_slider_brightness_auto">Automatikus</string>
+    <string name="notification_slider_brightness_brightest">Fényesebb</string>
+    <string name="notification_slider_brightness_darkest">Sötétebb</string>
+    <string name="notification_slider_rotation_auto">Automatikus</string>
+    <string name="notification_slider_rotation_portrait">Álló (Portré)</string>
+    <string name="notification_slider_rotation_landscape_90">Fekvő (90°)</string>
+    <string name="notification_slider_rotation_landscape_270">Fekvő (270°)</string>
+    <string name="notification_slider_ringer_normal">Normál</string>
+    <string name="notification_slider_ringer_vibrate">Rezgés</string>
+    <string name="notification_slider_ringer_silent">Néma</string>
+    <string name="notification_slider_refresh_auto">Automatikus</string>
+    <string name="notification_slider_refresh_min">Minimális</string>
+    <string name="notification_slider_refresh_max">Maximális</string>
+    <!-- Display -->
+    <string name="display_title">Képernyő</string>
+    <string name="dc_mode_title">DC-kiegyenlítés</string>
+    <string name="dc_mode_summary">Az egyenáram-felvétel csökkentésével csökkenti a háttérvilágítást</string>
+    <string name="hbm_mode_title">Magas fényerejű mód</string>
+    <string name="hbm_mode_summary">A csúcsfényerő engedélyezése</string>
+    <string name="hbm_mode_warning">A \'Magas fényerejű mód\' hosszú idejű használata tönkreteheti a kijelzőt</string>
+    <string name="auto_hbm_title">Automatikus magas fényerejű mód</string>
+    <string name="auto_hbm_summary">A napfényhez igazodik a csúcsfényerő</string>
+    <string name="auto_hbm_threshold_summary">küszöbérték (lux)</string>
+    <string name="refresh_title">Alkalmazásonkénti frissítési érték</string>
+    <string name="refresh_summary">Minden alkalmazáshoz külön értéket állithat be</string>
+    <string name="refresh_default">Alapértelmezett</string>
+    <string name="refresh_standard">Normál</string>
+    <string name="refresh_extreme">Maximális</string>
+    <!-- CPU -->
+    <string name="cpu_title">Processzor</string>
+    <string name="power_efficient_workqueue_title">Energiahatékony feladatáthelyezés</string>
+    <string name="power_efficient_workqueue_summary">Energiát takarít meg azáltal, hogy átütemezi a munkát egy olyan processzormagra, amely már ébren van</string>
+    <string name="touchboost_title">Érintéssel gyorsított</string>
+    <string name="touchboost_summary">A CPU frekvenciája képernyőérintéssel gyorsítható</string>
+    <!-- Filesystem -->
+    <string name="filesystem_title">Fájlrendszer</string>
+    <string name="fsync_title">Fsync</string>
+    <string name="fsync_summary">fsync ki/be</string>
+    <string name="fsync_warning">Az fsync letiltása felgyorsíthatja a teljesítményt, de a rendszer-összeomlás és az adatvesztés kockázata fennáll</string>
+    <!-- FPS Info -->
+    <string name="fps_title">Mért FPS</string>
+    <string name="fps_info_title">FPS-átfedés</string>
+    <string name="fps_info_summary">Átfedés-megjelenítés az aktuális másodpercenkénti képkockával</string>
+    <string name="fps_info_color_title">Szövegszín</string>
+    <string name="fps_info_color_green">Zöld</string>
+    <string name="fps_info_color_red">Vörös</string>
+    <string name="fps_info_color_magenta">Magenta</string>
+    <string name="fps_info_color_blue">Kék</string>
+    <string name="fps_info_color_cyan">Ciánkék</string>
+    <string name="fps_info_color_yellow">Sárga</string>
+    <string name="fps_info_color_black">Fekete</string>
+    <string name="fps_info_color_white">Fehér</string>
+    <string name="fps_info_color_gray">Szürke</string>
+    <string name="fps_info_color_ltgray">Világosszürke</string>
+    <string name="fps_info_color_dkgray">Sötétszürke</string>
+    <string name="fps_info_color_accent">Rendszertéma-követés</string>
+    <string name="fps_info_position_title">Az átfedés helyzete</string>
+    <string name="fps_info_position_top_left">Fent a bal oldalon</string>
+    <string name="fps_info_position_top_center">Fent középen</string>
+    <string name="fps_info_position_top_right">Fent a jobb oldalon</string>
+    <string name="fps_info_position_bottom_left">Lent a bal oldalon</string>
+    <string name="fps_info_position_bottom_center">Lent középen</string>
+    <string name="fps_info_position_bottom_right">Lent a jobb oldalon</string>
+    <string name="fps_info_position_center_left">Középen bal oldalon</string>
+    <string name="fps_info_position_center_center">Középen</string>
+    <string name="fps_info_position_center_right">Középen jobb oldalon</string>
+    <string name="fps_info_text_size_title">Szövegméret</string>
+    <!-- GPU -->
+    <string name="gpu_title">GPU</string>
+    <string name="adrenoboost_title">Adrenoboost</string>
+    <string name="adrenoboost_summary">Ki, enyhe, közepes, agresszív</string>
+    <!-- Power -->
+    <string name="category_power">Leállítás</string>
+    <string name="powershare_mode_title">Vezetéknélküli Energiamegosztás</string>
+    <string name="powershare_mode_summary">Fordított vezeték nélküli töltés engedélyezése</string>
+    <string name="quiet_mode_title">Csendes üzemmód</string>
+    <string name="quiet_mode_summary">OEM vezeték nélküli töltő csendes üzemmódja</string>
+    <!-- Touchscreen -->
+    <string name="touchscreen_title">Érintőképernyő</string>
+    <string name="game_mode_title">Játékmód</string>
+    <string name="game_mode_warning">Ez csökkentheti az akku élettartamát</string>
+    <string name="tp_edge_limit_mode_title">Képernyőszélek</string>
+    <string name="tp_edge_limit_mode_summary">Letiltja az érintőpanelek éleinek korlátjait</string>
+    <!-- UiBench -->
+    <string name="category_uibench">UiBench</string>
+    <string name="jitter_test_title">Jitter</string>
+    <string name="jitter_test_summary">A renderelési jitter kiszámítása</string>
+    <!-- USB -->
+    <string name="usb_title">USB</string>
+    <string name="otg_title">USB-OTG</string>
+    <string name="otg_summary">Engedélyezi az USB on-the-go módot</string>
+    <string name="usb2_fc_title">USB 2.0 gyorstöltés</string>
+    <string name="usb2_fc_summary">Kényszerítse a gyors töltést 900mA-ig USB 2.0 módban</string>
+    <string name="usb2_fc_warning">Zavarja a Dash- és a Lánctöltést; csak meghatározott esetben engedélyezze</string>
+    <!-- Vibrator -->
+    <string name="category_vibrator">Rezgőmotor</string>
+    <string name="vib_strength_title">A rendszer által megadott erősség</string>
+    <string name="vib_strength_summary">A rezgőmotor erősségének beállítása</string>
+</resources>

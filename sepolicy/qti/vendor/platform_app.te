@@ -1,0 +1,15 @@
+typeattribute platform_app hal_camera_client;
+
+allow platform_app oem_service:service_manager find;
+
+allow platform_app vendor_hal_orms_hwservice:hwservice_manager find;
+
+allow platform_app vendor_persist_camera_file:dir search;
+
+allow platform_app vendor_xdsp_device:chr_file r_file_perms;
+
+allow platform_app hal_dms_hwservice:hwservice_manager find;
+
+binder_call(platform_app, hal_dms_default)
+
+allow platform_app vendor_sysfs_msm_subsys:dir search;

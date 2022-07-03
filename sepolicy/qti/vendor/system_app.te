@@ -1,0 +1,27 @@
+# Battery Health
+r_dir_file(system_app, vendor_sysfs_usb_supply)
+
+# Touch
+rw_dir_file(system_app, vendor_proc_display)
+
+# USB fast charge
+rw_dir_file(system_app, sysfs_fastcharge)
+
+# Vibrator
+rw_dir_file(system_app, sysfs_vibrator)
+
+# Zram
+r_dir_file(system_app, sysfs_zram)
+
+# OTG
+allow system_app vendor_sysfs_usb_supply:file rw_file_perms;
+
+# OPlusExtras
+rw_dir_file(system_app, sysfs_dm)
+rw_dir_file(system_app, sysfs_sync)
+rw_dir_file(system_app, sysfs_workqueue)
+rw_dir_file(system_app, vendor_proc_wireless)
+rw_dir_file(system_app, vendor_sysfs_graphics)
+rw_dir_file(system_app, vendor_sysfs_kgsl)
+rw_dir_file(system_app, vendor_sysfs_msm_perf)
+allow system_app vendor_sysfs_msm_subsys:dir search;

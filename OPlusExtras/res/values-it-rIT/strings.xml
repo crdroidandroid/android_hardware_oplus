@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 The Evolution X Project
+                   2018-2021 crDroid Android Project
+                   2019 Havoc-OS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- OPlus Extras -->
+    <string name="oplus_extras_title">Extra OnePlus</string>
+    <string name="oplus_extras_summary">Impostazioni specifiche del dispositivo</string>
+    <string name="oplus_extras_warning_title">Attenzione</string>
+    <string name="oplus_extras_warning_text">Gran parte di queste funzionalità si affidano a nodi specifici del kernel per poter funzionare. Installando un kernel personalizzato rischi di perdere l\'accesso ad alcune funzionalità. Sei stato avvisato!</string>
+    <string name="oplus_extras_dialog">OK</string>
+    <!-- Alert slider -->
+    <string name="notification_slider_category_title">Slider notifiche</string>
+    <string name="notification_slider_title">Impostazioni slider notifiche</string>
+    <string name="notification_slider_selection_dialog_title">Azione</string>
+    <string name="notification_slider_top_position">Posizione superiore</string>
+    <string name="notification_slider_middle_position">Posizione centrale</string>
+    <string name="notification_slider_bottom_position">Posizione inferiore</string>
+    <string name="notification_slider_mode_total_silence">Silenzia tutto</string>
+    <string name="notification_slider_mode_alarms_only">Solo sveglie</string>
+    <string name="notification_slider_mode_priority_only">Solo priorità</string>
+    <string name="notification_slider_mode_none">Tutto</string>
+    <string name="notification_slider_usage_title">Utilizza slider per</string>
+    <string name="notification_slider_for_notification">Notifica</string>
+    <string name="notification_slider_for_flashlight">Torcia</string>
+    <string name="notification_slider_for_brightness">Luminosità</string>
+    <string name="notification_slider_for_rotation">Rotazione</string>
+    <string name="notification_slider_for_ringer">Suoneria</string>
+    <string name="notification_slider_for_notification_ringer">Notifica e suoneria</string>
+    <string name="notification_slider_for_refresh">Frequenza di aggiornamento</string>
+    <string name="notification_slider_flashlight_off">Spento</string>
+    <string name="notification_slider_flashlight_on">Acceso</string>
+    <string name="notification_slider_flashlight_blink">Lampeggia</string>
+    <string name="notification_slider_brightness_auto">Automatico</string>
+    <string name="notification_slider_brightness_brightest">Più luminoso</string>
+    <string name="notification_slider_brightness_darkest">Più scuro</string>
+    <string name="notification_slider_rotation_auto">Automatico</string>
+    <string name="notification_slider_rotation_portrait">Verticale</string>
+    <string name="notification_slider_rotation_landscape_90">Orizzontale (90°)</string>
+    <string name="notification_slider_rotation_landscape_270">Orizzontale (270°)</string>
+    <string name="notification_slider_ringer_normal">Normale</string>
+    <string name="notification_slider_ringer_vibrate">Vibrazione</string>
+    <string name="notification_slider_ringer_silent">Silenzioso</string>
+    <string name="notification_slider_refresh_auto">Automatica</string>
+    <string name="notification_slider_refresh_min">Minima</string>
+    <string name="notification_slider_refresh_max">Massima</string>
+    <!-- Display -->
+    <string name="display_title">Display</string>
+    <string name="dc_mode_title">Modalità anti-sfarfallio</string>
+    <string name="dc_mode_summary">Abbassa la retroilluminazione riducendo lo sfarfallio</string>
+    <string name="hbm_mode_title">Modalità alta luminosità</string>
+    <string name="hbm_mode_summary">Abilita alta luminosità</string>
+    <string name="hbm_mode_warning">L\'utilizzo prolungato della modalità Alta luminosità può danneggiare il display</string>
+    <string name="auto_hbm_title">Modalità alta luminosità automatica</string>
+    <string name="auto_hbm_summary">Abilita alta luminosità in base alla luce solare</string>
+    <string name="auto_hbm_threshold_summary">soglia (lux)</string>
+    <string name="refresh_title">Frequenza di aggiornamento per applicazione</string>
+    <string name="refresh_summary">Configura la frequenza di aggiornamento in base all\'applicazione</string>
+    <string name="refresh_default">Predefinito</string>
+    <string name="refresh_standard">Standard</string>
+    <string name="refresh_extreme">Massimo</string>
+    <!-- CPU -->
+    <string name="cpu_title">CPU</string>
+    <string name="power_efficient_workqueue_title">Coda di lavoro efficiente</string>
+    <string name="power_efficient_workqueue_summary">Risparmia energia riprogrammando il lavoro su un core già sveglio</string>
+    <string name="touchboost_title">TouchBoost</string>
+    <string name="touchboost_summary">Aumenta la frequenza della CPU toccando lo schermo</string>
+    <!-- Filesystem -->
+    <string name="filesystem_title">Filesystem</string>
+    <string name="fsync_title">FSync</string>
+    <string name="fsync_summary">fsync spento/acceso</string>
+    <string name="fsync_warning">Disabilitare fsync può accelerare le prestazioni a rischio di una perdita di dati in caso di crash di sistema</string>
+    <!-- FPS Info -->
+    <string name="fps_title">FPS misurati</string>
+    <string name="fps_info_title">Sovrapposizione FPS</string>
+    <string name="fps_info_summary">Mostra i fotogrammi al secondo in sovrapposizione</string>
+    <string name="fps_info_color_title">Colore del testo</string>
+    <string name="fps_info_color_green">Verde</string>
+    <string name="fps_info_color_red">Rosso</string>
+    <string name="fps_info_color_magenta">Magenta</string>
+    <string name="fps_info_color_blue">Blu</string>
+    <string name="fps_info_color_cyan">Ciano</string>
+    <string name="fps_info_color_yellow">Giallo</string>
+    <string name="fps_info_color_black">Nero</string>
+    <string name="fps_info_color_white">Bianco</string>
+    <string name="fps_info_color_gray">Grigio</string>
+    <string name="fps_info_color_ltgray">Grigio chiaro</string>
+    <string name="fps_info_color_dkgray">Grigio scuro</string>
+    <string name="fps_info_color_accent">Segui impostazioni sistema</string>
+    <string name="fps_info_position_title">Posizione della sovrapposizione</string>
+    <string name="fps_info_position_top_left">In alto a sinistra</string>
+    <string name="fps_info_position_top_center">In alto al centro</string>
+    <string name="fps_info_position_top_right">In alto a destra</string>
+    <string name="fps_info_position_bottom_left">In basso a sinistra</string>
+    <string name="fps_info_position_bottom_center">In basso al centro</string>
+    <string name="fps_info_position_bottom_right">In basso a destra</string>
+    <string name="fps_info_position_center_left">Centro sinistra</string>
+    <string name="fps_info_position_center_center">Centro</string>
+    <string name="fps_info_position_center_right">Centro destra</string>
+    <string name="fps_info_text_size_title">Dimensione del testo</string>
+    <!-- GPU -->
+    <string name="gpu_title">GPU</string>
+    <string name="adrenoboost_title">AdrenoBoost</string>
+    <string name="adrenoboost_summary">Spento, leggero, medio, aggressivo</string>
+    <!-- Power -->
+    <string name="category_power">Energia</string>
+    <string name="powershare_mode_title">Wireless PowerShare</string>
+    <string name="powershare_mode_summary">Abilita la ricarica wireless inversa</string>
+    <string name="quiet_mode_title">Modalità silenziosa</string>
+    <string name="quiet_mode_summary">Abilita la modalità silenziosa per il caricabatterie wireless OEM</string>
+    <!-- Touchscreen -->
+    <string name="touchscreen_title">Touchscreen</string>
+    <string name="game_mode_title">Modalità gioco</string>
+    <string name="game_mode_warning">Può diminuire la durata della batteria</string>
+    <string name="tp_edge_limit_mode_title">Limite Bordo TP</string>
+    <string name="tp_edge_limit_mode_summary">Disabilita il limite del bordo del pannello touch</string>
+    <!-- UiBench -->
+    <string name="category_uibench">UiBench</string>
+    <string name="jitter_test_title">Tremolio</string>
+    <string name="jitter_test_summary">Calcola il tremolio di rendering</string>
+    <!-- USB -->
+    <string name="usb_title">USB</string>
+    <string name="otg_title">USB-OTG</string>
+    <string name="otg_summary">Abilita la modalità USB On-The-Go</string>
+    <string name="usb2_fc_title">Ricarica rapida USB 2.0</string>
+    <string name="usb2_fc_summary">Forza la ricarica rapida fino a 900mA in modalità USB 2.0</string>
+    <string name="usb2_fc_warning">Interferisce con la ricarica DASH/WARP. Abilitare solo quando applicabile</string>
+    <!-- Vibrator -->
+    <string name="category_vibrator">Vibrazione</string>
+    <string name="vib_strength_title">Intensità</string>
+    <string name="vib_strength_summary">Imposta l\'intensità della vibrazione</string>
+</resources>

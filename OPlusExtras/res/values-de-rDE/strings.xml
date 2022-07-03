@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2016 The OmniROM Project
+                   2021-2022 The Evolution X Project
+                   2018-2021 crDroid Android Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+        http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Oplus Extras -->
+    <string name="oplus_extras_title">Geräteextras</string>
+    <string name="oplus_extras_summary">Gerätespezifische Einstellungen anpassen</string>
+    <string name="oplus_extras_warning_title">Warnung</string>
+    <string name="oplus_extras_warning_text">Die meisten dieser Funktionen sind auf bestimmte Kernelknoten angewiesen, um zu funktionieren. Wenn Sie einen benutzerdefinierten Kernel flashen, riskieren Sie, dass Sie den Zugang zu einigen Funktionen verlieren.</string>
+    <string name="oplus_extras_dialog">OK</string>
+    <!-- Alert slider -->
+    <string name="notification_slider_category_title">Alarm-Schieberegler</string>
+    <string name="notification_slider_title">Alert-Slider Einstellungen</string>
+    <string name="notification_slider_selection_dialog_title">Aktion</string>
+    <string name="notification_slider_top_position">Obere Position</string>
+    <string name="notification_slider_middle_position">Mittlere Position</string>
+    <string name="notification_slider_bottom_position">Untere Position</string>
+    <string name="notification_slider_mode_total_silence">Totale Stille</string>
+    <string name="notification_slider_mode_alarms_only">Nur Wecker</string>
+    <string name="notification_slider_mode_priority_only">Nur Priorität</string>
+    <string name="notification_slider_mode_none">Alle</string>
+    <string name="notification_slider_usage_title">Schieberegler verwenden für</string>
+    <string name="notification_slider_for_notification">Benachrichtigung</string>
+    <string name="notification_slider_for_flashlight">Taschenlampe</string>
+    <string name="notification_slider_for_brightness">Helligkeit</string>
+    <string name="notification_slider_for_rotation">Drehung</string>
+    <string name="notification_slider_for_ringer">Klingelton</string>
+    <string name="notification_slider_for_notification_ringer">Benachrichtigung und Klingelton</string>
+    <string name="notification_slider_flashlight_off">Aus</string>
+    <string name="notification_slider_flashlight_on">Ein</string>
+    <string name="notification_slider_flashlight_blink">Blinken</string>
+    <string name="notification_slider_brightness_auto">Automatisch</string>
+    <string name="notification_slider_brightness_brightest">Am hellsten</string>
+    <string name="notification_slider_brightness_darkest">Am dunkelsten</string>
+    <string name="notification_slider_rotation_auto">Automatisch</string>
+    <string name="notification_slider_rotation_portrait">Porträt</string>
+    <string name="notification_slider_rotation_landscape_90">Querformat (90°)</string>
+    <string name="notification_slider_rotation_landscape_270">Querformat (270°)</string>
+    <string name="notification_slider_ringer_normal">Normal</string>
+    <string name="notification_slider_ringer_vibrate">Vibrieren</string>
+    <string name="notification_slider_ringer_silent">Lautlos</string>
+    <!-- Display -->
+    <string name="display_title">Anzeige</string>
+    <string name="dc_mode_title">DC-Dimmen</string>
+    <string name="dc_mode_summary">Hintergrundbeleuchtung durch Senkung der Gleichstrom-Remis dimmen</string>
+    <string name="hbm_mode_title">Hohe Helligkeit</string>
+    <string name="hbm_mode_summary">Nennspitzenleuchtdichte</string>
+    <string name="hbm_mode_warning">Eine lange Nutzung des hohen Helligkeitsmodus kann dein Display schädigen</string>
+    <string name="auto_hbm_title">Automatischer Helligkeitsmodus</string>
+    <string name="auto_hbm_summary">Beleuchtungsspitzen basierend auf Sonnenlicht aktivieren</string>
+    <string name="auto_hbm_threshold_summary">Schwellenwert (lux)</string>
+    <!-- FPS Info -->
+    <string name="fps_title">Gemessene FPS</string>
+    <string name="fps_info_title">FPS Overlay</string>
+    <string name="fps_info_summary">Überlagerung mit aktuellen Bildern pro Sekunde anzeigen</string>
+    <string name="fps_info_color_title">Textfarbe</string>
+    <string name="fps_info_color_green">Grün</string>
+    <string name="fps_info_color_red">Rot</string>
+    <string name="fps_info_color_magenta">Magenta</string>
+    <string name="fps_info_color_blue">Blau</string>
+    <string name="fps_info_color_cyan">Türkis</string>
+    <string name="fps_info_color_yellow">Gelb</string>
+    <string name="fps_info_color_black">Schwarz</string>
+    <string name="fps_info_color_white">Weiß</string>
+    <string name="fps_info_color_gray">Grau</string>
+    <string name="fps_info_color_ltgray">Hellgrau</string>
+    <string name="fps_info_color_dkgray">Dunkelgrau</string>
+    <string name="fps_info_color_accent">Systemstandard</string>
+    <string name="fps_info_position_title">Overlay-Position</string>
+    <string name="fps_info_position_top_left">Oben links</string>
+    <string name="fps_info_position_top_center">Oben zentriert</string>
+    <string name="fps_info_position_top_right">Oben rechts</string>
+    <string name="fps_info_position_bottom_left">Unten links</string>
+    <string name="fps_info_position_bottom_center">Unten zentriert</string>
+    <string name="fps_info_position_bottom_right">Unten rechts</string>
+    <string name="fps_info_position_center_left">Mittig links</string>
+    <string name="fps_info_position_center_center">Zentriert</string>
+    <string name="fps_info_position_center_right">Mittig rechts</string>
+    <string name="fps_info_text_size_title">Schriftgröße</string>
+    <!-- Power -->
+    <string name="category_power">Leistung</string>
+    <string name="powershare_mode_title">Umgekehrtes kabelloses Aufladen </string>
+    <string name="powershare_mode_summary">Aktiviert das umgekehrte kabellose Laden</string>
+    <!-- Touchscreen -->
+    <string name="touchscreen_title">Touchscreen</string>
+    <string name="game_mode_title">Spielmodus</string>
+    <string name="game_mode_warning">Kann die Akkulaufzeit verringern</string>
+    <string name="tp_edge_limit_mode_title">TP Kantenlimit</string>
+    <string name="tp_edge_limit_mode_summary">Das Touchpanel-Kantenlimit deaktivieren</string>
+    <!-- UiBench -->
+    <string name="category_uibench">UiBench</string>
+    <string name="jitter_test_title">Jitter</string>
+    <string name="jitter_test_summary">Berechnung des Rendering-Jitters</string>
+    <!-- USB -->
+    <string name="usb_title">USB</string>
+    <string name="usb2_fc_title">USB 2.0 (Schnell laden)</string>
+    <string name="usb2_fc_summary">Schnelles Laden von bis zu 900mA im USB 2.0 Modus erzwingen</string>
+    <string name="usb2_fc_warning">Beeinträchtigt die Dash-/Warp-Ladung. Nur aktivieren, wenn zutreffend</string>
+    <!-- Vibrator -->
+    <string name="category_vibrator">Vibrator</string>
+    <string name="vib_strength_title">Vibrationsstärke des Systems</string>
+    <string name="vib_strength_summary">Stärke der Vibration einstellen</string>
+</resources>

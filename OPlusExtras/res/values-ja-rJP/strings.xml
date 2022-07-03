@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 The Evolution X Project
+                   2018-2021 crDroid Android Project
+                   2019 Havoc-OS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- OPlus Extras -->
+    <string name="oplus_extras_title">端末の追加機能</string>
+    <string name="oplus_extras_summary">端末固有の設定を調整する</string>
+    <string name="oplus_extras_warning_title">警告</string>
+    <string name="oplus_extras_warning_text">これらの機能の大部分は機能させるために特定のカーネルノードを必要とします。カスタムカーネルをフラッシュすると、一部の機能へのアクセスを失う可能性があります。注意して下さい!</string>
+    <string name="oplus_extras_dialog">OK</string>
+    <!-- Alert slider -->
+    <string name="notification_slider_category_title">Alert Slider</string>
+    <string name="notification_slider_title">Alert Slider の設定</string>
+    <string name="notification_slider_selection_dialog_title">アクション</string>
+    <string name="notification_slider_top_position">上部</string>
+    <string name="notification_slider_middle_position">中央</string>
+    <string name="notification_slider_bottom_position">下部</string>
+    <string name="notification_slider_mode_total_silence">完全サイレント</string>
+    <string name="notification_slider_mode_alarms_only">アラームのみ</string>
+    <string name="notification_slider_mode_priority_only">優先通知のみ</string>
+    <string name="notification_slider_mode_none">全て</string>
+    <string name="notification_slider_usage_title">スライダー使用先</string>
+    <string name="notification_slider_for_notification">通知</string>
+    <string name="notification_slider_for_flashlight">フラッシュライト</string>
+    <string name="notification_slider_for_brightness">明るさ</string>
+    <string name="notification_slider_for_rotation">回転</string>
+    <string name="notification_slider_for_ringer">着信</string>
+    <string name="notification_slider_for_notification_ringer">通知と着信</string>
+    <string name="notification_slider_for_refresh">リフレッシュレート</string>
+    <string name="notification_slider_flashlight_off">OFF</string>
+    <string name="notification_slider_flashlight_on">ON</string>
+    <string name="notification_slider_flashlight_blink">点滅</string>
+    <string name="notification_slider_brightness_auto">自動</string>
+    <string name="notification_slider_brightness_brightest">最大輝度</string>
+    <string name="notification_slider_brightness_darkest">最低輝度</string>
+    <string name="notification_slider_rotation_auto">自動</string>
+    <string name="notification_slider_rotation_portrait">縦向き</string>
+    <string name="notification_slider_rotation_landscape_90">横向き (90°)</string>
+    <string name="notification_slider_rotation_landscape_270">横向き (270°)</string>
+    <string name="notification_slider_ringer_normal">標準</string>
+    <string name="notification_slider_ringer_vibrate">振動</string>
+    <string name="notification_slider_ringer_silent">サイレント</string>
+    <string name="notification_slider_refresh_auto">自動</string>
+    <string name="notification_slider_refresh_min">最小</string>
+    <string name="notification_slider_refresh_max">最大</string>
+    <!-- Display -->
+    <string name="display_title">ディスプレイ</string>
+    <string name="dc_mode_title">DC 調光</string>
+    <string name="dc_mode_summary">直流電流を低くしてバックライトを暗くする</string>
+    <string name="hbm_mode_title">高輝度モード</string>
+    <string name="hbm_mode_summary">最高輝度を有効にする</string>
+    <string name="hbm_mode_warning">長時間の高輝度モードの使用は画面にダメージを与える可能性があります</string>
+    <string name="auto_hbm_title">自動高輝度モード</string>
+    <string name="auto_hbm_summary">日光による高輝度を有効にする</string>
+    <string name="auto_hbm_threshold_summary">しきい値 (lux)</string>
+    <string name="refresh_title">アプリごとのリフレッシュレート</string>
+    <string name="refresh_summary">アプリごとの基本リフレッシュレートを設定する</string>
+    <string name="refresh_default">デフォルト</string>
+    <string name="refresh_standard">標準</string>
+    <string name="refresh_extreme">最大</string>
+    <!-- CPU -->
+    <string name="cpu_title">CPU</string>
+    <string name="power_efficient_workqueue_title">電力効率の高いワークキュー</string>
+    <string name="power_efficient_workqueue_summary">既に起動したコアへの指示を再スケジュールして電力を節約する</string>
+    <string name="touchboost_title">タッチブースト</string>
+    <string name="touchboost_summary">タッチ入力時に CPU 周波数を上げるかどうか決める</string>
+    <!-- Filesystem -->
+    <string name="filesystem_title">ファイルシステム</string>
+    <string name="fsync_title">Fsync</string>
+    <string name="fsync_summary">fsync OFF/ON</string>
+    <string name="fsync_warning">FSync を無効にするとシステムがクラッシュした時にデータが失われる危険がありますが、パフォーマンスの高速化を期待できます。</string>
+    <!-- FPS Info -->
+    <string name="fps_title">FPS 測定</string>
+    <string name="fps_info_title">FPS オーバーレイ</string>
+    <string name="fps_info_summary">現在の FPS をオーバーレイ表示する</string>
+    <string name="fps_info_color_title">文字の色</string>
+    <string name="fps_info_color_green">緑</string>
+    <string name="fps_info_color_red">レッド</string>
+    <string name="fps_info_color_magenta">マゼンタ</string>
+    <string name="fps_info_color_blue">青</string>
+    <string name="fps_info_color_cyan">シアン</string>
+    <string name="fps_info_color_yellow">黄</string>
+    <string name="fps_info_color_black">黒</string>
+    <string name="fps_info_color_white">ホワイト</string>
+    <string name="fps_info_color_gray">グレー</string>
+    <string name="fps_info_color_ltgray">ライトグレー</string>
+    <string name="fps_info_color_dkgray">ダークグレー</string>
+    <string name="fps_info_color_accent">システムに従う</string>
+    <string name="fps_info_position_title">オーバーレイの位置</string>
+    <string name="fps_info_position_top_left">左上</string>
+    <string name="fps_info_position_top_center">中央上</string>
+    <string name="fps_info_position_top_right">右上</string>
+    <string name="fps_info_position_bottom_left">左下</string>
+    <string name="fps_info_position_bottom_center">中央下</string>
+    <string name="fps_info_position_bottom_right">右下</string>
+    <string name="fps_info_position_center_left">左中央</string>
+    <string name="fps_info_position_center_center">中央</string>
+    <string name="fps_info_position_center_right">右中央</string>
+    <string name="fps_info_text_size_title">文字の大きさ</string>
+    <!-- GPU -->
+    <string name="gpu_title">GPU</string>
+    <string name="adrenoboost_title">AdrenoBoost</string>
+    <string name="adrenoboost_summary">OFF、軽量、標準、高速から選択します。</string>
+    <!-- Power -->
+    <string name="category_power">電源</string>
+    <string name="powershare_mode_title">ワイヤレス PowerShare</string>
+    <string name="powershare_mode_summary">リバースワイヤレス充電を有効にする</string>
+    <string name="quiet_mode_title">クワイエットモード</string>
+    <string name="quiet_mode_summary">OEM の無線充電器のクワイエットモードを有効化する</string>
+    <!-- Touchscreen -->
+    <string name="touchscreen_title">タッチスクリーン</string>
+    <string name="game_mode_title">ゲームモード</string>
+    <string name="game_mode_warning">電池の減りが速くなります</string>
+    <string name="tp_edge_limit_mode_title">TP エッジ制限</string>
+    <string name="tp_edge_limit_mode_summary">タッチパネルのエッジ制限を無効にする</string>
+    <!-- UiBench -->
+    <string name="category_uibench">UIBench</string>
+    <string name="jitter_test_title">ジッター</string>
+    <string name="jitter_test_summary">レンダリングジッターを計算する</string>
+    <!-- USB -->
+    <string name="usb_title">USB</string>
+    <string name="otg_title">USB-OTG</string>
+    <string name="otg_summary">USB on-the-go モードを有効化する</string>
+    <string name="usb2_fc_title">USB 2.0 急速充電</string>
+    <string name="usb2_fc_summary">USB 2.0モードで最大900mAの急速充電を強制使用する</string>
+    <string name="usb2_fc_warning">Dash/Warp Charging に干渉することがあります。適用できる場合のみ有効化して下さい。</string>
+    <!-- Vibrator -->
+    <string name="category_vibrator">振動</string>
+    <string name="vib_strength_title">システムの振動</string>
+    <string name="vib_strength_summary">振動の強さを決める</string>
+</resources>

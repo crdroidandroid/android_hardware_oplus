@@ -125,6 +125,11 @@
 /dev/audio_ultrasound     u:object_r:ultrasound_device:s0
 /dev/sensor_ultrasound    u:object_r:ultrasound_device:s0
 
+# USB fast charge
+/sys/module/oplus_chg/parameters/force_fast_charge                 u:object_r:sysfs_fastcharge:s0
+/sys/module/oplus_chg/parameters/ffc_val                           u:object_r:sysfs_fastcharge:s0
+/sys/module/oplus_charger/parameters/force_fast_charge             u:object_r:sysfs_fastcharge:s0
+
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.oplus    u:object_r:hal_vibrator_default_exec:s0
 
@@ -135,3 +140,14 @@
 # Wlchgmonitor
 /(odm|vendor/odm)/bin/wlchgmonitor    u:object_r:wlchgmonitor_exec:s0
 /dev/wlchg                            u:object_r:wlchg_device:s0
+
+# Sys files (OPlusExtras)
+/sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost                                              u:object_r:vendor_sysfs_kgsl:s0
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps         u:object_r:sysfs_dm:s0
+/sys/devices/platform/soc/a8c000.i2c/i2c-6/6-005a/leds/vibrator/level                     u:object_r:sysfs_vibrator:s0
+/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator/level                     u:object_r:sysfs_vibrator:s0
+/sys/devices/platform/soc/88c000.i2c/i2c-10/10-005a/leds/vibrator/level                   u:object_r:sysfs_vibrator:s0
+/sys/module/msm_drm/parameters(/.*)?                                                      u:object_r:sysfs_dm:s0
+/sys/module/msm_performance/parameters/touchboost                                         u:object_r:vendor_sysfs_msm_perf:s0
+/sys/module/sync/parameters/fsync_enabled                                                 u:object_r:sysfs_sync:s0
+/sys/module/workqueue/parameters/power_efficient                                          u:object_r:sysfs_workqueue:s0

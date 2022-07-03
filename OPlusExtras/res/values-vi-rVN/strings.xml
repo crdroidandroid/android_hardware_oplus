@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2016 The OmniROM Project
+                   2021-2022 The Evolution X Project
+                   2018-2021 crDroid Android Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Oplus Extras -->
+    <string name="oplus_extras_title">Tính năng bổ sung</string>
+    <string name="oplus_extras_summary">Điều chỉnh cài đặt thiết bị</string>
+    <string name="oplus_extras_warning_title">Cảnh báo</string>
+    <string name="oplus_extras_warning_text">Những tính năng này chủ yếu dựa vào các node của kernel để hoạt động. Các tính năng này có thể không hoạt động nếu bạn flash kernel khác!</string>
+    <string name="oplus_extras_dialog">OK</string>
+    <!-- Alert slider -->
+    <string name="notification_slider_category_title">Thanh trượt chuông</string>
+    <string name="notification_slider_title">Cài đặt thanh trượt chuông</string>
+    <string name="notification_slider_selection_dialog_title">Hành động</string>
+    <string name="notification_slider_top_position">Trên cùng</string>
+    <string name="notification_slider_middle_position">Ở giữa</string>
+    <string name="notification_slider_bottom_position">Dưới cùng</string>
+    <string name="notification_slider_mode_total_silence">Tắt tiếng hoàn toàn</string>
+    <string name="notification_slider_mode_alarms_only">Chỉ báo thức</string>
+    <string name="notification_slider_mode_priority_only">Chỉ ưu tiên</string>
+    <string name="notification_slider_mode_none">Tất cả</string>
+    <string name="notification_slider_usage_title">Sử dụng thanh trượt cho</string>
+    <string name="notification_slider_for_notification">Thông báo</string>
+    <string name="notification_slider_for_flashlight">Đèn pin</string>
+    <string name="notification_slider_for_brightness">Độ sáng</string>
+    <string name="notification_slider_for_rotation">Xoay màn hình</string>
+    <string name="notification_slider_for_ringer">Chuông</string>
+    <string name="notification_slider_for_notification_ringer">Thông báo và chuông</string>
+    <string name="notification_slider_flashlight_off">Tắt</string>
+    <string name="notification_slider_flashlight_on">Bật</string>
+    <string name="notification_slider_flashlight_blink">Nháy</string>
+    <string name="notification_slider_brightness_auto">Tự động</string>
+    <string name="notification_slider_brightness_brightest">Sáng nhất</string>
+    <string name="notification_slider_brightness_darkest">Tối nhất</string>
+    <string name="notification_slider_rotation_auto">Tự động</string>
+    <string name="notification_slider_rotation_portrait">Dọc</string>
+    <string name="notification_slider_rotation_landscape_90">Ngang (90°)</string>
+    <string name="notification_slider_rotation_landscape_270">Ngang (270°)</string>
+    <string name="notification_slider_ringer_normal">Bình thường</string>
+    <string name="notification_slider_ringer_vibrate">Rung</string>
+    <string name="notification_slider_ringer_silent">Im lặng</string>
+    <!-- Display -->
+    <string name="display_title">Hiển thị</string>
+    <string name="dc_mode_title">Siêu tối</string>
+    <string name="dc_mode_summary">Giảm độ sáng bằng cách giảm dòng điện</string>
+    <string name="hbm_mode_title">Chế độ Độ sáng cao</string>
+    <string name="hbm_mode_summary">Bật độ sáng tối đa</string>
+    <string name="hbm_mode_warning">Sử dụng chế độ Độ sáng cao trong thời gian dài có thể làm hỏng màn hình của bạn</string>
+    <string name="auto_hbm_title">Chế độ sáng cao tự động</string>
+    <string name="auto_hbm_summary">Bật độ sáng tối đa dựa vào ánh sáng xung quanh</string>
+    <string name="auto_hbm_threshold_summary">ngưỡng (lux)</string>
+    <!-- FPS Info -->
+    <string name="fps_title">FPS đo được</string>
+    <string name="fps_info_title">Lớp phủ FPS</string>
+    <string name="fps_info_summary">Hiển thị lớp phủ với khung hình trên giây</string>
+    <string name="fps_info_color_title">Màu chữ</string>
+    <string name="fps_info_color_green">Xanh lá</string>
+    <string name="fps_info_color_red">Đỏ</string>
+    <string name="fps_info_color_magenta">Cánh sen đậm</string>
+    <string name="fps_info_color_blue">Xanh dương</string>
+    <string name="fps_info_color_cyan">Lục lam</string>
+    <string name="fps_info_color_yellow">Vàng</string>
+    <string name="fps_info_color_black">Đen</string>
+    <string name="fps_info_color_white">Trắng</string>
+    <string name="fps_info_color_gray">Xám</string>
+    <string name="fps_info_color_ltgray">Xám nhạt</string>
+    <string name="fps_info_color_dkgray">Xám đậm</string>
+    <string name="fps_info_color_accent">Theo Hệ Thống</string>
+    <string name="fps_info_position_title">Vị trí lớp phủ</string>
+    <string name="fps_info_position_top_left">Phía trên bên trái</string>
+    <string name="fps_info_position_top_center">Phía trên ở giữa</string>
+    <string name="fps_info_position_top_right">Phía trên bên phải</string>
+    <string name="fps_info_position_bottom_left">Phía dưới bên trái</string>
+    <string name="fps_info_position_bottom_center">Phía dưới ở giữa</string>
+    <string name="fps_info_position_bottom_right">Dưới cùng bên phải</string>
+    <string name="fps_info_position_center_left">Ở giữa bên trái</string>
+    <string name="fps_info_position_center_center">Ở giữa</string>
+    <string name="fps_info_position_center_right">Ở giữa bên phải</string>
+    <string name="fps_info_text_size_title">Cỡ chữ</string>
+    <!-- Power -->
+    <string name="category_power">Nguồn</string>
+    <string name="powershare_mode_title">Sạc Ngược Không Dây</string>
+    <string name="powershare_mode_summary">Bật sạc ngược không dây</string>
+    <!-- Touchscreen -->
+    <string name="touchscreen_title">Màn hình cảm ứng</string>
+    <string name="game_mode_title">Chế độ trò chơi</string>
+    <string name="game_mode_warning">Có thể tăng mức sử dụng pin</string>
+    <string name="tp_edge_limit_mode_title">Giới hạn cảm ứng rìa màn hình</string>
+    <string name="tp_edge_limit_mode_summary">Tắt giới hạn cảm ứng rìa màn hình</string>
+    <!-- UiBench -->
+    <string name="category_uibench">UiBench</string>
+    <string name="jitter_test_title">Jitter</string>
+    <string name="jitter_test_summary">Tính jitter khi render</string>
+    <!-- USB -->
+    <string name="usb_title">USB</string>
+    <string name="usb2_fc_title">Sạc nhanh USB 2.0</string>
+    <string name="usb2_fc_summary">Ép sạc nhanh lên đến 900mA ở chế độ USB 2.0</string>
+    <string name="usb2_fc_warning">Cản trở sạc Dash/Warp; chỉ bật khi cần thiết</string>
+    <!-- Vibrator -->
+    <string name="category_vibrator">Rung</string>
+    <string name="vib_strength_title">Cường độ rung Hệ thống</string>
+    <string name="vib_strength_summary">Chọn độ mạnh của bộ rung</string>
+</resources>
