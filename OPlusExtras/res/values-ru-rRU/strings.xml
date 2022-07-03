@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 The Evolution X Project
+                   2018-2021 crDroid Android Project
+                   2019 Havoc-OS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- OPlus Extras -->
+    <string name="oplus_extras_title">Настройки OnePlus</string>
+    <string name="oplus_extras_summary">Дополнительные настройки для OnePlus</string>
+    <string name="oplus_extras_warning_title">Предупреждение</string>
+    <string name="oplus_extras_warning_text">Работа большинства этих функций зависит от ядра. Прошивая стороннее ядро, вы рискуете потерять доступ к некоторым функциям. Вы были предупреждены!</string>
+    <string name="oplus_extras_dialog">Хорошо</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Значение: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">по умолчанию</string>
+    <string name="custom_seekbar_default_value_to_set">Значение по умолчанию: <xliff:g id="v">%s</xliff:g>\nУдерживайте для установки</string>
+    <string name="custom_seekbar_default_value_is_set">Значение по умолчанию установлено</string>
+
+    <!-- Alert slider -->
+    <string name="notification_slider_category_title">Переключатель уведомлений</string>
+    <string name="notification_slider_title">Параметры бокового переключателя уведомлений</string>
+    <string name="notification_slider_selection_dialog_title">Поведение</string>
+    <string name="notification_slider_top_position">Верхнее положение</string>
+    <string name="notification_slider_middle_position">Среднее положение</string>
+    <string name="notification_slider_bottom_position">Нижнее положение</string>
+    <string name="notification_slider_mode_total_silence">Полная тишина</string>
+    <string name="notification_slider_mode_alarms_only">Только будильники</string>
+    <string name="notification_slider_mode_priority_only">Только важные</string>
+    <string name="notification_slider_mode_none">Все</string>
+    <string name="notification_slider_usage_title">Использовать переключатель для</string>
+    <string name="notification_slider_for_notification">Уведомлений</string>
+    <string name="notification_slider_for_flashlight">Фонарика</string>
+    <string name="notification_slider_for_brightness">Яркости</string>
+    <string name="notification_slider_for_rotation">Поворота экрана</string>
+    <string name="notification_slider_for_ringer">Звонка</string>
+    <string name="notification_slider_for_notification_ringer">Уведомлений и звонка</string>
+    <string name="notification_slider_for_refresh">Частоты обновления</string>
+    <string name="notification_slider_for_extradim">Уменьшения яркости</string>
+    <string name="notification_slider_for_nightlight">Ночной подсветки</string>
+    <string name="notification_slider_for_colorspace">Цветового профиля</string>
+    <string name="notification_slider_flashlight_off">Выключить</string>
+    <string name="notification_slider_flashlight_on">Включить</string>
+    <string name="notification_slider_flashlight_blink">Мигать</string>
+    <string name="notification_slider_brightness_auto">Авто</string>
+    <string name="notification_slider_brightness_brightest">Ярче</string>
+    <string name="notification_slider_brightness_darkest">Темнее</string>
+    <string name="notification_slider_rotation_auto">Автоматическая</string>
+    <string name="notification_slider_rotation_portrait">Вертикальная</string>
+    <string name="notification_slider_rotation_landscape_90">Горизонтальная (90°)</string>
+    <string name="notification_slider_rotation_landscape_270">Горизонтальная (270°)</string>
+    <string name="notification_slider_ringer_normal">Обычный</string>
+    <string name="notification_slider_ringer_vibrate">Вибрация</string>
+    <string name="notification_slider_ringer_silent">Без звука</string>
+    <string name="notification_slider_refresh_auto">Авто</string>
+    <string name="notification_slider_refresh_min">Минимальная</string>
+    <string name="notification_slider_refresh_max">Максимальная</string>
+    <string name="notification_slider_extradim_off">Выключено</string>
+    <string name="notification_slider_extradim_min">Минимально</string>
+    <string name="notification_slider_extradim_mid">Средне</string>
+    <string name="notification_slider_extradim_max">Максимально</string>
+    <string name="notification_slider_nightlight_off">Выключено</string>
+    <string name="notification_slider_nightlight_min">Минимальна</string>
+    <string name="notification_slider_nightlight_mid">Средне</string>
+    <string name="notification_slider_nightlight_max">Максимальна</string>
+    <string name="notification_slider_colorspace_vivid">Яркий</string>
+    <string name="notification_slider_colorspace_natural">Естественный</string>
+    <string name="notification_slider_colorspace_cinematic">Кино</string>
+    <string name="notification_slider_colorspace_brilliant">Бриллиант</string>
+
+    <!-- Display -->
+    <string name="display_title">Экран</string>
+    <string name="dc_mode_title">DC-затемнение</string>
+    <string name="dc_mode_summary">Уменьшить подсветку, снизив потребление тока</string>
+    <string name="hbm_mode_title">Режим высокой яркости</string>
+    <string name="hbm_mode_summary">Включить максимальную яркость</string>
+    <string name="hbm_mode_warning">Длительное использование режима высокой яркости может повредить дисплей</string>
+    <string name="auto_hbm_title">Авто режим высокой яркости</string>
+    <string name="auto_hbm_summary">Включать максимальную яркость на солнце</string>
+
+    <string name="auto_hbm_threshold_summary">порог (люкс)</string>
+    <string name="refresh_title">Частота для каждого приложения</string>
+    <string name="refresh_summary">Настройка частоты обновления экрана для каждого приложения</string>
+    <string name="refresh_default">По умолчанию</string>
+    <string name="refresh_standard">Стандартная</string>
+    <string name="refresh_extreme">Максимальная</string>
+
+    <string name="colorspace_title">Цветовой профиль приложений</string>
+    <string name="colorspace_summary">Настройка цветового профиля для каждого приложения</string>
+    <string name="colorspace_default">По умолчанию</string>
+    <string name="colorspace_vivid">Яркий</string>
+    <string name="colorspace_natural">Естественный</string>
+    <string name="colorspace_cinematic">Кино</string>
+    <string name="colorspace_brilliant">Бриллиант</string>
+
+    <!-- CPU -->
+    <string name="cpu_title">Процессор</string>
+    <string name="power_efficient_workqueue_title">Эффективная очередь задач</string>
+    <string name="power_efficient_workqueue_summary">Экономия энергии, перенося работу на ядро, которое уже работает</string>
+    <string name="touchboost_title">Форсирование экрана</string>
+    <string name="touchboost_summary">Повышение частоты процессора при касании сенсорного экрана</string>
+
+    <!-- Filesystem -->
+    <string name="filesystem_title">Файловая система</string>
+    <string name="fsync_title">Синхронизация</string>
+    <string name="fsync_summary">Вкл/выкл синхронизации состояния файла в памяти с его состоянием на диске</string>
+    <string name="fsync_warning">Отключение синхронизации повышает производительность, но есть риск потерять данные в случае сбоя системы</string>
+
+    <!-- FPS Info -->
+    <string name="fps_title">Измерение кадров в секунду</string>
+    <string name="fps_info_title">Показывать «кадров в секунду»</string>
+    <string name="fps_info_summary">Показывать счётчик кадров в секунду на экране</string>
+    <string name="fps_info_color_title">Цвет текста</string>
+    <string name="fps_info_color_green">Зелёный</string>
+    <string name="fps_info_color_red">Красный</string>
+    <string name="fps_info_color_magenta">Пурпурный</string>
+    <string name="fps_info_color_blue">Синий</string>
+    <string name="fps_info_color_cyan">Бирюзовый</string>
+    <string name="fps_info_color_yellow">Жёлтый</string>
+    <string name="fps_info_color_black">Чёрный</string>
+    <string name="fps_info_color_white">Белый</string>
+    <string name="fps_info_color_gray">Серый</string>
+    <string name="fps_info_color_ltgray">Светло-серый</string>
+    <string name="fps_info_color_dkgray">Тёмно-серый</string>
+    <string name="fps_info_color_accent">Системный</string>
+    <string name="fps_info_position_title">Положение на экране</string>
+    <string name="fps_info_position_top_left">Вверху слева</string>
+    <string name="fps_info_position_top_center">Вверху по центру</string>
+    <string name="fps_info_position_top_right">Вверху справа</string>
+    <string name="fps_info_position_bottom_left">Внизу слева</string>
+    <string name="fps_info_position_bottom_center">Внизу по центру</string>
+    <string name="fps_info_position_bottom_right">Внизу справа</string>
+    <string name="fps_info_position_center_left">Слева по центру</string>
+    <string name="fps_info_position_center_center">По центру</string>
+    <string name="fps_info_position_center_right">Справа по центру</string>
+    <string name="fps_info_text_size_title">Размер текста</string>
+
+    <!-- GPU -->
+    <string name="gpu_title">Графическое ядро</string>
+    <string name="adrenoboost_title">Форсирование ядра</string>
+    <string name="adrenoboost_summary">Выключено, лёгкое, среднее, агрессивное</string>
+
+    <!-- Power -->
+    <string name="category_power">Питание</string>
+    <string name="powershare_mode_title">Беспроводная зарядка</string>
+    <string name="powershare_mode_summary">Включить обратную беспроводную зарядку</string>
+    <string name="quiet_mode_title">Тихий режим</string>
+    <string name="quiet_mode_summary">Включение тихого режима для OEM беспроводного зарядного устройства</string>
+
+    <!-- Touchscreen -->
+    <string name="touchscreen_title">Сенсорный экран</string>
+    <string name="game_mode_title">Игровой режим</string>
+    <string name="game_mode_summary">Повышение частоты опроса сенсорного экрана</string>
+    <string name="game_mode_warning">Может увеличить расход заряда батареи</string>
+    <string name="tp_edge_limit_mode_title">Лимит сенсорного экрана</string>
+    <string name="tp_edge_limit_mode_summary">Отключить границу края сенсорных панелей</string>
+
+    <!-- UiBench -->
+    <string name="category_uibench">Тест пользовательского интерфейса</string>
+    <string name="jitter_test_title">Искажение</string>
+    <string name="jitter_test_summary">Рассчёт искажения отрисовки</string>
+
+    <!-- USB -->
+    <string name="usb_title">USB</string>
+    <string name="otg_title">USB-OTG</string>
+    <string name="otg_summary">Переключить USB в режим OTG</string>
+    <string name="usb2_fc_title">Быстрая зарядка USB 2.0</string>
+    <string name="usb2_fc_summary">Принудительная быстрая зарядка до 900mA в режиме USB 2.0</string>
+    <string name="usb2_fc_warning">Интерфейс зарядки DASH/WARP включается только при необходимости</string>
+
+    <!-- Vibrator -->
+    <string name="category_vibrator">Вибрация</string>
+    <string name="vib_strength_title">Общесистемная</string>
+    <string name="vib_strength_summary">Установка интенсивности общей вибрации</string>
+</resources>

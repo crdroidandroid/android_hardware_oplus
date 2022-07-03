@@ -1,1 +1,2 @@
 r_dir_file(vendor_thermal-engine, vendor_sysfs_usb_supply)
+allow vendor_thermal-engine vendor_sysfs_msm_subsys:dir search;

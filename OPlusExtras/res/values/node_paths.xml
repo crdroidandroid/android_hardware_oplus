@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 The Evolution X Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- High Brightnes sysfs node path -->
+    <string name="node_hbm_mode_switch"></string>
+    <string name="node_hbm_mode_switch_true"></string>
+    <string name="node_hbm_mode_switch_false"></string>
+
+    <!-- DC-dimming sysfs node path, true, false -->
+    <string name="node_dc_mode_switch"></string>
+    <string name="node_dc_mode_switch_true"></string>
+    <string name="node_dc_mode_switch_false"></string>
+
+    <!-- Power Efficient Workqueue sysfs node path, true, false -->
+    <string name="node_power_efficient_workqueue_mode_switch"></string>
+    <string name="node_power_efficient_workqueue_mode_switch_true"></string>
+    <string name="node_power_efficient_workqueue_mode_switch_false"></string>
+
+    <!-- MSM Touchboost sysfs node path, true, false -->
+    <string name="node_touchboost_mode_switch"></string>
+    <string name="node_touchboost_mode_switch_true"></string>
+    <string name="node_touchboost_mode_switch_false"></string>
+
+    <!-- FSync sysfs node path, true, false -->
+    <string name="node_fsync_mode_switch"></string>
+    <string name="node_fsync_mode_switch_true"></string>
+    <string name="node_fsync_mode_switch_false"></string>
+
+    <!-- AdrenoBoost sysfs node path -->
+    <string name="node_adrenoboost_preference"></string>
+
+    <!-- Measuered FPS sysfs node path -->
+    <string name="node_fps_info_service"></string>
+
+    <!-- PowerShare procfs node path -->
+    <string name="node_powershare_mode_switch"></string>
+
+    <!-- Quiet Mode procfs node path, true, false -->
+    <string name="node_quiet_mode_switch"></string>
+    <string name="node_quiet_mode_switch_true"></string>
+    <string name="node_quiet_mode_switch_false"></string>
+
+    <!-- GameMode procfs node path, true, false -->
+    <string name="node_game_mode_switch"></string>
+    <string name="node_game_mode_switch_true"></string>
+    <string name="node_game_mode_switch_false"></string>
+
+    <!-- TP Edge Limit procfs node path, true, false -->
+    <string name="node_tp_edge_limit_mode_switch"></string>
+    <string name="node_tp_edge_limit_mode_switch_true"></string>
+    <string name="node_tp_edge_limit_mode_switch_false"></string>
+
+    <!-- USB-OTG sysfs node path, true, false -->
+    <string name="node_otg_mode_switch"></string>
+    <string name="node_otg_mode_switch_true"></string>
+    <string name="node_otg_mode_switch_false"></string>
+
+    <!-- USB 2.0 Force fastcharge sysfs node path, true, false -->
+    <string name="node_usb2_fast_charge_mode_switch"></string>
+    <string name="node_usb2_fast_charge_mode_switch_true"></string>
+    <string name="node_usb2_fast_charge_mode_switch_false"></string>
+
+    <!-- System vibration sysfs node path -->
+    <string name="node_vibrator_strength_preference"></string>
+
+</resources>

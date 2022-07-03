@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Evolution X Project
+                   2017 The LineageOS Project
+                   2018-2021 crDroid Android Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.lineageos.settings"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="7"
+    android:versionName="7.3">
+
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <protected-broadcast android:name="org.lineageos.settings.slider.UPDATE_SLIDER_POSITION" />
+    <protected-broadcast android:name="org.lineageos.settings.slider.UPDATE_SLIDER_SETTINGS" />
+
+    <uses-sdk
+        android:minSdkVersion="28"
+        android:targetSdkVersion="30" />
+
+    <application
+        android:icon="@drawable/ic_launcher_settings"
+        android:label="@string/oplus_extras_title"
+        android:theme="@style/Theme.SubSettingsBase"
+        android:supportsRtl="true"
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true">
+
+        <receiver
+            android:name=".Startup"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".OPlusExtras" />
+        <activity
+            android:name=".slider.KeyHandler" />
+
+        <!-- OPlusExtras -->
+        <activity
+            android:name=".OPlusExtrasActivity"
+            android:label="@string/oplus_extras_title">
+            <intent-filter>
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_oplus_extras" />
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.homepage" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/oplus_extras_summary" />
+        </activity>
+
+        <!-- Per-App ColorSpace Activity -->
+        <activity
+            android:name=".colorspace.ColorSpaceActivity"
+            android:exported="true"  
+            android:label="@string/colorspace_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Per-App ColorSpace Service -->
+        <service
+            android:name=".colorspace.ColorSpaceService"
+            android:permission="ColorSpaceService"
+            android:exported="false" />
+
+        <!-- Per-App Refresh Rate Activity -->
+        <activity
+            android:name=".refreshrate.RefreshActivity"
+            android:exported="true"
+            android:label="@string/refresh_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Per-App Refresh Rate Service -->
+        <service
+            android:name=".refreshrate.RefreshService"
+            android:permission="RefreshService"
+            android:exported="false" />
+
+        <!-- Jitter Test Activity -->
+        <activity
+            android:name=".uibench.JitterTestActivity"
+            android:exported="true"
+            android:label="@string/jitter_test_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- FPS info service -->
+        <service
+            android:name=".services.FPSInfoService"
+            android:exported="false" />
+
+        <!-- Auto HBM service -->
+        <service
+            android:name=".services.AutoHBMService"
+            android:exported="false" />
+
+        <!-- Search indexing -->
+        <provider
+            android:name=".ConfigPanelSearchIndexablesProvider"
+            android:authorities="org.lineageos.settings"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:multiprocess="false"
+            android:permission="android.permission.READ_SEARCH_INDEXABLES">
+            <intent-filter>
+                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER" />
+            </intent-filter>
+        </provider>
+    </application>
+</manifest>

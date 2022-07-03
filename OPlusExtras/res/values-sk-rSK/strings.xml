@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2016 The OmniROM Project
+                  2021-2022 The Evolution X Project
+                  2018-2021 crDroid Android Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Oplus Extras -->
+    <string name="oplus_extras_title">Ďalšie možnosti zariadenia</string>
+    <string name="oplus_extras_summary">Upravte nastavenia špecifické pre zariadenie</string>
+    <!-- Alert slider -->
+    <string name="notification_slider_category_title">Posuvník upozornení</string>
+    <string name="notification_slider_title">Nastavenia posuvníka upozornení</string>
+    <string name="notification_slider_selection_dialog_title">Akcia</string>
+    <string name="notification_slider_top_position">Umiestnenie hore</string>
+    <string name="notification_slider_middle_position">Umiestnenie v strede</string>
+    <string name="notification_slider_bottom_position">Umiestnenie dolu</string>
+    <string name="notification_slider_mode_total_silence">Úplné ticho</string>
+    <string name="notification_slider_mode_alarms_only">Iba budíky</string>
+    <string name="notification_slider_mode_priority_only">Iba prioritné</string>
+    <string name="notification_slider_mode_none">Všetko</string>
+    <string name="notification_slider_usage_title">Použiť posuvník pre</string>
+    <string name="notification_slider_for_notification">Upozornenie</string>
+    <string name="notification_slider_for_flashlight">Svietidlo</string>
+    <string name="notification_slider_for_brightness">Jas</string>
+    <string name="notification_slider_for_rotation">Otáčanie</string>
+    <string name="notification_slider_for_ringer">Zvonenie</string>
+    <string name="notification_slider_for_notification_ringer">Oznámenie a zvonenie</string>
+    <string name="notification_slider_flashlight_off">Vypnúť</string>
+    <string name="notification_slider_flashlight_on">Zapnúť</string>
+    <string name="notification_slider_flashlight_blink">Blikať</string>
+    <string name="notification_slider_brightness_auto">Auto</string>
+    <string name="notification_slider_brightness_brightest">Najjasnejšie</string>
+    <string name="notification_slider_brightness_darkest">Najtmavšie</string>
+    <string name="notification_slider_rotation_auto">Auto</string>
+    <string name="notification_slider_rotation_portrait">Na výšku</string>
+    <string name="notification_slider_rotation_landscape_90">Na šírku (90°)</string>
+    <string name="notification_slider_rotation_landscape_270">Na šírku (270°)</string>
+    <string name="notification_slider_ringer_normal">Normálne</string>
+    <string name="notification_slider_ringer_vibrate">Vibrovať</string>
+    <string name="notification_slider_ringer_silent">Tichý</string>
+    <!-- Display -->
+    <string name="display_title">Displej</string>
+    <string name="dc_mode_title">DC-Stmievanie</string>
+    <string name="dc_mode_summary">Dim backlight by lowering DC current draw</string>
+    <string name="hbm_mode_title">Režim vysokého jasu</string>
+    <string name="hbm_mode_summary">Povoliť maximálny jas</string>
+    <string name="hbm_mode_warning">Dlhodobé používanie režimu vysokého jasu môže poškodiť váš displej</string>
+    <string name="auto_hbm_title">Automatický režim vysokého jasu</string>
+    <string name="auto_hbm_summary">Povoliť maximálny jas na základe slnečného svetla</string>
+    <string name="auto_hbm_threshold_summary">prah (lux)</string>
+    <!-- FPS Info -->
+    <string name="fps_title">Merané FPS</string>
+    <string name="fps_info_title">Prekrytie FPS</string>
+    <string name="fps_info_summary">Zobraziť prekrytie s aktuálnym počtom snímkov za sekundu</string>
+    <string name="fps_info_color_title">Farba textu</string>
+    <string name="fps_info_color_green">Zelená</string>
+    <string name="fps_info_color_red">Červená</string>
+    <string name="fps_info_color_blue">Modrá</string>
+    <string name="fps_info_color_yellow">Žltá</string>
+    <string name="fps_info_color_black">Čierna</string>
+    <string name="fps_info_color_accent">Prispôsobiť sa systému</string>
+    <string name="fps_info_position_title">Pozícia prekrytia</string>
+    <string name="fps_info_position_top_left">Vľavo hore</string>
+    <string name="fps_info_position_top_center">Hore v strede</string>
+    <string name="fps_info_position_top_right">Vpravo hore</string>
+    <string name="fps_info_position_bottom_left">Vľavo dolu</string>
+    <string name="fps_info_position_bottom_center">Dolu v strede</string>
+    <string name="fps_info_position_bottom_right">Vpravo dolu</string>
+    <string name="fps_info_text_size_title">Veľkosť textu</string>
+    <!-- Power -->
+    <string name="category_power">Napájanie</string>
+    <string name="powershare_mode_title">Bezdrôtové nabíjanie PowerShare</string>
+    <string name="powershare_mode_summary">Povoliť spätné bezdrôtové nabíjanie</string>
+    <!-- Touchscreen -->
+    <string name="touchscreen_title">Dotykový displej</string>
+    <string name="game_mode_title">Herný režim</string>
+    <string name="game_mode_warning">Môže znížiť životnosť batérie</string>
+    <string name="tp_edge_limit_mode_title">Limit TP Edge</string>
+    <string name="tp_edge_limit_mode_summary">Zakázať limit okrajov dotykových panelov</string>
+    <!-- USB -->
+    <string name="usb_title">USB</string>
+    <string name="usb2_fc_title">Rýchle nabíjanie cez USB 2.0</string>
+    <string name="usb2_fc_summary">Vynútiť rýchle nabíjanie až 900 mA cez USB 2.0</string>
+    <!-- Vibrator -->
+    <string name="category_vibrator">Vibrácia</string>
+    <string name="vib_strength_title">Systémová sila</string>
+    <string name="vib_strength_summary">Definovať silu vibrácií</string>
+</resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Evolution X Project
+                   2017 The LineageOS Project
+                   2018-2021 crDroid Android Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Alert slider -->
+    <string-array name="notification_slider_usage_entries" translatable="false">
+        <item>@string/notification_slider_for_notification</item>
+        <item>@string/notification_slider_for_flashlight</item>
+        <item>@string/notification_slider_for_brightness</item>
+        <item>@string/notification_slider_for_rotation</item>
+        <item>@string/notification_slider_for_ringer</item>
+        <item>@string/notification_slider_for_notification_ringer</item>
+        <item>@string/notification_slider_for_extradim</item>
+        <item>@string/notification_slider_for_nightlight</item>
+        <item>@string/notification_slider_for_refresh</item>
+        <item>@string/notification_slider_for_colorspace</item>
+    </string-array>
+
+    <string-array name="notification_slider_usage_entry_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="notification_slider_mode_entries" translatable="false">
+        <item>@string/notification_slider_mode_total_silence</item>
+        <item>@string/notification_slider_mode_priority_only</item>
+        <item>@string/notification_slider_mode_none</item>
+    </string-array>
+
+    <string-array name="notification_slider_mode_entry_values" translatable="false">
+        <item>10</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+
+    <string-array name="notification_slider_flashlight_entries" translatable="false">
+        <item>@string/notification_slider_flashlight_off</item>
+        <item>@string/notification_slider_flashlight_on</item>
+        <item>@string/notification_slider_flashlight_blink</item>
+    </string-array>
+
+    <string-array name="notification_slider_flashlight_entry_values" translatable="false">
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+    </string-array>
+
+    <string-array name="notification_slider_brightness_entries" translatable="false">
+        <item>@string/notification_slider_brightness_auto</item>
+        <item>@string/notification_slider_brightness_brightest</item>
+        <item>@string/notification_slider_brightness_darkest</item>
+    </string-array>
+
+    <string-array name="notification_slider_brightness_entry_values" translatable="false">
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+    </string-array>
+
+    <string-array name="notification_slider_rotation_entries" translatable="false">
+        <item>@string/notification_slider_rotation_auto</item>
+        <item>@string/notification_slider_rotation_portrait</item>
+        <item>@string/notification_slider_rotation_landscape_90</item>
+        <item>@string/notification_slider_rotation_landscape_270</item>
+    </string-array>
+
+    <string-array name="notification_slider_rotation_entry_values" translatable="false">
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+    </string-array>
+
+    <string-array name="notification_slider_ringer_entries" translatable="false">
+        <item>@string/notification_slider_ringer_normal</item>
+        <item>@string/notification_slider_ringer_vibrate</item>
+        <item>@string/notification_slider_ringer_silent</item>
+    </string-array>
+
+    <string-array name="notification_slider_ringer_entry_values" translatable="false">
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+    </string-array>
+
+    <string-array name="notification_ringer_slider_mode_entries" translatable="false">
+        <item>@string/notification_slider_mode_total_silence</item>
+        <item>@string/notification_slider_ringer_silent</item>
+        <item>@string/notification_slider_mode_priority_only</item>
+        <item>@string/notification_slider_ringer_vibrate</item>
+        <item>@string/notification_slider_mode_none</item>
+    </string-array>
+
+    <string-array name="notification_ringer_slider_mode_entry_values" translatable="false">
+        <item>60</item>
+        <item>65</item>
+        <item>62</item>
+        <item>64</item>
+        <item>63</item>
+    </string-array>
+
+    <string-array name="notification_slider_extradim_entries" translatable="false">
+        <item>@string/notification_slider_extradim_off</item>
+        <item>@string/notification_slider_extradim_min</item>
+        <item>@string/notification_slider_extradim_mid</item>
+        <item>@string/notification_slider_extradim_max</item>
+    </string-array>
+
+    <string-array name="notification_slider_extradim_entry_values" translatable="false">
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+    </string-array>
+
+    <string-array name="notification_slider_nightlight_entries" translatable="false">
+        <item>@string/notification_slider_nightlight_off</item>
+        <item>@string/notification_slider_nightlight_min</item>
+        <item>@string/notification_slider_nightlight_mid</item>
+        <item>@string/notification_slider_nightlight_max</item>
+    </string-array>
+
+    <string-array name="notification_slider_nightlight_entry_values" translatable="false">
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+        <item>76</item>
+    </string-array>
+
+    <string-array name="notification_slider_refresh_entries" translatable="false">
+        <item>@string/notification_slider_refresh_auto</item>
+        <item>@string/notification_slider_refresh_min</item>
+        <item>@string/notification_slider_refresh_max</item>
+    </string-array>
+
+    <string-array name="notification_slider_refresh_entry_values" translatable="false">
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+    </string-array>
+
+    <string-array name="notification_slider_colorspace_entries" translatable="false">
+        <item>@string/notification_slider_colorspace_vivid</item>
+        <item>@string/notification_slider_colorspace_natural</item>
+        <item>@string/notification_slider_colorspace_cinematic</item>
+        <item>@string/notification_slider_colorspace_brilliant</item>
+    </string-array>
+
+    <string-array name="notification_slider_colorspace_entry_values" translatable="false">
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+        <item>80</item>
+    </string-array>
+
+    <!-- FPS Info -->
+    <string-array name="fps_info_color_entries" translatable="false">
+        <item>@string/fps_info_color_green</item>
+        <item>@string/fps_info_color_red</item>
+        <item>@string/fps_info_color_magenta</item>
+        <item>@string/fps_info_color_blue</item>
+        <item>@string/fps_info_color_cyan</item>
+        <item>@string/fps_info_color_yellow</item>
+        <item>@string/fps_info_color_black</item>
+        <item>@string/fps_info_color_white</item>
+        <item>@string/fps_info_color_gray</item>
+        <item>@string/fps_info_color_ltgray</item>
+        <item>@string/fps_info_color_dkgray</item>
+        <item>@string/fps_info_color_accent</item>
+    </string-array>
+
+    <string-array name="fps_info_color_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+
+    <string-array name="fps_info_position_entries" translatable="false">
+        <item>@string/fps_info_position_top_left</item>
+        <item>@string/fps_info_position_top_center</item>
+        <item>@string/fps_info_position_top_right</item>
+        <item>@string/fps_info_position_bottom_left</item>
+        <item>@string/fps_info_position_bottom_center</item>
+        <item>@string/fps_info_position_bottom_right</item>
+        <item>@string/fps_info_position_center_left</item>
+        <item>@string/fps_info_position_center_center</item>
+        <item>@string/fps_info_position_center_right</item>
+    </string-array>
+
+    <string-array name="fps_info_position_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+</resources>
