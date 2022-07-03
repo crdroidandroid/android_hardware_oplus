@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014-2016 The OmniROM Project
+                   2021-2022 The Evolution X Project
+                   2018-2021 crDroid Android Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- Oplus Extras -->
+    <string name="oplus_extras_title">Tính năng bổ sung</string>
+    <string name="oplus_extras_summary">Điều chỉnh cài đặt thiết bị</string>
+    <string name="oplus_extras_warning_title">Cảnh báo</string>
+    <string name="oplus_extras_warning_text">Những tính năng này chủ yếu dựa vào các node của kernel để hoạt động. Các tính năng này có thể không hoạt động nếu bạn flash kernel khác!</string>
+    <string name="oplus_extras_dialog">OK</string>
+    <!-- Alert slider -->
+    <string name="notification_slider_category_title">Thanh trượt chuông</string>
+    <string name="notification_slider_title">Cài đặt thanh trượt chuông</string>
+    <string name="notification_slider_selection_dialog_title">Hành động</string>
+    <string name="notification_slider_top_position">Trên cùng</string>
+    <string name="notification_slider_middle_position">Ở giữa</string>
+    <string name="notification_slider_bottom_position">Dưới cùng</string>
+    <string name="notification_slider_mode_total_silence">Tắt tiếng hoàn toàn</string>
+    <string name="notification_slider_mode_alarms_only">Chỉ báo thức</string>
+    <string name="notification_slider_mode_priority_only">Chỉ ưu tiên</string>
+    <string name="notification_slider_mode_none">Tất cả</string>
+    <string name="notification_slider_usage_title">Sử dụng thanh trượt cho</string>
+    <string name="notification_slider_for_notification">Thông báo</string>
+    <string name="notification_slider_for_flashlight">Đèn pin</string>
+    <string name="notification_slider_for_brightness">Độ sáng</string>
+    <string name="notification_slider_for_rotation">Xoay màn hình</string>
+    <string name="notification_slider_for_ringer">Chuông</string>
+    <string name="notification_slider_for_notification_ringer">Thông báo và chuông</string>
+    <string name="notification_slider_flashlight_off">Tắt</string>
+    <string name="notification_slider_flashlight_on">Bật</string>
+    <string name="notification_slider_flashlight_blink">Nháy</string>
+    <string name="notification_slider_brightness_auto">Tự động</string>
+    <string name="notification_slider_brightness_brightest">Sáng nhất</string>
+    <string name="notification_slider_brightness_darkest">Tối nhất</string>
+    <string name="notification_slider_rotation_auto">Tự động</string>
+    <string name="notification_slider_rotation_portrait">Dọc</string>
+    <string name="notification_slider_rotation_landscape_90">Ngang (90°)</string>
+    <string name="notification_slider_rotation_landscape_270">Ngang (270°)</string>
+    <string name="notification_slider_ringer_normal">Bình thường</string>
+    <string name="notification_slider_ringer_vibrate">Rung</string>
+    <string name="notification_slider_ringer_silent">Im lặng</string>
+    <!-- Display -->
+    <string name="display_title">Hiển thị</string>
+    <string name="dc_mode_title">Siêu tối</string>
+    <string name="dc_mode_summary">Giảm độ sáng bằng cách giảm dòng điện</string>
+    <string name="hbm_mode_title">Chế độ Độ sáng cao</string>
+    <string name="hbm_mode_summary">Bật độ sáng tối đa</string>
+    <string name="hbm_mode_warning">Sử dụng chế độ Độ sáng cao trong thời gian dài có thể làm hỏng màn hình của bạn</string>
+    <string name="auto_hbm_title">Chế độ sáng cao tự động</string>
+    <string name="auto_hbm_summary">Bật độ sáng tối đa dựa vào ánh sáng xung quanh</string>
+    <string name="auto_hbm_threshold_summary">ngưỡng (lux)</string>
+    <string name="kcal_settings_title">Kcal</string>
+    <string name="kcal_settings_summary">Cân chỉnh màn hình qua Kcal</string>
+    <string name="kcal_settings">Các giá trị có thể điều chỉnh</string>
+    <string name="red_title">Đỏ</string>
+    <string name="green_title">Lục</string>
+    <string name="blue_title">Lam</string>
+    <string name="saturation_title">Độ bão hòa</string>
+    <string name="hue_title">Màu sắc</string>
+    <string name="value_title">Giá trị</string>
+    <string name="contrast_title">Độ tương phản</string>
+    <!-- FPS Info -->
+    <string name="fps_title">FPS đo được</string>
+    <string name="fps_info_title">Lớp phủ FPS</string>
+    <string name="fps_info_summary">Hiển thị lớp phủ với khung hình trên giây</string>
+    <string name="fps_info_color_title">Màu chữ</string>
+    <string name="fps_info_color_green">Xanh lá</string>
+    <string name="fps_info_color_red">Đỏ</string>
+    <string name="fps_info_color_magenta">Cánh sen đậm</string>
+    <string name="fps_info_color_blue">Xanh dương</string>
+    <string name="fps_info_color_cyan">Lục lam</string>
+    <string name="fps_info_color_yellow">Vàng</string>
+    <string name="fps_info_color_black">Đen</string>
+    <string name="fps_info_color_white">Trắng</string>
+    <string name="fps_info_color_gray">Xám</string>
+    <string name="fps_info_color_ltgray">Xám nhạt</string>
+    <string name="fps_info_color_dkgray">Xám đậm</string>
+    <string name="fps_info_color_accent">Theo Hệ Thống</string>
+    <string name="fps_info_position_title">Vị trí lớp phủ</string>
+    <string name="fps_info_position_top_left">Phía trên bên trái</string>
+    <string name="fps_info_position_top_center">Phía trên ở giữa</string>
+    <string name="fps_info_position_top_right">Phía trên bên phải</string>
+    <string name="fps_info_position_bottom_left">Phía dưới bên trái</string>
+    <string name="fps_info_position_bottom_center">Phía dưới ở giữa</string>
+    <string name="fps_info_position_bottom_right">Dưới cùng bên phải</string>
+    <string name="fps_info_position_center_left">Ở giữa bên trái</string>
+    <string name="fps_info_position_center_center">Ở giữa</string>
+    <string name="fps_info_position_center_right">Ở giữa bên phải</string>
+    <string name="fps_info_text_size_title">Cỡ chữ</string>
+    <!-- Doze -->
+    <string name="ambient_enable">Sử dụng màn hình xem nhanh</string>
+    <string name="ambient_display_title">Màn hình xem nhanh</string>
+    <string name="ambient_display_enable_title">Màn hình xem nhanh</string>
+    <string name="ambient_display_enable_summary">Đánh thức màn hình khi nhận thông báo</string>
+    <string name="ambient_display_gestures_title">Cử chỉ màn hình xem nhanh</string>
+    <string name="ambient_display_gestures_summary">Các cử chỉ bổ sung để đánh thức màn hình</string>
+    <string name="ambient_display_summary">Đánh thức màn hình khi nhận thông báo</string>
+    <string name="ambient_display_always_on_title">Luôn bật</string>
+    <string name="dialog_ok">OK</string>
+    <string name="disabled">Đã tắt</string>
+    <string name="doze_panel_title">Doze</string>
+    <string name="doze_settings_help_text">Các tính năng này sử dụng các sự kiện cảm biến để kích hoạt một thông báo doze. Các cảm biến được chọn chỉ được kích hoạt khi thiết bị nhận một thông báo, điều này giúp giảm thiểu việc sử dụng pin. Ngoài ra còn có một tùy chọn để kích hoạt các cảm biến được chọn ngay khi màn hình tắt, điều này sẽ gây ra việc sử dụng pin cao hơn.</string>
+    <string name="doze_settings_help_title">Trợ giúp</string>
+    <string name="pickup_sensor_title">Cảm biến nhấc lên</string>
+    <string name="pick_up_gesture_title">Nhấc lên</string>
+    <string name="pick_up_gesture_summary">Hiện thông báo khi cầm lên</string>
+    <string name="pick_up_wake_gesture_summary">Đánh thức thiết bị khi cầm lên</string>
+    <string name="pocket_gesture_title">Bỏ túi</string>
+    <string name="pocket_gesture_summary">Hiện thông báo khi lấy ra khỏi túi</string>
+    <string name="proximity_sensor_title">Cảm biến tiệm cận</string>
+    <string name="ambient_display_always_on_summary">Hiển thị thời gian, biểu tượng thông báo và thông tin khác. Sử dụng nhiều pin hơn.</string>
+    <string name="switch_bar_off">Tắt</string>
+    <string name="switch_bar_on">Bật</string>
+    <!-- Power -->
+    <string name="category_power">Nguồn</string>
+    <string name="powershare_mode_title">Sạc Ngược Không Dây</string>
+    <string name="powershare_mode_summary">Bật sạc ngược không dây</string>
+    <!-- Touchscreen -->
+    <string name="touchscreen_title">Màn hình cảm ứng</string>
+    <string name="touchscreen_gesture_settings_title">Cử chỉ màn hình cảm ứng</string>
+    <string name="touchscreen_gesture_settings_summary">Thực hiện các cử chỉ màn hình cảm ứng cho các thao tác nhanh</string>
+    <string name="touchscreen_gesture_two_finger_down_swipe_title">Vuốt xuống bằng hai ngón tay</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_title">Vuốt lên bằng một ngón tay</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Vuốt lên từ nút Home</string>
+    <string name="touchscreen_gesture_one_finger_down_swipe_title">Vuốt xuống bằng một ngón tay</string>
+    <string name="touchscreen_gesture_one_finger_left_swipe_title">Vuốt sang trái bằng một ngón tay</string>
+    <string name="touchscreen_gesture_one_finger_right_swipe_title">Vuốt sang phải bằng một ngón tay</string>
+    <string name="touchscreen_gesture_single_tap_title">Chạm một lần</string>
+    <string name="touchscreen_gesture_up_arrow_title">Vẽ kí tự \"Λ\"</string>
+    <string name="touchscreen_gesture_down_arrow_title">Vẽ kí tự \"V\"</string>
+    <string name="touchscreen_gesture_right_arrow_title">Vẽ một \"&lt;\"</string>
+    <string name="touchscreen_gesture_left_arrow_title">Vẽ một \"&gt;\"</string>
+    <string name="touchscreen_gesture_letter_c_title">Vẽ chữ cái \"C\"</string>
+    <string name="touchscreen_gesture_letter_e_title">Vẽ chữ cái \"e\"</string>
+    <string name="touchscreen_gesture_letter_o_title">Vẽ chữ cái \"O\"</string>
+    <string name="touchscreen_gesture_letter_m_title">Vẽ chữ cái \"M\"</string>
+    <string name="touchscreen_gesture_letter_s_title">Vẽ chữ cái \"S\"</string>
+    <string name="touchscreen_gesture_letter_v_title">Vẽ chữ cái \"V\"</string>
+    <string name="touchscreen_gesture_letter_w_title">Vẽ chữ cái \"W\"</string>
+    <string name="touchscreen_gesture_letter_z_title">Vẽ chữ cái \"Z\"</string>
+    <string name="touchscreen_gesture_action_dialog_title">Hành động cử chỉ</string>
+    <string name="touchscreen_gesture_action_do_nothing">Không</string>
+    <string name="touchscreen_gesture_action_flashlight">Bật/tắt đèn pin</string>
+    <string name="touchscreen_gesture_action_camera">Mở máy ảnh</string>
+    <string name="touchscreen_gesture_action_browser">Mở trình duyệt</string>
+    <string name="touchscreen_gesture_action_dialer">Mở trình quay số</string>
+    <string name="touchscreen_gesture_action_email">Xem email của bạn</string>
+    <string name="touchscreen_gesture_action_messages">Xem tin nhắn của bạn</string>
+    <string name="touchscreen_gesture_action_play_pause_music">Phát/dừng nhạc</string>
+    <string name="touchscreen_gesture_action_previous_track">Phát bản nhạc trước đó</string>
+    <string name="touchscreen_gesture_action_next_track">Phát bản nhạc tiếp theo</string>
+    <string name="touchscreen_gesture_action_volume_down">Giảm âm lượng phương tiện</string>
+    <string name="touchscreen_gesture_action_volume_up">Tăng âm lượng phương tiện</string>
+    <string name="touchscreen_gesture_action_ambient_display">Hiển thị trên màn hình xem nhanh</string>
+    <string name="touchscreen_gesture_action_wake_device">Đánh thức thiết bị</string>
+    <string name="touchscreen_gesture_action_wechat_pay">WeChat Pay</string>
+    <string name="touchscreen_gesture_action_alipay_pay">Alipay Pay</string>
+    <string name="touchscreen_gesture_action_wechat_scan">Wechat Scan</string>
+    <string name="touchscreen_gesture_action_alipay_scan">Alipay Scan</string>
+    <string name="touchscreen_gesture_action_alipay_trip">Alipay Trip</string>
+    <string name="touchscreen_gesture_action_wallet_trip">Wallet Trip</string>
+    <string name="touchscreen_gesture_action_device_extras">OPlusExtras</string>
+    <string name="touchscreen_gesture_action_google_maps">Bản Đồ Google</string>
+    <string name="touchscreen_gesture_action_google_search">Google Tìm kiếm</string>
+    <string name="game_mode_title">Chế độ trò chơi</string>
+    <string name="game_mode_summary">Buộc kích hoạt tốc độ lấy mẫu 240Hz cho tất cả các ứng dụng</string>
+    <string name="game_mode_warning">Có thể tăng mức sử dụng pin</string>
+    <string name="tp_edge_limit_mode_title">Giới hạn cảm ứng rìa màn hình</string>
+    <string name="tp_edge_limit_mode_summary">Tắt giới hạn cảm ứng rìa màn hình</string>
+    <!-- UiBench -->
+    <string name="category_uibench">UiBench</string>
+    <string name="jitter_test_title">Jitter</string>
+    <string name="jitter_test_summary">Tính jitter khi render</string>
+    <!-- USB -->
+    <string name="usb_title">USB</string>
+    <string name="usb2_fc_title">Sạc nhanh USB 2.0</string>
+    <string name="usb2_fc_summary">Ép sạc nhanh lên đến 900mA ở chế độ USB 2.0</string>
+    <string name="usb2_fc_warning">Cản trở sạc Dash/Warp; chỉ bật khi cần thiết</string>
+    <!-- Vibrator -->
+    <string name="category_vibrator">Rung</string>
+    <string name="vib_strength_title">Cường độ rung Hệ thống</string>
+    <string name="vib_strength_summary">Chọn độ mạnh của bộ rung</string>
+</resources>

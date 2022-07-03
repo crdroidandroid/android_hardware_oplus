@@ -1,0 +1,3 @@
+-keep class org.evolution.oplus.OPlusExtras.** {
+  *;
+}

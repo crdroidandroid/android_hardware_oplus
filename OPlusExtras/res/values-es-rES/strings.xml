@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 The Evolution X Project
+                   2018-2021 crDroid Android Project
+                   2019 Havoc-OS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- OPlus Extras -->
+    <string name="oplus_extras_title">Extras del dispositivo</string>
+    <string name="oplus_extras_summary">Configurar opciones específicas de este dispositivo</string>
+    <string name="oplus_extras_warning_title">Aviso</string>
+    <string name="oplus_extras_warning_text">Muchas de estas características dependen de nodos específicos del kernel para funcionar. Al flashear un kernel personalizado, podrías perder algunas características. ¡Has sido advertido!</string>
+    <string name="oplus_extras_dialog">Ok</string>
+    <!-- Alert slider -->
+    <string name="notification_slider_category_title">Control deslizante de alerta</string>
+    <string name="notification_slider_title">Configuración del control deslizante de alerta</string>
+    <string name="notification_slider_selection_dialog_title">Acción</string>
+    <string name="notification_slider_top_position">Posición superior</string>
+    <string name="notification_slider_middle_position">Posición media</string>
+    <string name="notification_slider_bottom_position">Posición inferior</string>
+    <string name="notification_slider_mode_total_silence">Silencio total</string>
+    <string name="notification_slider_mode_alarms_only">Sólo alarmas</string>
+    <string name="notification_slider_mode_priority_only">Solo prioritarias</string>
+    <string name="notification_slider_mode_none">Todas</string>
+    <string name="notification_slider_usage_title">Utilice el control deslizante para</string>
+    <string name="notification_slider_for_notification">Notificación</string>
+    <string name="notification_slider_for_flashlight">Linterna</string>
+    <string name="notification_slider_for_brightness">Brillo</string>
+    <string name="notification_slider_for_rotation">Rotación</string>
+    <string name="notification_slider_for_ringer">Timbre</string>
+    <string name="notification_slider_for_notification_ringer">Notificación y timbre</string>
+    <string name="notification_slider_for_refresh">Tasa de refresco</string>
+    <string name="notification_slider_flashlight_off">Desactivado</string>
+    <string name="notification_slider_flashlight_on">Activado</string>
+    <string name="notification_slider_flashlight_blink">Parpadeo</string>
+    <string name="notification_slider_brightness_auto">Auto</string>
+    <string name="notification_slider_brightness_brightest">El más brillante</string>
+    <string name="notification_slider_brightness_darkest">El más oscuro</string>
+    <string name="notification_slider_rotation_auto">Auto</string>
+    <string name="notification_slider_rotation_portrait">Vertical</string>
+    <string name="notification_slider_rotation_landscape_90">Apaisado (90º)</string>
+    <string name="notification_slider_rotation_landscape_270">Apaisado (270º)</string>
+    <string name="notification_slider_ringer_normal">Normal</string>
+    <string name="notification_slider_ringer_vibrate">Vibrar</string>
+    <string name="notification_slider_ringer_silent">Silencio</string>
+    <string name="notification_slider_refresh_auto">Auto</string>
+    <string name="notification_slider_refresh_min">Mín</string>
+    <string name="notification_slider_refresh_max">Máx</string>
+    <!-- Display -->
+    <string name="display_title">Pantalla</string>
+    <string name="dc_mode_title">Atenuación DC</string>
+    <string name="dc_mode_summary">Atenuar la luz de fondo al reducir el consumo de corriente CC</string>
+    <string name="hbm_mode_title">Modo de brillo alto</string>
+    <string name="hbm_mode_summary">Activar iluminación pico</string>
+    <string name="hbm_mode_warning">El uso prolongado en modo de alto brillo puede dañar tu pantalla</string>
+    <string name="auto_hbm_title">Modo de brillo alto automático</string>
+    <string name="auto_hbm_summary">Activar la iluminación máxima basada en la luz del sol</string>
+    <string name="auto_hbm_threshold_summary">umbral (lux)</string>
+    <string name="refresh_title">Tasa de refresco por aplicación</string>
+    <string name="refresh_summary">Configurar tasa de refresco por aplicación</string>
+    <string name="refresh_default">Predeterminado</string>
+    <string name="refresh_standard">60Hz</string>
+    <string name="refresh_extreme">120 Hz</string>
+    <string name="kcal_settings_title">Kcal</string>
+    <string name="kcal_settings_summary">Calibrar pantalla con Kcal</string>
+    <string name="kcal_settings">Valores ajustables</string>
+    <string name="red_title">Rojo</string>
+    <string name="green_title">Verde</string>
+    <string name="blue_title">Azul</string>
+    <string name="saturation_title">Saturación</string>
+    <string name="hue_title">Tono</string>
+    <string name="value_title">Valor</string>
+    <string name="contrast_title">Contraste</string>
+    <!-- CPU -->
+    <string name="cpu_title">CPU</string>
+    <string name="power_efficient_workqueue_title">Cola de trabajo eficiente</string>
+    <string name="power_efficient_workqueue_summary">Ahorra energía redirigiendo el trabajo a un núcleo que ya está despierto</string>
+    <string name="touchboost_title">Mejor tacto</string>
+    <string name="touchboost_summary">Aumentar la frecuencia de CPU en las entradas táctiles</string>
+    <!-- Filesystem -->
+    <string name="filesystem_title">Sistema de archivos</string>
+    <string name="fsync_title">Fsync</string>
+    <string name="fsync_summary">fsync off/on</string>
+    <string name="fsync_warning">Desactivar fsync puede aumentar el rendimiento a riesgo de una potencial pérdida de datos en el caso de un eventual fallo del sistema</string>
+    <!-- FPS Info -->
+    <string name="fps_title">Medición de FPS</string>
+    <string name="fps_info_title">Superposición de FPS</string>
+    <string name="fps_info_summary">Mostrar superposición con fotogramas actuales por segundo</string>
+    <string name="fps_info_color_title">Color del texto</string>
+    <string name="fps_info_color_green">Verde</string>
+    <string name="fps_info_color_red">Rojo</string>
+    <string name="fps_info_color_magenta">Magenta</string>
+    <string name="fps_info_color_blue">Azul</string>
+    <string name="fps_info_color_cyan">Cián</string>
+    <string name="fps_info_color_yellow">Amarillo</string>
+    <string name="fps_info_color_black">Negro</string>
+    <string name="fps_info_color_white">Blanco</string>
+    <string name="fps_info_color_gray">Gris</string>
+    <string name="fps_info_color_ltgray">Gris claro</string>
+    <string name="fps_info_color_dkgray">Gris Oscuro</string>
+    <string name="fps_info_color_accent">Igual que el sistema</string>
+    <string name="fps_info_position_title">Posición de la superposición</string>
+    <string name="fps_info_position_top_left">Arriba a la izquierda</string>
+    <string name="fps_info_position_top_center">Arriba en el centro</string>
+    <string name="fps_info_position_top_right">Arriba a la derecha</string>
+    <string name="fps_info_position_bottom_left">Abajo a la izquierda</string>
+    <string name="fps_info_position_bottom_center">Abajo en el centro</string>
+    <string name="fps_info_position_bottom_right">Abajo a la derecha</string>
+    <string name="fps_info_position_center_left">Centro izquierda</string>
+    <string name="fps_info_position_center_center">Centro</string>
+    <string name="fps_info_position_center_right">Centro derecha</string>
+    <string name="fps_info_text_size_title">Tamaño del texto</string>
+    <!-- GPU -->
+    <string name="gpu_title">GPU</string>
+    <string name="adrenoboost_title">Adrenoboost</string>
+    <string name="adrenoboost_summary">Apagado, ligero, medio, agresivo</string>
+    <!-- Doze -->
+    <string name="ambient_enable">Usar pantalla ambiente</string>
+    <string name="ambient_display_title">Pantalla ambiente</string>
+    <string name="ambient_display_enable_title">Pantalla ambiente</string>
+    <string name="ambient_display_enable_summary">Encender pantalla al recibir notificaciones</string>
+    <string name="ambient_display_gestures_title">Gestos en pantalla ambiente</string>
+    <string name="ambient_display_gestures_summary">Gestos adicionales para activar la pantalla</string>
+    <string name="ambient_display_summary">Encender pantalla al recibir notificaciones</string>
+    <string name="ambient_display_always_on_title">Siempre encendido</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="disabled">Desactivado</string>
+    <string name="doze_panel_title">Reposo</string>
+    <string name="doze_settings_help_text">Estas características usan eventos de sensor para lanzar un pulso de notificación doze. El sensor elegido sólo se activa cuando el dispositivo recibe una notificación, esto ayuda a reducir el uso de la batería. También hay una opción para activar el sensor elegido tan pronto como la pantalla se apaga, esto hará que un mayor uso de la batería.</string>
+    <string name="doze_settings_help_title">Ayuda</string>
+    <string name="pickup_sensor_title">Sensor de elevación</string>
+    <string name="pick_up_gesture_title">Levantar</string>
+    <string name="pick_up_gesture_summary">Mostrar notificaciones al levantar</string>
+    <string name="pick_up_wake_gesture_summary">Despertar dispositivo al levantar</string>
+    <string name="pocket_gesture_title">Bolsillo</string>
+    <string name="pocket_gesture_summary">Notificaciones de pulso al sacar del bolsillo</string>
+    <string name="proximity_sensor_title">Sensor de proximidad</string>
+    <string name="ambient_display_always_on_summary">Mostrar hora, iconos de notificaciones y otra info. Incrementa el uso de batería.</string>
+    <string name="switch_bar_off">Desactivado</string>
+    <string name="switch_bar_on">Activado</string>
+    <!-- Power -->
+    <string name="category_power">Energía</string>
+    <string name="powershare_mode_title">Transferencia inalámbrica de energía</string>
+    <string name="powershare_mode_summary">Activar carga inalámbrica inversa</string>
+    <string name="quiet_mode_title">Modo tranquilo</string>
+    <string name="quiet_mode_summary">Activar Modo tranquilo para el cargador inalámbrico del fabricante</string>
+    <!-- Touchscreen -->
+    <string name="touchscreen_title">Pantalla táctil</string>
+    <string name="touchscreen_gesture_settings_title">Gestos en pantalla</string>
+    <string name="touchscreen_gesture_settings_summary">Realizar varios gestos en pantalla para acciones rápidas</string>
+    <string name="touchscreen_gesture_two_finger_down_swipe_title">Deslizar hacia abajo con dos dedos</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_title">Deslizar hacia arriba con un dedo</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Deslizar hacia arriba desde el botón de Inicio</string>
+    <string name="touchscreen_gesture_one_finger_down_swipe_title">Deslizar hacia abajo con un dedo</string>
+    <string name="touchscreen_gesture_one_finger_left_swipe_title">Deslizar hacia la izquierda con un dedo</string>
+    <string name="touchscreen_gesture_one_finger_right_swipe_title">Deslizar a la derecha con un dedo</string>
+    <string name="touchscreen_gesture_single_tap_title">Un toque</string>
+    <string name="touchscreen_gesture_up_arrow_title">Dibujar una \"Λ\"</string>
+    <string name="touchscreen_gesture_down_arrow_title">Dibuja una «V»</string>
+    <string name="touchscreen_gesture_right_arrow_title">Dibujar una \"&lt;\"</string>
+    <string name="touchscreen_gesture_left_arrow_title">Dibujar una «&gt;»</string>
+    <string name="touchscreen_gesture_letter_c_title">Dibujar la letra «C»</string>
+    <string name="touchscreen_gesture_letter_e_title">Dibujar la letra \"e\"</string>
+    <string name="touchscreen_gesture_letter_o_title">Dibujar la letra \"O\"</string>
+    <string name="touchscreen_gesture_letter_m_title">Dibujar la letra \"M\"</string>
+    <string name="touchscreen_gesture_letter_s_title">Dibujar la letra \"S\"</string>
+    <string name="touchscreen_gesture_letter_v_title">Dibujar la letra «V»</string>
+    <string name="touchscreen_gesture_letter_w_title">Dibujar la letra «W»</string>
+    <string name="touchscreen_gesture_letter_z_title">Dibujar la letra \"Z\"</string>
+    <string name="touchscreen_gesture_action_dialog_title">Acción del gesto</string>
+    <string name="touchscreen_gesture_action_do_nothing">No hacer nada</string>
+    <string name="touchscreen_gesture_action_flashlight">Alternar linterna</string>
+    <string name="touchscreen_gesture_action_camera">Abrir la cámara</string>
+    <string name="touchscreen_gesture_action_browser">Abrir el navegador</string>
+    <string name="touchscreen_gesture_action_dialer">Abrir el teléfono</string>
+    <string name="touchscreen_gesture_action_email">Ver tus correos electrónicos</string>
+    <string name="touchscreen_gesture_action_messages">Ver tus mensajes</string>
+    <string name="touchscreen_gesture_action_play_pause_music">Reproducir/pausar música</string>
+    <string name="touchscreen_gesture_action_previous_track">Reproducir la canción anterior</string>
+    <string name="touchscreen_gesture_action_next_track">Reproducir la siguiente canción</string>
+    <string name="touchscreen_gesture_action_volume_down">Reducir volumen de multimedia</string>
+    <string name="touchscreen_gesture_action_volume_up">Aumentar el volumen multimedia</string>
+    <string name="touchscreen_gesture_action_ambient_display">Mostrar pantalla ambiente</string>
+    <string name="touchscreen_gesture_action_wake_device">Despertar dispositivo</string>
+    <string name="touchscreen_gesture_action_wechat_pay">Wechat Pay</string>
+    <string name="touchscreen_gesture_action_alipay_pay">Alipay Pay</string>
+    <string name="touchscreen_gesture_action_wechat_scan">Wechat Scan</string>
+    <string name="touchscreen_gesture_action_alipay_scan">Alipay Scan</string>
+    <string name="touchscreen_gesture_action_alipay_trip">Alipay Trip</string>
+    <string name="touchscreen_gesture_action_wallet_trip">Wallet Trip</string>
+    <string name="touchscreen_gesture_action_device_extras">Extras del dispositivo</string>
+    <string name="touchscreen_gesture_action_google_maps">Google Maps</string>
+    <string name="touchscreen_gesture_action_google_search">Búsqueda de Google</string>
+    <string name="game_mode_title">Modo Juego</string>
+    <string name="game_mode_summary">Forzar habilitar la velocidad de muestreo de 240Hz para todas las aplicaciones</string>
+    <string name="game_mode_warning">Puede reducir la duración de la batería</string>
+    <string name="tp_edge_limit_mode_title">Límite de borde TP</string>
+    <string name="tp_edge_limit_mode_summary">Desactivar el límite de bordes de los paneles táctiles</string>
+    <!-- UiBench -->
+    <string name="category_uibench">UiBench</string>
+    <string name="jitter_test_title">Jitter</string>
+    <string name="jitter_test_summary">Calcular jitter de renderizado</string>
+    <!-- USB -->
+    <string name="usb_title">USB</string>
+    <string name="otg_title">USB-OTG</string>
+    <string name="otg_summary">Activar el modo USB on-the-go</string>
+    <string name="usb2_fc_title">Carga rápida USB 2.0</string>
+    <string name="usb2_fc_summary">Forzar la carga rápida de hasta 900mA en modo USB 2.0</string>
+    <string name="usb2_fc_warning">Interferencias con la carga de dash/warp; activar solo cuando sea aplicable</string>
+    <!-- Vibrator -->
+    <string name="category_vibrator">Vibración</string>
+    <string name="vib_strength_title">Intensidad del sistema</string>
+    <string name="vib_strength_summary">Definir la intensidad de la vibración</string>
+</resources>
