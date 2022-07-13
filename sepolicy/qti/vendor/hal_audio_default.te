@@ -16,3 +16,7 @@ get_prop(hal_audio_default, vendor_audio_debug_prop)
 userdebug_or_eng(`
   allow hal_audio_default debugfs:dir r_dir_perms;
 ')
+
+# Dolby
+allow hal_audio_default hal_dms_hwservice:hwservice_manager find;
+binder_call(hal_audio_default, hal_dms_default)
