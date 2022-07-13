@@ -8,8 +8,6 @@ allow platform_app vendor_persist_camera_file:dir search;
 
 allow platform_app vendor_xdsp_device:chr_file r_file_perms;
 
-allow platform_app hal_dms_hwservice:hwservice_manager find;
-
 binder_call(platform_app, hal_dms_default)
 
 allow platform_app vendor_sysfs_msm_subsys:dir search;
@@ -20,3 +18,7 @@ r_dir_file(platform_app, sysfs_dm)
 r_dir_file(platform_app, vendor_sysfs_sde_crtc)
 
 allow platform_app selinuxfs:file r_file_perms;
+
+# Dolby
+dontaudit platform_app hal_dms_hwservice:hwservice_manager find;
+get_prop(platform_app, audio_config_prop)
