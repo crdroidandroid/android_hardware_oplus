@@ -1,5 +1,7 @@
 typeattribute platform_app hal_camera_client;
 
+allow platform_app hal_dms_hwservice:hwservice_manager find;
+
 allow platform_app fwk_osense_aidl_service:service_manager find;
 allow platform_app oem_service:service_manager find;
 
@@ -11,3 +13,6 @@ allow platform_app vendor_xdsp_device:chr_file r_file_perms;
 rw_dir_file(platform_app, oplus_scheduler_sched_assist_proc)
 
 binder_call(platform_app, hal_camera_default)
+binder_call(platform_app, hal_dms_default)
+
+get_prop(platform_app, audio_config_prop)
