@@ -14,6 +14,7 @@ allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
 
 rw_dir_file(hal_fingerprint_default, vendor_proc_display)
 rw_dir_file(hal_fingerprint_default, vendor_persist_fingerprint_file)
+rw_dir_file(hal_fingerprint_default, vendor_sysfs_battery_supply)
 rw_dir_file(hal_fingerprint_default, vendor_sysfs_graphics)
 r_dir_file(hal_fingerprint_default, sysfs_leds)
 r_dir_file(hal_fingerprint_default, vendor_proc_fingerprint)
