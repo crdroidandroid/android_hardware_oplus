@@ -8,5 +8,8 @@ type hal_dms_hwservice, hwservice_manager_type;
 # ORMS
 type vendor_hal_orms_hwservice, hwservice_manager_type, protected_hwservice;
 
+# Performance
+type hal_performance_hwservice, hwservice_manager_type;
+
 # Sensors
 type vendor_hal_oplusSensor_hwservice, hwservice_manager_type, protected_hwservice;

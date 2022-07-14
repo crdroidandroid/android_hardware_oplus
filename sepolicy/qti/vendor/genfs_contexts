@@ -31,6 +31,9 @@ genfscon proc /oplus_rf    u:object_r:vendor_proc_engineer:s0
 # Fingerprint
 genfscon proc /fp_id    u:object_r:vendor_proc_fingerprint:s0
 
+# Opboot
+genfscon proc /opbootfrom     u:object_r:vendor_proc_oplus_boot:s0
+
 # Sensors
 genfscon proc /sensor/als_cali                        u:object_r:vendor_proc_oplus_als_file:s0
 genfscon proc /sensor/pressure_cali                   u:object_r:vendor_proc_eng_cali_file:s0
