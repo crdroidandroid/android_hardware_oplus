@@ -1,1 +1,5 @@
 r_dir_file(hal_bluetooth_default, vendor_proc_oplus_version)
+r_dir_file(hal_bluetooth_default, vendor_bt_data_file)
+
+allow hal_bluetooth_default vendor_ramdump_vendor_data_file:dir rw_dir_perms;
+allow hal_bluetooth_default vendor_ramdump_vendor_data_file:file { create w_file_perms };

@@ -1,5 +1,6 @@
 allow hal_sensors_default ssc_interactive_device:chr_file rw_file_perms;
 
 rw_dir_file(hal_sensors_default, vendor_persist_engineer_file)
+rw_dir_file(hal_sensors_default, vendor_proc_oplus_version)
 rw_dir_file(hal_sensors_default, vendor_sysfs_graphics)
 rw_dir_file(hal_sensors_default, vendor_sysfs_sensor_fb)
