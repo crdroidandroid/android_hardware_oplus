@@ -52,6 +52,9 @@
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.oplus-libperfmgr  u:object_r:hal_power_default_exec:s0
 
+# Radio
+/(odm|vendor/odm)/bin/oemnvbkdaemon    u:object_r:vendor_mdm_helper_exec:s0
+
 # RMT
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oplusdycnvbk          u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oplusstanvbk_[ab]     u:object_r:vendor_modem_efs_partition_device:s0
