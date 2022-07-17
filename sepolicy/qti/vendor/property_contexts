@@ -20,3 +20,7 @@ ro.vendor.oplus.radio.sar_regionmark    u:object_r:vendor_radio_prop:s0
 # RIL
 vendor.gsm.phoneserial         u:object_r:vendor_nw_exported_system_prop:s0
 vendor.gsm.serial              u:object_r:vendor_nw_exported_system_prop:s0
+
+# WCNSS
+ro.vendor.vold.serialno        u:object_r:vendor_vold_prop:s0
+vendor.vold.serialno           u:object_r:vendor_vold_prop:s0
