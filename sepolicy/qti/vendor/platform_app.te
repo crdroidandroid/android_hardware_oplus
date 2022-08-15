@@ -1,0 +1,7 @@
+add_hwservice(platform_app,  vendor_hal_orms_hwservice)
+
+typeattribute platform_app hal_camera_client;
+
+allow platform_app oem_service:service_manager find;
+
+allow platform_app vendor_xdsp_device:chr_file r_file_perms;
