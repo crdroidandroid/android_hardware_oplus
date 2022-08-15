@@ -1,6 +1,18 @@
 # Alert Slider
 genfscon proc /tristatekey    u:object_r:vendor_proc_tri_state_key:s0
 
+# Camera
+genfscon sysfs /kernel/tof_control/app0/alg_setting                 u:object_r:cam_laser_sysfs:s0
+genfscon sysfs /kernel/tof_control/app0/app0_apply_fac_calib        u:object_r:cam_laser_sysfs:s0
+genfscon sysfs /kernel/tof_control/app0/app0_clk_trim_set           u:object_r:cam_laser_sysfs:s0
+genfscon sysfs /kernel/tof_control/app0/app0_get_fac_calib          u:object_r:cam_laser_sysfs:s0
+genfscon sysfs /kernel/tof_control/app0/app0_read_peak_crosstalk    u:object_r:cam_laser_sysfs:s0
+genfscon sysfs /kernel/tof_control/app0/capture                     u:object_r:cam_laser_sysfs:s0
+genfscon sysfs /kernel/tof_control/app0/iterations                  u:object_r:cam_laser_sysfs:s0
+genfscon sysfs /kernel/tof_control/app0/period                      u:object_r:cam_laser_sysfs:s0
+genfscon sysfs /kernel/tof_control/chip_enable                      u:object_r:cam_laser_sysfs:s0
+genfscon sysfs /kernel/tof_control/driver_debug                     u:object_r:cam_laser_sysfs:s0
+
 # Charging
 genfscon proc /wireless                                                u:object_r:vendor_proc_wireless:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/ac    u:object_r:vendor_sysfs_battery_supply:s0
