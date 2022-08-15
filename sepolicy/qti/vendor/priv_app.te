@@ -1,0 +1,11 @@
+typeattribute priv_app hal_camera_client;
+
+typeattribute priv_app vendor_hal_dspmanager_client;
+
+allow priv_app oem_service:service_manager find;
+
+allow priv_app vendor_hal_orms_hwservice:hwservice_manager find;
+
+allow priv_app vendor_xdsp_device:chr_file r_file_perms;
+
+allow priv_app vendor_qdsp_device:chr_file r_file_perms;
