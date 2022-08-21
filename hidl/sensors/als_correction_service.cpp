@@ -16,8 +16,10 @@
 
 #include <android-base/properties.h>
 #include <binder/ProcessState.h>
+#include <gui/LayerState.h>
 #include <gui/SurfaceComposerClient.h>
 #include <gui/SyncScreenCaptureListener.h>
+#include <ui/DisplayState.h>
 
 #include <cstdio>
 #include <signal.h>
@@ -27,6 +29,8 @@
 #include <utils/Timers.h>
 
 using android::base::SetProperty;
+using android::ui::Rotation;
+using android::ui::DisplayState;
 using android::GraphicBuffer;
 using android::Rect;
 using android::ScreenshotClient;
@@ -34,7 +38,14 @@ using android::sp;
 using android::SurfaceComposerClient;
 using namespace android;
 
-static Rect screenshot_rect(251, 988, 305, 1042);
+constexpr int ALS_POS_X = 650;
+constexpr int ALS_POS_Y = 40;
+constexpr int ALS_RADIUS = 40;
+
+static Rect screenshot_rect_0(ALS_POS_X - ALS_RADIUS, ALS_POS_Y - ALS_RADIUS, ALS_POS_X + ALS_RADIUS, ALS_POS_Y + ALS_RADIUS);
+static Rect screenshot_rect_land_90(ALS_POS_Y - ALS_RADIUS, 1080 - ALS_POS_X - ALS_RADIUS, ALS_POS_Y + ALS_RADIUS, 1080 - ALS_POS_X + ALS_RADIUS);
+static Rect screenshot_rect_180(1080-ALS_POS_X - ALS_RADIUS, 2400-ALS_POS_Y - ALS_RADIUS, 1080-ALS_POS_X + ALS_RADIUS, 2400-ALS_POS_Y + ALS_RADIUS);
+static Rect screenshot_rect_land_270(2400 - (ALS_POS_Y + ALS_RADIUS),ALS_POS_X - ALS_RADIUS, 2400 - (ALS_POS_Y - ALS_RADIUS), ALS_POS_X + ALS_RADIUS);
 
 class TakeScreenshotCommand : public FrameworkCommand {
   public:
@@ -53,17 +64,34 @@ class TakeScreenshotCommand : public FrameworkCommand {
     };
 
     screenshot_t takeScreenshot() {
-        static sp<GraphicBuffer> outBuffer = new GraphicBuffer(
-                screenshot_rect.getWidth(), screenshot_rect.getHeight(),
-                android::PIXEL_FORMAT_RGB_888,
-                GraphicBuffer::USAGE_SW_READ_OFTEN | GraphicBuffer::USAGE_SW_WRITE_OFTEN);
+        sp<IBinder> display = SurfaceComposerClient::getInternalDisplayToken();
+
+        android::ui::DisplayState state;
+        SurfaceComposerClient::getDisplayState(display, &state);
+        Rect screenshot_rect;
+        switch (state.orientation) {
+             case Rotation::Rotation90:  screenshot_rect = screenshot_rect_land_90;
+                                         break;
+             case Rotation::Rotation180: screenshot_rect = screenshot_rect_180;
+                                         break;
+             case Rotation::Rotation270: screenshot_rect = screenshot_rect_land_270;
+                                         break;
+             default:                    screenshot_rect = screenshot_rect_0;
+                                         break;
+        }
 
         sp<SyncScreenCaptureListener> captureListener = new SyncScreenCaptureListener();
-        gui::ScreenCaptureResults captureResults;
+        gui::ScreenCaptureResults captureResults;        
+
+        static sp<GraphicBuffer> outBuffer = new GraphicBuffer(
+        screenshot_rect.getWidth(), screenshot_rect.getHeight(),
+        android::PIXEL_FORMAT_RGB_888,
+        GraphicBuffer::USAGE_SW_READ_OFTEN | GraphicBuffer::USAGE_SW_WRITE_OFTEN);
 
         DisplayCaptureArgs captureArgs;
-        captureArgs.displayToken = SurfaceComposerClient::getInternalDisplayToken();
+        captureArgs.displayToken = display;
         captureArgs.pixelFormat = android::ui::PixelFormat::RGBA_8888;
+
         captureArgs.sourceCrop = screenshot_rect;
         captureArgs.width = screenshot_rect.getWidth();
         captureArgs.height = screenshot_rect.getHeight();
