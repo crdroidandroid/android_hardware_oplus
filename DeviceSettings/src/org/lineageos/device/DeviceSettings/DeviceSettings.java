@@ -46,8 +46,8 @@ public class DeviceSettings extends PreferenceFragment
     private static final String KEY_USB2_SWITCH = "usb2_fast_charge";
     private static final String KEY_VIBSTRENGTH = "vib_strength";
 
-    private static final String FILE_FAST_CHARGE = "/sys/module/oplus_chg/parameters/force_fast_charge";
-    private static final String FILE_LEVEL = "/sys/devices/platform/soc/88c000.i2c/i2c-6/6-005a/leds/vibrator/level";
+    private static final String FILE_FAST_CHARGE = "/sys/kernel/fast_charge/force_fast_charge";
+    private static final String FILE_LEVEL = "/sys/devices/platform/soc/a8c000.i2c/i2c-6/6-005a/leds/vibrator/level";
     private static final long testVibrationPattern[] = {0,5};
     private static final String DEFAULT = "3";
 
