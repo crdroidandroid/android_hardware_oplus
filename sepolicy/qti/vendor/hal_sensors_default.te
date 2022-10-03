@@ -10,3 +10,8 @@ rw_dir_file(hal_sensors_default, vendor_sysfs_graphics)
 rw_dir_file(hal_sensors_default, vendor_sysfs_sensor_fb)
 
 get_prop(hal_sensors_default, vendor_sensor_prop)
+
+# ALS
+allow hal_sensors_default als_correction_service:process signal;
+
+get_prop(hal_sensors_default, vendor_sensors_als_prop)
