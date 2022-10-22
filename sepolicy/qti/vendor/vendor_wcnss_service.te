@@ -1,1 +1,2 @@
 set_prop(vendor_wcnss_service, vendor_vold_prop)
+create_dir_file(vendor_wcnss_service, mnt_vendor_file)
