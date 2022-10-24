@@ -2,3 +2,6 @@ r_dir_file(platform_app, vendor_proc_ui_soc_decimal)
 
 # Allow platform_app to access zram nodes
 r_dir_file(platform_app, sysfs_zram)
+
+allow platform_app hal_dms_hwservice:hwservice_manager find;
+binder_call(platform_app, hal_dms_default)
