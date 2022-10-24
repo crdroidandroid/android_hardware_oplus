@@ -1,4 +1,5 @@
 # Camera
+NA                                               u:object_r:exported_system_prop:s0
 oplus.camera.                                    u:object_r:exported_system_prop:s0
 oplus.CTP.Tunningmode                            u:object_r:exported_system_prop:s0
 persist.bps.debug                                u:object_r:exported_system_prop:s0
