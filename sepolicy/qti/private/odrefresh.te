@@ -1,0 +1,1 @@
+allow odrefresh odrefresh:capability { kill };
