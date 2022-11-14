@@ -171,6 +171,13 @@
     <string name="usb2_fc_summary">Force fast charging of up to 900mA in USB 2.0 mode</string>
     <string name="usb2_fc_warning">Interferes with dash/warp charging; only enable when applicable</string>
 
+    <!-- Audio -->
+    <string name="category_audio">Audio</string>
+
+    <!-- Audio - Dolby -->
+    <string name="dolby_title">Dolby Atmos</string>
+    <string name="dolby_summary">Enhance your audio experience with dolby</string>
+
     <!-- Vibrator -->
     <string name="category_vibrator">Vibrator</string>
     <string name="vib_strength_title">System strength</string>

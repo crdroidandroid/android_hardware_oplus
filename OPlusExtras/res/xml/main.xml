@@ -252,6 +252,21 @@
             android:persistent="false" />
     </PreferenceCategory>
 
+    <!-- Start of audio Category -->
+    <PreferenceCategory
+        android:key="audio"
+        android:title="@string/category_audio">
+
+        <Preference
+            android:key="dolby_atmos"
+            android:title="@string/dolby_title"
+            android:summary="@string/dolby_summary" >
+            <intent
+                android:targetPackage="com.dolby.daxappui"
+                android:targetClass="com.dolby.daxappui.MainActivity" />
+        </Preference>
+    </PreferenceCategory>
+
     <!-- Start of vibrator Category -->
     <PreferenceCategory
         android:key="vibrator"
