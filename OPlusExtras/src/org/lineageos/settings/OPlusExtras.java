@@ -117,6 +117,9 @@ public class OPlusExtras extends PreferenceFragment
     private static TwoStatePreference mOTGModeSwitch;
     private static TwoStatePreference mUSB2FastChargeModeSwitch;
 
+    public static final String KEY_CATEGORY_AUDIO = "audio";
+    public static final String KEY_DOLBY = "dolby_atmos";
+
     public static final String KEY_CATEGORY_VIBRATOR = "vibrator";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
     private VibratorStrengthPreference mVibratorStrength;
@@ -412,9 +415,20 @@ public class OPlusExtras extends PreferenceFragment
             getPreferenceScreen().removePreference((Preference) findPreference(KEY_CATEGORY_USB));
         }
 
-        boolean vibratorCategory = false;
+        // Audio
+        boolean audioCategory = false;
+        // Dolby
+        audioCategory = audioCategory | isFeatureSupported(context, R.bool.config_deviceSupportsDolby);
+        if (!isFeatureSupported(context, R.bool.config_deviceSupportsDolby)) {
+            findPreference(KEY_DOLBY).setVisible(false);
+        }
+
+        if (!audioCategory) {
+            getPreferenceScreen().removePreference((Preference) findPreference(KEY_CATEGORY_AUDIO));
+        }
 
         // Vibrator
+        boolean vibratorCategory = false;
         vibratorCategory = vibratorCategory | isFeatureSupported(context, R.bool.config_deviceSupportsSysVib);
         if (isFeatureSupported(context, R.bool.config_deviceSupportsSysVib)) {
             mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
