@@ -373,27 +373,26 @@ int LedVibratorDevice::write_value(const char *file, int value) {
 
 int LedVibratorDevice::on(int32_t timeoutMs) {
     int ret = 0;
-    if (timeoutMs <= 20) {
-        ret |= write_value(LED_DEVICE "/rtp", 0);
+    if (timeoutMs <= 0) {
+        return ret;
+    } else if (timeoutMs <= 20) {
         ret |= write_value(LED_DEVICE "/vmax", timeoutMs * 10);
-        ret |= write_value(LED_DEVICE "/waveform_index", 7);
-        ret |= write_value(LED_DEVICE "/brightness", 1);
-        ret |= write_value(LED_DEVICE "/rtp", 0);
     } else {
-        ret |= write_value(LED_DEVICE "/vmax", 1600);
-        ret |= write_value(LED_DEVICE "/waveform_index", 1);
-        ret |= write_value(LED_DEVICE "/duration", timeoutMs);
-        ret |= write_value(LED_DEVICE "/state", "1");
-        ret |= write_value(LED_DEVICE "/activate", "1");
-        ret |= write_value(LED_DEVICE "/activate", "0");
+        ret |= write_value(LED_DEVICE "/vmax", 2000);
     }
+    ret |= write_value(LED_DEVICE "/waveform_index", 7);
+    ret |= write_value(LED_DEVICE "/duration", timeoutMs);
+    ret |= write_value(LED_DEVICE "/state", "1");
+    ret |= write_value(LED_DEVICE "/activate", "1");
+    ret |= write_value(LED_DEVICE "/activate", "0");
+
     return ret;
 }
 
 int LedVibratorDevice::onWaveform(int waveformIndex) {
     int ret = 0;
     ret |= write_value(LED_DEVICE "/rtp", "0");
-    ret |= write_value(LED_DEVICE "/vmax", "1600");
+    ret |= write_value(LED_DEVICE "/vmax", "2000");
     ret |= write_value(LED_DEVICE "/waveform_index", waveformIndex);
     ret |= write_value(LED_DEVICE "/brightness", "1");
     ret |= write_value(LED_DEVICE "/rtp", "0");
@@ -524,15 +523,13 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength es, const std
             return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
         }
 
-
         // Return magic value for play length so that we won't end up calling on() / off()
         playLengthMs = 150;
     } else {
 #ifdef TARGET_SUPPORTS_OFFLOAD
-        if (effect < Effect::CLICK ||  effect > Effect::TEXTURE_TICK)
+        if (effect < Effect::CLICK ||  effect > Effect::RINGTONE_15)
 #else
-        if (effect < Effect::CLICK ||
-                (effect > Effect::HEAVY_CLICK && effect < Effect::TEXTURE_TICK))
+        if (effect < Effect::CLICK ||  effect > Effect::HEAVY_CLICK)
 #endif
             return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 
