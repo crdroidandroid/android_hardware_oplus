@@ -16,6 +16,6 @@
     <string name="alert_slider_mode_dnd_priority_only">Только важные</string>
     <string name="alert_slider_mode_dnd_total_silence">Полная тишина</string>
     <string name="alert_slider_mode_dnd_alarms_only">Только будильники</string>
-    <string name="alert_slider_mute_media_title">Выключить звук медиафайлов</string>
+    <string name="alert_slider_mute_media_title">Выключить звук медиа</string>
     <string name="alert_slider_mute_media_summary">Отключение звука медиафайлов при переключении на беззвучный режим</string>
 </resources>
