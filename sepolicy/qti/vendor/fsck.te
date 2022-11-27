@@ -1,1 +1,2 @@
 allow fsck fsck:capability { kill };
+allow fsck vendor_efs_boot_dev:blk_file rw_file_perms;
