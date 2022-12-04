@@ -51,8 +51,6 @@
     <string name="display_title">Ecrã</string>
     <string name="dc_mode_title">DC-Dimming</string>
     <string name="dc_mode_summary">Diminuir o brilho do ecrã por baixar a corrente DC</string>
-    <string name="hbm_mode_title">Modo brilho máximo</string>
-    <string name="hbm_mode_summary">Habilitar luminância de pico</string>
     <string name="hbm_mode_warning">O uso prolongado do modo de alto brilho pode danificar o seu ecrã</string>
     <string name="auto_hbm_title">Modo de brilho automático</string>
     <string name="auto_hbm_summary">Ativar o modo de brilho máximo baseado no brilho local</string>

@@ -51,8 +51,6 @@
     <string name="display_title">Tela</string>
     <string name="dc_mode_title">Modo anti cintilação</string>
     <string name="dc_mode_summary">Diminuir o cansaço visual reduzindo o brilho e cintilação da tela</string>
-    <string name="hbm_mode_title">Brilho máximo</string>
-    <string name="hbm_mode_summary">Ativar pico de luz</string>
     <string name="hbm_mode_warning">Usar o modo de brilho máximo por muito tempo pode danificar sua tela</string>
     <string name="auto_hbm_title">Modo automático para o brilho máximo</string>
     <string name="auto_hbm_summary">Ativar o pico de luz quando exposto à luz solar</string>

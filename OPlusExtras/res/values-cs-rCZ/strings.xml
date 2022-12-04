@@ -58,8 +58,6 @@
     <string name="display_title">Displej</string>
     <string name="dc_mode_title">DC – ztlumení</string>
     <string name="dc_mode_summary">Ztlumení podsvícení snížením odběru stejnosměrného proudu</string>
-    <string name="hbm_mode_title">Režim vysokého jasu</string>
-    <string name="hbm_mode_summary">Povolit maximální svítivost</string>
     <string name="hbm_mode_warning">Dlouhodobé používání režimu vysokého jasu může poškodit displej</string>
     <string name="auto_hbm_title">Automatický režim vysokého jasu</string>
     <string name="auto_hbm_summary">Povolit maximální svítivost na základě slunečního světla</string>

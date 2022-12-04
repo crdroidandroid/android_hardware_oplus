@@ -88,12 +88,6 @@
             android:summary="@string/dc_mode_summary" />
 
         <SwitchPreference
-            android:key="hbm"
-            android:title="@string/hbm_mode_title"
-            android:summary="@string/hbm_mode_summary"
-            android:defaultValue="false" />
-
-        <SwitchPreference
             android:key="auto_hbm"
             android:title="@string/auto_hbm_title"
             android:summary="@string/auto_hbm_summary" />

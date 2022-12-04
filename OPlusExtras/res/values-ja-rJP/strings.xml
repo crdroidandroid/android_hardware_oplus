@@ -51,8 +51,6 @@
     <string name="display_title">ディスプレイ</string>
     <string name="dc_mode_title">DC 調光</string>
     <string name="dc_mode_summary">直流電流を低くしてバックライトを暗くする</string>
-    <string name="hbm_mode_title">高輝度モード</string>
-    <string name="hbm_mode_summary">最高輝度を有効にする</string>
     <string name="hbm_mode_warning">長時間の高輝度モードの使用は画面にダメージを与える可能性があります</string>
     <string name="auto_hbm_title">自動高輝度モード</string>
     <string name="auto_hbm_summary">日光による高輝度を有効にする</string>

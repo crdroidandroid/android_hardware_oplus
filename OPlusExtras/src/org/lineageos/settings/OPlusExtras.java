@@ -60,12 +60,10 @@ public class OPlusExtras extends PreferenceFragment
     public static final String KEY_PER_APP_COLORSPACE = "per_app_colorspace";
     public static final String KEY_PER_APP_REFRESH_RATE = "per_app_refresh_rate";
     public static final String KEY_DC_SWITCH = "dc";
-    public static final String KEY_HBM_SWITCH = "hbm";
     public static final String KEY_AUTO_HBM_SWITCH = "auto_hbm";
     public static final String KEY_AUTO_HBM_THRESHOLD = "auto_hbm_threshold";
     public static final String KEY_HBM_INFO = "hbm_info";
     private static TwoStatePreference mDCModeSwitch;
-    private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
     private Preference mHBMInfo;
 
@@ -174,20 +172,43 @@ public class OPlusExtras extends PreferenceFragment
             findPreference(KEY_DC_SWITCH).setVisible(false);
         }
 
-        // HBM/AutoHBM
+        // AutoHBM
         displayCategory = displayCategory | isFeatureSupported(context, R.bool.config_deviceSupportsHBM);
         if (isFeatureSupported(context, R.bool.config_deviceSupportsHBM)) {
-            mHBMModeSwitch = (TwoStatePreference) findPreference(KEY_HBM_SWITCH);
-            mHBMModeSwitch.setEnabled(HBMModeSwitch.isSupported(this.getContext()));
-            mHBMModeSwitch.setChecked(HBMModeSwitch.isCurrentlyEnabled(this.getContext()));
-            mHBMModeSwitch.setOnPreferenceChangeListener(new HBMModeSwitch());
-
             mAutoHBMSwitch = (TwoStatePreference) findPreference(KEY_AUTO_HBM_SWITCH);
             mAutoHBMSwitch.setChecked(PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean(OPlusExtras.KEY_AUTO_HBM_SWITCH, false));
             mAutoHBMSwitch.setOnPreferenceChangeListener(this);
+
+            // EasterEgg (HBM Info)
+            mHBMInfo = (Preference)findPreference(KEY_HBM_INFO);
+            mHBMInfo.setOnPreferenceClickListener(preference -> {
+
+                Random rand =new Random();
+                int firstRandom = rand.nextInt(91-0);
+                int secondRandom = rand.nextInt(181-90)+90;
+                int thirdRandom = rand.nextInt(181-0);
+
+                Drawable evo = getResources().getDrawable(R.drawable.evo,null);
+                int randomColor;
+                randomColor = Color.rgb(
+                Color.red(rand.nextInt(0xFFFFFF)),
+                Color.green(rand.nextInt(0xFFFFFF)),
+                Color.blue(rand.nextInt(0xFFFFFF)));
+                evo.setTint(randomColor);
+
+                ParticleSystem ps = new ParticleSystem(getActivity(),50,evo,2000);
+                ps.setScaleRange(0.7f,1.3f);
+                ps.setSpeedRange(0.1f,0.25f);
+                ps.setAcceleration(0.0001f,thirdRandom);
+                ps.setRotationSpeedRange(firstRandom,secondRandom);
+                ps.setFadeOut(300);
+                ps.oneShot(this.getView(),50);
+
+                return true;
+            });
+
         }
         else {
-            findPreference(KEY_HBM_SWITCH).setVisible(false);
             findPreference(KEY_AUTO_HBM_SWITCH).setVisible(false);
             findPreference(KEY_AUTO_HBM_THRESHOLD).setVisible(false);
             findPreference(KEY_HBM_INFO).setVisible(false);
@@ -196,34 +217,6 @@ public class OPlusExtras extends PreferenceFragment
         if (!displayCategory) {
             getPreferenceScreen().removePreference((Preference) findPreference(KEY_CATEGORY_DISPLAY));
         }
-
-        // EasterEgg (HBM Info)
-        mHBMInfo = (Preference)findPreference(KEY_HBM_INFO);
-        mHBMInfo.setOnPreferenceClickListener(preference -> {
-
-        Random rand =new Random();
-
-        int firstRandom = rand.nextInt(91-0);
-        int secondRandom = rand.nextInt(181-90)+90;
-        int thirdRandom = rand.nextInt(181-0);
-
-        Drawable evo = getResources().getDrawable(R.drawable.evo,null);
-        int randomColor;
-        randomColor = Color.rgb(
-        Color.red(rand.nextInt(0xFFFFFF)),
-        Color.green(rand.nextInt(0xFFFFFF)),
-        Color.blue(rand.nextInt(0xFFFFFF)));
-        evo.setTint(randomColor);
-
-        ParticleSystem ps = new ParticleSystem(getActivity(),50,evo,2000);
-        ps.setScaleRange(0.7f,1.3f);
-        ps.setSpeedRange(0.1f,0.25f);
-        ps.setAcceleration(0.0001f,thirdRandom);
-        ps.setRotationSpeedRange(firstRandom,secondRandom);
-        ps.setFadeOut(300);
-        ps.oneShot(this.getView(),50);
-        return true;
-        });
 
         boolean cpuCategory = false;
 
@@ -479,9 +472,6 @@ public class OPlusExtras extends PreferenceFragment
     public void onResume() {
         super.onResume();
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this.getContext());
-        if (isFeatureSupported(this.getContext(), R.bool.config_deviceSupportsHBM)) {
-            mHBMModeSwitch.setChecked(HBMModeSwitch.isCurrentlyEnabled(this.getContext()));
-        }
         if (isFeatureSupported(this.getContext(), R.bool.config_deviceSupportsFPS)) {
             mFpsInfo.setChecked(isFPSOverlayRunning());
         }

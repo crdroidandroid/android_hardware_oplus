@@ -51,8 +51,6 @@
     <string name="display_title">Дисплей</string>
     <string name="dc_mode_title">DC Dimming</string>
     <string name="dc_mode_summary">Зменшити підсвічування, знизивши споживання постійного струму</string>
-    <string name="hbm_mode_title">Режим високої яскравості</string>
-    <string name="hbm_mode_summary">Ввімкнути максимальну яскравість</string>
     <string name="hbm_mode_warning">Довгий час використання режиму високої яскравості може пошкодити дисплей</string>
     <string name="auto_hbm_title">Автоматичний режим високої яскравості</string>
     <string name="auto_hbm_summary">Вмикати максимальну яскравість на сонці</string>

@@ -75,8 +75,6 @@
     <string name="display_title">Display</string>
     <string name="dc_mode_title">DC-dimming</string>
     <string name="dc_mode_summary">Dim backlight by lowering DC current draw</string>
-    <string name="hbm_mode_title">High brightness mode</string>
-    <string name="hbm_mode_summary">Enable peak luminance</string>
     <string name="hbm_mode_warning">Long time usage of High brightness mode may damage your display</string>
     <string name="auto_hbm_title">Automatic high brightness mode</string>
     <string name="auto_hbm_summary">Enable peak luminance based on sunlight</string>
