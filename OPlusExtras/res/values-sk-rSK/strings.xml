@@ -55,8 +55,6 @@
     <string name="display_title">Displej</string>
     <string name="dc_mode_title">DC-Stmievanie</string>
     <string name="dc_mode_summary">Dim backlight by lowering DC current draw</string>
-    <string name="hbm_mode_title">Režim vysokého jasu</string>
-    <string name="hbm_mode_summary">Povoliť maximálny jas</string>
     <string name="hbm_mode_warning">Dlhodobé používanie režimu vysokého jasu môže poškodiť váš displej</string>
     <string name="auto_hbm_title">Automatický režim vysokého jasu</string>
     <string name="auto_hbm_summary">Povoliť maximálny jas na základe slnečného svetla</string>

@@ -51,8 +51,6 @@
     <string name="display_title">Pantalla</string>
     <string name="dc_mode_title">Atenuación DC</string>
     <string name="dc_mode_summary">Atenuar la luz de fondo al reducir el consumo de corriente CC</string>
-    <string name="hbm_mode_title">Modo de brillo alto</string>
-    <string name="hbm_mode_summary">Activar iluminación pico</string>
     <string name="hbm_mode_warning">El uso prolongado en modo de alto brillo puede dañar tu pantalla</string>
     <string name="auto_hbm_title">Modo de brillo alto automático</string>
     <string name="auto_hbm_summary">Activar la iluminación máxima basada en la luz del sol</string>

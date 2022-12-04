@@ -39,10 +39,6 @@ public class Startup extends BroadcastReceiver {
         if (enabled) {
             restore(DCModeSwitch.getFile(context), enabled);
         }
-        enabled = sharedPrefs.getBoolean(OPlusExtras.KEY_HBM_SWITCH, false);
-        if (enabled) {
-            restore(HBMModeSwitch.getFile(context), enabled);
-        }
         enabled = sharedPrefs.getBoolean(OPlusExtras.KEY_FPS_INFO, false);
         if (enabled) {
             context.startService(new Intent(context, FPSInfoService.class));

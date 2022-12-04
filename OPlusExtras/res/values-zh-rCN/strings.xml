@@ -51,8 +51,6 @@
     <string name="display_title">显示</string>
     <string name="dc_mode_title">DC 调光</string>
     <string name="dc_mode_summary">通过降低直流电流消耗来调暗背光</string>
-    <string name="hbm_mode_title">高亮度模式</string>
-    <string name="hbm_mode_summary">启用峰值亮度</string>
     <string name="hbm_mode_warning">长时间使用高亮度模式可能会损坏您的屏幕</string>
     <string name="auto_hbm_title">自动高亮模式</string>
     <string name="auto_hbm_summary">启用基于日光的峰值亮度</string>

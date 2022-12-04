@@ -58,8 +58,6 @@
     <string name="display_title">Hiển thị</string>
     <string name="dc_mode_title">Siêu tối</string>
     <string name="dc_mode_summary">Giảm độ sáng bằng cách giảm dòng điện</string>
-    <string name="hbm_mode_title">Chế độ Độ sáng cao</string>
-    <string name="hbm_mode_summary">Bật độ sáng tối đa</string>
     <string name="hbm_mode_warning">Sử dụng chế độ Độ sáng cao trong thời gian dài có thể làm hỏng màn hình của bạn</string>
     <string name="auto_hbm_title">Chế độ sáng cao tự động</string>
     <string name="auto_hbm_summary">Bật độ sáng tối đa dựa vào ánh sáng xung quanh</string>

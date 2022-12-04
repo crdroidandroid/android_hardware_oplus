@@ -51,8 +51,6 @@
     <string name="display_title">Display</string>
     <string name="dc_mode_title">Modalità anti-sfarfallio</string>
     <string name="dc_mode_summary">Abbassa la retroilluminazione riducendo lo sfarfallio</string>
-    <string name="hbm_mode_title">Modalità alta luminosità</string>
-    <string name="hbm_mode_summary">Abilita alta luminosità</string>
     <string name="hbm_mode_warning">L\'utilizzo prolungato della modalità Alta luminosità può danneggiare il display</string>
     <string name="auto_hbm_title">Modalità alta luminosità automatica</string>
     <string name="auto_hbm_summary">Abilita alta luminosità in base alla luce solare</string>
