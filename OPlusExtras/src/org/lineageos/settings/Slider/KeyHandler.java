@@ -128,6 +128,7 @@ public class KeyHandler implements DeviceKeyHandler {
         mInputManager = mContext.getSystemService(InputManager.class);
     }
 
+    @Override
     public KeyEvent handleKeyEvent(KeyEvent event) {
         if (event.getAction() != KeyEvent.ACTION_DOWN) {
             return event;
