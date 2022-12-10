@@ -25,6 +25,9 @@ vendor.oplus.                                    u:object_r:exported_system_prop
 vendor.oppo.                                     u:object_r:exported_system_prop:s0
 vendor.property.debug.caliexif.enable            u:object_r:exported_system_prop:s0
 
+# Display
+persist.sys.display.iris.absent   u:object_r:system_oplus_iris_prop:s0
+
 # Fingerprint
 gf.debug.dump_data    u:object_r:system_fingerprint_prop:s0
 oplus.fingerprint.    u:object_r:system_fingerprint_prop:s0
