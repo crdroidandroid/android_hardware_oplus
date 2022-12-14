@@ -2,6 +2,7 @@ allow vendor_init vendor_proc_display:file w_file_perms;
 allow vendor_init vendor_proc_fastchg_fw_update:file w_file_perms;
 allow vendor_init vendor_proc_ui_soc_decimal:file w_file_perms;
 allow vendor_init proc_dirty:file { write };
+allow vendor_init vendor_latency_device:file { create };
 
 set_prop(vendor_init, system_oplus_project_prop)
 set_prop(vendor_init, vendor_power_prop)

@@ -6,4 +6,4 @@ r_dir_file(rild, vendor_proc_engineer)
 
 set_prop(rild, vendor_nw_exported_system_prop)
 
-dontaudit rild default_prop:file r_file_perms;
+allow rild vendor_pd_locater_dbg_prop:file { read };

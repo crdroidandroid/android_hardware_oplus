@@ -8,6 +8,7 @@ genfscon proc /qcom_flash     u:object_r:vendor_proc_flash:s0
 genfscon proc /fastchg_fw_update                                       u:object_r:vendor_proc_fastchg_fw_update:s0
 genfscon proc /wireless                                                u:object_r:vendor_proc_wireless:s0
 genfscon proc /ui_soc_decimal                                          u:object_r:vendor_proc_ui_soc_decimal:s0
+genfscon sysfs /class/power_supply/battery                          u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /class/oplus_chg                                        u:object_r:vendor_sysfs_usb_supply:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/ac    u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:oneplus_wlchg/power_supply    u:object_r:vendor_sysfs_usb_supply:s0
@@ -30,6 +31,12 @@ genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display                       
 genfscon sysfs /devices/platform/soc/soc:qcom,gpubw                                                 u:object_r:vendor_sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,gpubw/devfreq                                         u:object_r:vendor_sysfs_msm_subsys:s0
 genfscon sysfs /kernel/oplus_display    u:object_r:vendor_sysfs_graphics:s0
+
+# Extcon sysfs
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon                                                                                  u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/extcon                                                                                   u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/extcon                 u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/extcon                      u:object_r:sysfs_extcon:s0
 
 # Engineering
 genfscon proc /oplus_rf    u:object_r:vendor_proc_engineer:s0
@@ -147,3 +154,5 @@ genfscon sysfs /devices/virtual/misc/msm_mp3/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_qcelp/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_wma/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_wmapro/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/wakeup/wakeup u:object_r:sysfs_wakeup:s0
