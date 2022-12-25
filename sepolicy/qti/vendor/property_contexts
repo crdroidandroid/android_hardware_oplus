@@ -8,7 +8,6 @@ vendor.dps.dump.composerpid    u:object_r:vendor_display_prop:s0
 persist.vendor.fingerprint.    u:object_r:vendor_fingerprint_prop:s0
 persist.vendor.fp.             u:object_r:vendor_fingerprint_prop:s0
 vendor.fingerprint.            u:object_r:vendor_fingerprint_prop:s0
-vendor.flash.locked            u:object_r:vendor_fingerprint_prop:s0
 
 # Modem
 vendor.modem_dump_action       u:object_r:vendor_modem_prop:s0
