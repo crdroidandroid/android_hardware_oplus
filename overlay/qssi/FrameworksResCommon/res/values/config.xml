@@ -282,4 +282,11 @@
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath2" translatable="false">"/sys/devices/platform/soc/soc:oplus,chg_intf/soc:oplus,chg_intf:oplus,wireless-charge/oplus_chg/wireless/fastchg_status"</string>
 
+    <!-- Parallel space blocklist -->
+    <string-array name="config_parallelSpaceBlocklist">
+        <item>com.android.launcher3</item>
+        <item>com.google.android.apps.nexuslauncher</item>
+        <item>org.lineageos.settings.DeviceExtras</item>
+        <item>org.lineageos.settings.OPlusExtras</item>
+    </string-array>
 </resources>
