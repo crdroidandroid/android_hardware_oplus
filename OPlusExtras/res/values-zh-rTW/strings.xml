@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 The Evolution X Project
+                   2018-2021 crDroid Android Project
+                   2019 Havoc-OS
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- OPlus Extras -->
+    <string name="oplus_extras_title">OPlus 設定</string>
+    <string name="oplus_extras_summary">調整設備的特殊設定</string>
+    <string name="oplus_extras_warning_title">注意</string>
+    <string name="oplus_extras_warning_text">這些功能大多依賴於特定內核節點才能起作用。刷入自訂內核後某些功能可能無法使用。</string>
+    <string name="oplus_extras_dialog">確定</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">數值: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">使用預設值</string>
+    <string name="custom_seekbar_default_value_to_set">預設值: <xliff:g id="v">%s</xliff:g>\n長按以設定</string>
+    <string name="custom_seekbar_default_value_is_set">已設定為預設值</string>
+
+    <!-- Alert slider -->
+    <string name="notification_slider_category_title">三段式開關</string>
+    <string name="notification_slider_title">三段式開關設定</string>
+    <string name="notification_slider_selection_dialog_title">Action</string>
+    <string name="notification_slider_top_position">頂部位置</string>
+    <string name="notification_slider_middle_position">中間位置</string>
+    <string name="notification_slider_bottom_position">底部位置</string>
+    <string name="notification_slider_mode_total_silence">完全靜音</string>
+    <string name="notification_slider_mode_alarms_only">僅限鬧鐘</string>
+    <string name="notification_slider_mode_priority_only">僅限優先</string>
+    <string name="notification_slider_mode_none">響鈴</string>
+    <string name="notification_slider_usage_title">三段式開關用於</string>
+    <string name="notification_slider_for_notification">通知</string>
+    <string name="notification_slider_for_flashlight">手電筒</string>
+    <string name="notification_slider_for_brightness">亮度</string>
+    <string name="notification_slider_for_rotation">旋轉</string>
+    <string name="notification_slider_for_ringer">響鈴</string>
+    <string name="notification_slider_for_notification_ringer">通知和響鈴</string>
+    <string name="notification_slider_for_extradim">超暗</string>
+    <string name="notification_slider_for_nightlight">護眼</string>
+    <string name="notification_slider_for_refresh">螢幕更新率</string>
+    <string name="notification_slider_for_colorspace">色彩配置</string>
+    <string name="notification_slider_flashlight_off">關閉</string>
+    <string name="notification_slider_flashlight_on">開啟</string>
+    <string name="notification_slider_flashlight_blink">閃爍</string>
+    <string name="notification_slider_brightness_auto">自動</string>
+    <string name="notification_slider_brightness_brightest">最亮</string>
+    <string name="notification_slider_brightness_darkest">最暗</string>
+    <string name="notification_slider_rotation_auto">自動</string>
+    <string name="notification_slider_rotation_portrait">縱向</string>
+    <string name="notification_slider_rotation_landscape_90">橫向 (90°)</string>
+    <string name="notification_slider_rotation_landscape_270">橫向 (270°)</string>
+    <string name="notification_slider_ringer_normal">正常</string>
+    <string name="notification_slider_ringer_vibrate">震動</string>
+    <string name="notification_slider_ringer_silent">靜音</string>
+    <string name="notification_slider_extradim_off">關閉</string>
+    <string name="notification_slider_extradim_min">較亮</string>
+    <string name="notification_slider_extradim_mid">中間</string>
+    <string name="notification_slider_extradim_max">最暗</string>
+    <string name="notification_slider_nightlight_off">關閉</string>
+    <string name="notification_slider_nightlight_min">最弱</string>
+    <string name="notification_slider_nightlight_mid">中間</string>
+    <string name="notification_slider_nightlight_max">最強</string>
+    <string name="notification_slider_refresh_auto">自動</string>
+    <string name="notification_slider_refresh_min">最低</string>
+    <string name="notification_slider_refresh_max">最高</string>
+    <string name="notification_slider_colorspace_vivid">生動</string>
+    <string name="notification_slider_colorspace_natural">自然</string>
+    <string name="notification_slider_colorspace_cinematic">電影</string>
+    <string name="notification_slider_colorspace_brilliant">鮮艶</string>
+
+    <!-- Display -->
+    <string name="display_title">螢幕</string>
+    <string name="dc_mode_title">DC 調光</string>
+    <string name="dc_mode_summary">透過降低直流電流來調暗背光</string>
+    <string name="hbm_mode_warning">長時間使用高亮度模式可能會損壞您的螢幕</string>
+    <string name="auto_hbm_title">自動高亮度模式</string>
+    <string name="auto_hbm_summary">開啟基於太陽的最高亮度</string>
+    <string name="auto_hbm_threshold_title"></string>
+    <string name="auto_hbm_threshold_summary">閾值 (lux)</string>
+    <string name="refresh_title">每個應用程式的螢幕更新率</string>
+    <string name="refresh_summary">設定每個應用程式的螢幕更新率</string>
+    <string name="refresh_default">預設</string>
+    <string name="refresh_standard">標準</string>
+    <string name="refresh_extreme">最大</string>
+
+    <string name="colorspace_title">每個應用程式的色彩配置</string>
+    <string name="colorspace_summary">設定每個應用程式的色彩配置</string>
+    <string name="colorspace_default">預設</string>
+    <string name="colorspace_vivid">生動</string>
+    <string name="colorspace_natural">自然</string>
+    <string name="colorspace_cinematic">電影</string>
+    <string name="colorspace_brilliant">鮮艶</string>
+
+    <!-- CPU -->
+    <string name="cpu_title">CPU</string>
+    <string name="power_efficient_workqueue_title">電源效率工作佇列</string>
+    <string name="power_efficient_workqueue_summary">將工作重新安排到喚醒的核心以降低功耗</string>
+    <string name="touchboost_title">Touchboost</string>
+    <string name="touchboost_summary">觸控時是否提高CPU頻率</string>
+
+    <!-- Filesystem -->
+    <string name="filesystem_title">檔案系統</string>
+    <string name="fsync_title">FSync</string>
+    <string name="fsync_summary">FSync 關閉/開啟</string>
+    <string name="fsync_warning">關閉 FSync 可以增加效能，但會增加系統當機時遺失資料的風險</string>
+
+    <!-- FPS Info -->
+    <string name="fps_title">顯示 FPS</string>
+    <string name="fps_info_title">FPS 疊加層</string>
+    <string name="fps_info_summary">每秒顯示當前幀數</string>
+    <string name="fps_info_color_title">文字顏色</string>
+    <string name="fps_info_color_green">綠色</string>
+    <string name="fps_info_color_red">紅色</string>
+    <string name="fps_info_color_magenta">洋紅色</string>
+    <string name="fps_info_color_blue">藍色</string>
+    <string name="fps_info_color_cyan">青色</string>
+    <string name="fps_info_color_yellow">黃色</string>
+    <string name="fps_info_color_black">黑色</string>
+    <string name="fps_info_color_white">白色</string>
+    <string name="fps_info_color_gray">灰色</string>
+    <string name="fps_info_color_ltgray">淡灰色</string>
+    <string name="fps_info_color_dkgray">深灰色</string>
+    <string name="fps_info_color_accent">跟隨系統</string>
+    <string name="fps_info_position_title">覆蓋位置</string>
+    <string name="fps_info_position_top_left">左上角</string>
+    <string name="fps_info_position_top_center">頂部置中</string>
+    <string name="fps_info_position_top_right">右上角</string>
+    <string name="fps_info_position_bottom_left">左下角</string>
+    <string name="fps_info_position_bottom_center">底部置中</string>
+    <string name="fps_info_position_bottom_right">右下角</string>
+    <string name="fps_info_position_center_left">中間靠左</string>
+    <string name="fps_info_position_center_center">置中</string>
+    <string name="fps_info_position_center_right">中間靠右</string>
+    <string name="fps_info_text_size_title">文字大小</string>
+
+    <!-- GPU -->
+    <string name="gpu_title">GPU</string>
+    <string name="adrenoboost_title">Adrenoboost</string>
+    <string name="adrenoboost_summary">關閉, 輕微, 中度, 激進</string>
+
+    <!-- Power -->
+    <string name="category_power">電源</string>
+    <string name="powershare_mode_title">反向無線充電</string>
+    <string name="powershare_mode_summary">開啟反向無線充電</string>
+    <string name="quiet_mode_title">安靜模式</string>
+    <string name="quiet_mode_summary">為 OEM 無線充電器開啟安靜模式</string>
+
+    <!-- Touchscreen -->
+    <string name="touchscreen_title">觸控螢幕</string>
+    <string name="game_mode_title">遊戲模式</string>
+    <string name="game_mode_summary">增加觸控採樣率</string>
+    <string name="game_mode_warning">可能會減少電池壽命</string>
+    <string name="tp_edge_limit_mode_title">曲面螢幕邊緣限制</string>
+    <string name="tp_edge_limit_mode_summary">關閉曲面螢幕邊緣限制</string>
+
+    <!-- UiBench -->
+    <string name="category_uibench">UiBench</string>
+    <string name="jitter_test_title">抖動</string>
+    <string name="jitter_test_summary">計算渲染抖動</string>
+
+    <!-- USB -->
+    <string name="usb_title">USB</string>
+    <string name="otg_title">USB-OTG</string>
+    <string name="otg_summary">開啟 USB-OTG</string>
+    <string name="usb2_fc_title">USB 2.0 快速充電</string>
+    <string name="usb2_fc_summary">強制在 USB 2.0 模式下使用 900mA 快速充電</string>
+    <string name="usb2_fc_warning">會干擾 dash/warp 閃充; 僅在適用時開啟</string>
+
+    <!-- Audio -->
+    <string name="category_audio">音效</string>
+
+    <!-- Audio - Dolby -->
+    <string name="dolby_title">Dolby Atmos</string>
+    <string name="dolby_summary">使用Dolby增強音效體驗</string>
+
+    <!-- Vibrator -->
+    <string name="category_vibrator">震動馬達</string>
+    <string name="vib_strength_title">系統強度</string>
+    <string name="vib_strength_summary">定義震動馬達的強度</string>
+
+</resources>
