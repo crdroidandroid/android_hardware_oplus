@@ -12,3 +12,5 @@ allow vl53l1_daemon_main self:{
 allow vl53l1_daemon_main self:netlink_iscsi_socket { read write create bind };
 
 rw_dir_file(vl53l1_daemon_main, mnt_vendor_file)
+
+allow vl53l1_daemon_main sysfs:file r_file_perms;
