@@ -5,3 +5,5 @@ allow rild vendor_proc_display:file r_file_perms;
 r_dir_file(rild, vendor_proc_engineer)
 
 set_prop(rild, vendor_nw_exported_system_prop)
+
+dontaudit rild default_prop:file r_file_perms;
