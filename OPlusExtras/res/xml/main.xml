@@ -256,8 +256,8 @@
             android:title="@string/dolby_title"
             android:summary="@string/dolby_summary" >
             <intent
-                android:targetPackage="com.dolby.daxappui"
-                android:targetClass="com.dolby.daxappui.MainActivity" />
+                android:targetPackage="@string/config_DolbyPackage"
+                android:targetClass="@string/config_DolbyStartActivity" />
         </Preference>
     </PreferenceCategory>
 
