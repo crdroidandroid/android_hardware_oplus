@@ -20,6 +20,8 @@ vendor.powerhal.                   u:object_r:vendor_power_prop:s0
 
 # Radio
 ro.vendor.oplus.radio.sar_regionmark    u:object_r:vendor_radio_prop:s0
+ro.vendor.ril.svlte1x                           u:object_r:vendor_radio_prop:s0
+ro.vendor.ril.svdo                              u:object_r:vendor_radio_prop:s0
 
 # RIL
 vendor.gsm.phoneserial         u:object_r:vendor_nw_exported_system_prop:s0
