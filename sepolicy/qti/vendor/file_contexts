@@ -5,7 +5,6 @@
 /mnt/vendor/dsp/fastrpc_shell_3                                                                                                      u:object_r:public_adsprpcd_file:s0
 /mnt/vendor/persist/camera(/.*)?                                                                                                     u:object_r:vendor_persist_camera_file:s0
 /mnt/vendor/persist/dual_camera_calibration(/.*)?                                                                                    u:object_r:vendor_persist_camera_file:s0
-/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.cammidasservice@1\.0-service                                                       u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libAlgoInterface\.so                                                                                         u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libAlgoProcess\.so                                                                                           u:object_r:same_process_hal_file:s0
 /(odm|vendor/odm)/lib64/libAncSegBaseSdk\.so                                                                                         u:object_r:same_process_hal_file:s0
@@ -114,11 +113,14 @@
 /(vendor|system/vendor)/dsp(/.*)?                                                                                                    u:object_r:adsprpcd_file:s0
 /(vendor|system/vendor)/lib64/android.hardware.graphics.common-V1-ndk\.so                                                            u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib64/android.hardware.graphics.common-V1-ndk_platform\.so                                                   u:object_r:same_process_hal_file:s0
-/(vendor|system/vendor)/lib64/libcamerapostproc\.so                                                                                  u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib(64)?/libcamerapostproc\.so                                                                               u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib64/libipebpsstriping\.so                                                                                  u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib64/libfastcvadsp_stub\.so                                                                                 u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib64/vendor\.qti\.hardware\.camera\.postproc@1\.0-service-impl\.so                                          u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib64/vendor\.qti\.hardware\.camera\.postproc@1\.0\.so                                                       u:object_r:same_process_hal_file:s0
+
+# Cammidasservice
+/(vendor|odm)/bin/hw/vendor.oplus.hardware.cammidasservice@1.0-service                                                               u:object_r:vendor_hal_midas_default_exec:s0
 
 # Charging
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare@1\.0-service\.oplus    u:object_r:hal_lineage_powershare_default_exec:s0

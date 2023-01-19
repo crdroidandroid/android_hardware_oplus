@@ -1,6 +1,7 @@
 # Camera
 type vendor_hal_camera_extension_hwservice, hwservice_manager_type, protected_hwservice;
 type vendor_hal_cameraMDM_hwservice, hwservice_manager_type, protected_hwservice;
+type vendor_hal_midas_hwservice, hwservice_manager_type, protected_hwservice;
 
 # Dolby
 type hal_dms_hwservice, hwservice_manager_type;
