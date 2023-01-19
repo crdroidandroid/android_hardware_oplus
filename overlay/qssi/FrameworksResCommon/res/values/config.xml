@@ -279,8 +279,12 @@
     <!-- Parallel space blocklist -->
     <string-array name="config_parallelSpaceBlocklist">
         <item>com.android.launcher3</item>
+        <item>com.dolby.daxservice</item>
         <item>com.google.android.apps.nexuslauncher</item>
+        <item>com.motorola.dolby.dolbyui</item>
+        <item>org.lineageos.device.DeviceSettings</item>
         <item>org.lineageos.settings.DeviceExtras</item>
+        <item>org.lineageos.settings.device</item>
         <item>org.lineageos.settings.OPlusExtras</item>
     </string-array>
 </resources>
