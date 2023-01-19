@@ -1,0 +1,14 @@
+type vendor_hal_midas_default, domain;
+hal_server_domain(vendor_hal_midas_default, vendor_hal_midas)
+
+type vendor_hal_midas_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_hal_midas_default)
+
+binder_call(vendor_hal_midas_client, vendor_hal_midas_server)
+binder_call(vendor_hal_midas_server, vendor_hal_midas_client)
+
+allow vendor_hal_midas_default vendor_hal_midas_hwservice:hwservice_manager { add find };
+
+allow vendor_hal_midas_default hidl_base_hwservice:hwservice_manager add;
+
+typeattribute vendor_hal_midas_default vendor_hal_midas_client;
