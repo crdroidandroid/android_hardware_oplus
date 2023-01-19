@@ -6,6 +6,8 @@ allow hal_camera_default hal_osense_client_hwservice:hwservice_manager find;
 
 allow hal_camera_default vendor_hal_orms_hwservice:hwservice_manager find;
 
+allow hal_camera_default vendor_hal_midas_hwservice:hwservice_manager { add find };
+
 allow hal_camera_default input_device:chr_file rw_file_perms;
 allow hal_camera_default vendor_tof_device:chr_file rw_file_perms;
 
@@ -23,5 +25,7 @@ allow hal_camera_default public_adsprpcd_file:file r_file_perms;
 
 r_dir_file(hal_camera_default, input_device)
 rw_dir_file(hal_camera_default, vendor_sysfs_tof)
+
+binder_call(hal_camera_default, vendor_hal_midas_default)
 
 set_prop(hal_camera_default, vendor_camera_prop)
