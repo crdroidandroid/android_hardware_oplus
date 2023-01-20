@@ -1,0 +1,16 @@
+type vendor_hal_oplusPerf_default, domain;
+hal_server_domain(vendor_hal_oplusPerf_default, vendor_hal_oplusPerf)
+
+type vendor_hal_oplusPerf_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_hal_oplusPerf_default)
+
+binder_call(vendor_hal_oplusPerf_client, vendor_hal_oplusPerf_server)
+binder_call(vendor_hal_oplusPerf_server, vendor_hal_oplusPerf_client)
+
+hal_attribute_hwservice(vendor_hal_oplusPerf, vendor_hal_oplusPerf_hwservice)
+
+allow vendor_hal_oplusPerf_default hal_fingerprint_default:dir search;
+
+allow vendor_hal_oplusPerf_default hal_audio_default:dir search;
+
+allow vendor_hal_oplusPerf_default proc_version:file r_file_perms;
