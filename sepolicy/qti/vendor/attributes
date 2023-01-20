@@ -1,5 +1,6 @@
 vendor_hal_attribute(cameraMDM)
 vendor_hal_attribute(midas)
+vendor_hal_attribute(oplusPerf)
 vendor_hal_attribute(oplusSensor)
 
 attribute hal_dms;
