@@ -1,6 +1,9 @@
 # Authentication service
 authentication_service                      u:object_r:oem_service:s0
 
+# HoraeService
+horae                                       u:object_r:oem_service:s0
+
 # OPLUSResourceManage service
 OplusResourceManagerService                 u:object_r:oem_service:s0
 
