@@ -373,6 +373,11 @@ int LedVibratorDevice::write_value(const char *file, int value) {
 
 int LedVibratorDevice::on(int32_t timeoutMs) {
     int ret = 0;
+    int gain = 4 + 1.24*timeoutMs;
+        
+    if (gain > 128) {
+         gain = 128;             // 0x80
+    }  
     if (timeoutMs <= 0) {
         return ret;
     } else if (timeoutMs <= 20) {
@@ -385,6 +390,7 @@ int LedVibratorDevice::on(int32_t timeoutMs) {
     ret |= write_value(LED_DEVICE "/state", "1");
     ret |= write_value(LED_DEVICE "/activate", "1");
     ret |= write_value(LED_DEVICE "/activate", "0");
+    ret |= write_value(LED_DEVICE "/gain", gain);
 
     return ret;
 }
