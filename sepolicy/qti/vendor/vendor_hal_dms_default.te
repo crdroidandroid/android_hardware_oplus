@@ -1,0 +1,17 @@
+type vendor_hal_dms_default, domain;
+hal_server_domain(vendor_hal_dms_default, vendor_hal_dms)
+
+type vendor_hal_dms_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(vendor_hal_dms_default)
+
+binder_call(vendor_hal_dms_client, vendor_hal_dms_server)
+binder_call(vendor_hal_dms_server, vendor_hal_dms_client)
+
+hal_attribute_hwservice(vendor_hal_dms, vendor_hal_dms_hwservice)
+
+allow vendor_hal_dms_default vendor_data_file:file { rw_file_perms create unlink };
+allow vendor_hal_dms_default vendor_data_file:dir { rw_file_perms add_name remove_name };
+
+binder_call(vendor_hal_dms_default, hal_audio_default)
+binder_call(vendor_hal_dms_default, platform_app)
+binder_call(vendor_hal_dms_default, mediacodec)

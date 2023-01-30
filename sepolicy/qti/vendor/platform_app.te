@@ -1,5 +1,7 @@
 typeattribute platform_app hal_camera_client;
 
+hal_client_domain(platform_app, vendor_hal_dms)
+
 allow platform_app hal_osense_client_hwservice:hwservice_manager find;
 
 allow platform_app oem_service:service_manager find;
@@ -17,5 +19,7 @@ allow platform_app vendor_xdsp_device:chr_file r_file_perms;
 rw_dir_file(platform_app, vendor_sysfs_battery_supply)
 
 binder_call(platform_app, hal_camera_default)
+
+binder_call(platform_app, vendor_hal_dms_default)
 
 dontaudit platform_app mnt_vendor_file:dir search;
