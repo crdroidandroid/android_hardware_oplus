@@ -33,6 +33,9 @@ type vendor_proc_tee_bind_core, fs_type, proc_type;
 # Sync
 type sysfs_sync, fs_type, sysfs_type;
 
+# Ultrasound
+type vendor_proc_ultrasound, fs_type, proc_type;
+
 # Versioning
 type vendor_proc_oplus_version, fs_type, proc_type;
 

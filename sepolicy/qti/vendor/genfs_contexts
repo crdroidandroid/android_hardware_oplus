@@ -57,6 +57,9 @@ genfscon sysfs /devices/platform/soc/soc:sensor_fb    u:object_r:vendor_sysfs_se
 # TEE
 genfscon proc /tee_bind_core u:object_r:vendor_proc_tee_bind_core:s0
 
+# Ultrasound
+genfscon proc /ultrasound    u:object_r:vendor_proc_ultrasound:s0
+
 # Versioning
 genfscon proc /oplusVersion    u:object_r:vendor_proc_oplus_version:s0
 
