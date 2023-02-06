@@ -1,2 +1,6 @@
 allow mediacodec hal_dms_hwservice:hwservice_manager find;
 binder_call(mediacodec, hal_dms_default)
+
+allow mediacodec property_socket:sock_file write;
+set_prop(mediacodec, vendor_oplus_media_prop)
+

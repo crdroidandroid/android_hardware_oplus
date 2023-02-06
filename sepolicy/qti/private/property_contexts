@@ -7,6 +7,7 @@ oplus.camera.                                         u:object_r:exported_system
 oplus.CTP.Tunningmode                                 u:object_r:exported_system_prop:s0
 persist.bps.debug                                     u:object_r:exported_system_prop:s0
 persist.camera.                                       u:object_r:exported_system_prop:s0
+persist.sys.oplus.                                    u:object_r:exported_system_prop:s0
 persist.vendor.aps.debug.framenum                     u:object_r:exported_system_prop:s0
 persist.vendor.arcsoft.sn.dumprawinfo                 u:object_r:exported_system_prop:s0
 persist.vendor.oplus.rawhdr.dump                      u:object_r:exported_system_prop:s0
@@ -39,6 +40,7 @@ oplus.optical.goodix.fp                               u:object_r:system_fingerpr
 
 # Logging
 persist.sys.assert.panic            u:object_r:exported_system_prop:s0
+persist.sys.debuglog.config         u:object_r:exported_system_prop:s0
 persist.al.cfr.loglevel             u:object_r:exported_system_prop:s0
 persist.sys.log.                    u:object_r:exported_system_prop:s0
 
@@ -47,6 +49,7 @@ persist.sys.enable_modem_dump    u:object_r:exported_system_prop:s0
 
 # Radio
 ro.sys.reserve.integrate    u:object_r:exported_system_prop:s0
+sys.oplus_boot_mode         u:object_r:exported_system_prop:s0
 
 # SVN
 ro.build.version.svn      u:object_r:exported_system_prop:s0
