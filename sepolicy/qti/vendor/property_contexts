@@ -13,7 +13,8 @@ vendor.fingerprint.            u:object_r:vendor_fingerprint_prop:s0
 vendor.modem_dump_action       u:object_r:vendor_modem_prop:s0
 
 # NFC
-vendor.oplus.nfc.fw.version    u:object_r:vendor_nfc_nq_prop:s0
+persist.vendor.nfc.config_file_name    u:object_r:vendor_nfc_prop:s0
+vendor.oplus.nfc.fw.version            u:object_r:vendor_nfc_nq_prop:s0
 
 # Power
 vendor.powerhal.                   u:object_r:vendor_power_prop:s0
