@@ -76,7 +76,7 @@
     <string name="refresh_summary">Configura la frequenza di aggiornamento in base all\'applicazione</string>
     <string name="refresh_default">Predefinito</string>
     <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_extreme">90Hz</string>
     <string name="kcal_settings_title">Kcal</string>
     <string name="kcal_settings_summary">Calibra il display tramite Kcal</string>
     <string name="kcal_settings">Valori regolabili</string>

@@ -61,7 +61,7 @@
     <string name="refresh_summary">Ρύθμιση ρυθμού ανανέωσης ανά εφαρμογή</string>
     <string name="refresh_default">Προεπιλογή</string>
     <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_extreme">90Hz</string>
     <string name="kcal_settings_title">Kcal</string>
     <string name="kcal_settings_summary">Βαθμονόμηση οθόνης μέσω Kcal</string>
     <string name="kcal_settings">Ρυθμιζόμενες τιμές</string>

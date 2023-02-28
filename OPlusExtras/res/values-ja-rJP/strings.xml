@@ -76,7 +76,7 @@
     <string name="refresh_summary">アプリごとの基本リフレッシュレートを設定する</string>
     <string name="refresh_default">既定</string>
     <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_extreme">90Hz</string>
     <string name="kcal_settings_title">KCAL</string>
     <string name="kcal_settings_summary">KCAL による画面のキャリブレーションを行う</string>
     <string name="kcal_settings">調整可能な値</string>

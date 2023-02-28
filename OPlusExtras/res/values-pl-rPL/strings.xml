@@ -76,7 +76,7 @@
     <string name="refresh_summary">Skonfiguruj częstotliwość odświeżania na podstawie aplikacji</string>
     <string name="refresh_default">Domyślne</string>
     <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_extreme">90Hz</string>
     <string name="kcal_settings_title">Kcal</string>
     <string name="kcal_settings_summary">Kalibracja wyświetlacza za pomocą Kcal</string>
     <string name="kcal_settings">Modyfikowalne wartości</string>

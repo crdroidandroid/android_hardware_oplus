@@ -76,7 +76,7 @@
     <string name="refresh_summary">Configurar a taxa de atualização por aplicativo</string>
     <string name="refresh_default">Padrão</string>
     <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_extreme">90Hz</string>
     <string name="kcal_settings_title">Kcal</string>
     <string name="kcal_settings_summary">Calibrar cores da tela</string>
     <string name="kcal_settings">Valores ajustáveis</string>

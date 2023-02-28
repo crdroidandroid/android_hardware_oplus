@@ -76,7 +76,7 @@
     <string name="refresh_summary">Aktualisierungsrate auf pro-App-Basis konfigurieren</string>
     <string name="refresh_default">Standard</string>
     <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_extreme">90Hz</string>
     <string name="kcal_settings_title">KCAL</string>
     <string name="kcal_settings_summary">Display über KCAL kalibrieren</string>
     <string name="kcal_settings">Anpassbare Werte</string>

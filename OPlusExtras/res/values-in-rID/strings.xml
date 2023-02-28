@@ -76,7 +76,7 @@
     <string name="refresh_summary">Konfigurasi kecepatan refresh untuk per aplikasi berbeda</string>
     <string name="refresh_default">Standar</string>
     <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_extreme">90Hz</string>
     <string name="kcal_settings_title">Kcal</string>
     <string name="kcal_settings_summary">Kalibrasi layar lewat Kcal</string>
     <string name="kcal_settings">Nilai yang dapat disesuaikan</string>

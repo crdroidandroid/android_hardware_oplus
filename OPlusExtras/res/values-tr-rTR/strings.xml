@@ -76,7 +76,7 @@
     <string name="refresh_summary">Her bir uygulama için ekran yenileme hızını ayarla</string>
     <string name="refresh_default">Varsayılan</string>
     <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_extreme">90Hz</string>
     <string name="kcal_settings_title">Kcal</string>
     <string name="kcal_settings_summary">Kcal ile görüntüyü kalibre et</string>
     <string name="kcal_settings">Ayarlanabilir değerler</string>

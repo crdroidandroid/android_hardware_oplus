@@ -76,7 +76,7 @@
     <string name="refresh_summary">配置每个应用的刷新率</string>
     <string name="refresh_default">默认</string>
     <string name="refresh_standard">60 Hz</string>
-    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_extreme">90Hz</string>
     <string name="kcal_settings_title">卡尔</string>
     <string name="kcal_settings_summary">通过 Kcal 校准显示</string>
     <string name="kcal_settings">可调整值</string>

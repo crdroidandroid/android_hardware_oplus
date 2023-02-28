@@ -79,7 +79,7 @@
     <string name="refresh_summary">Configure refresh rate on a per-app basis</string>
     <string name="refresh_default">Default</string>
     <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_extreme">90Hz</string>
     <string name="kcal_settings_title">Kcal</string>
     <string name="kcal_settings_summary">Calibrate display via Kcal</string>
     <string name="kcal_settings">Adjustable values</string>
