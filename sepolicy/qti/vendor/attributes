@@ -1,5 +1,2 @@
 vendor_hal_attribute(cameraMDM)
 vendor_hal_attribute(oplusSensor)
-attribute hal_dms;
-attribute hal_dms_client;
-attribute hal_dms_server;

@@ -25,6 +25,3 @@ vendor.oplus.hardware.oplusSensor::ISensorFeature    u:object_r:vendor_hal_oplus
 vendor.oplus.hardware.appradio::IOplusAppRadio    u:object_r:hal_telephony_hwservice:s0
 vendor.oplus.hardware.ims::IOplusImsRadio         u:object_r:hal_telephony_hwservice:s0
 vendor.oplus.hardware.radio::IOplusRadio          u:object_r:hal_telephony_hwservice:s0
-
-# Dolby
-vendor.dolby.hardware.dms::IDms                                            u:object_r:hal_dms_hwservice:s0
