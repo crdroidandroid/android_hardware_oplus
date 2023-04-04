@@ -40,7 +40,7 @@ using namespace android;
 
 constexpr int ALS_POS_X = 650;
 constexpr int ALS_POS_Y = 40;
-constexpr int ALS_RADIUS = 40;
+constexpr int ALS_RADIUS = 64;
 
 static Rect screenshot_rect_0(ALS_POS_X - ALS_RADIUS, ALS_POS_Y - ALS_RADIUS, ALS_POS_X + ALS_RADIUS, ALS_POS_Y + ALS_RADIUS);
 static Rect screenshot_rect_land_90(ALS_POS_Y - ALS_RADIUS, 1080 - ALS_POS_X - ALS_RADIUS, ALS_POS_Y + ALS_RADIUS, 1080 - ALS_POS_X + ALS_RADIUS);
