@@ -6,6 +6,8 @@ allow vendor_qti_init_shell configfs:{
   lnk_file
 } create_file_perms;
 
+create_dir_file(vendor_qti_init_shell, vendor_persist_sensors_file)
+
 allow vendor_qti_init_shell proc_page_cluster:file rw_file_perms;
 allow vendor_qti_init_shell proc_watermark_scale_factor:file w_file_perms;
 allow vendor_qti_init_shell sysfs:file w_file_perms;

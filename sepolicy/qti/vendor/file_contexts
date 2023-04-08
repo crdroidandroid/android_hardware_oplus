@@ -29,7 +29,8 @@
 /mnt/vendor/persist/fingerprint(/.*)?                                                            u:object_r:vendor_persist_fingerprint_file:s0
 
 # Init
-/(odm|vendor/odm)/bin/init\.oplus\.sh    u:object_r:vendor_qti_init_shell_exec:s0
+/(odm|vendor/odm)/bin/init\.oplus\.sh          u:object_r:vendor_qti_init_shell_exec:s0
+/(odm|vendor/odm)/bin/sensor_recover\.sh       u:object_r:vendor_qti_init_shell_exec:s0
 
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.oplus                                                 u:object_r:hal_light_default_exec:s0
