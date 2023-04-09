@@ -1,8 +1,5 @@
 allow vendor_mdm_helper vendor_modem_efs_partition_device:blk_file rw_file_perms;
 
-# Allow mdm_helper to execute /vendor/bin/ks
-allow vendor_mdm_helper ks_exec:file execute_no_trans;
-
 # Needed to allow boot over PCIe
 allow vendor_mdm_helper vendor_mhi_device:chr_file rw_file_perms;
 
@@ -19,3 +16,5 @@ allow vendor_mdm_helper vendor_radio_prop:file { read };
 
 get_prop(vendor_mdm_helper, vendor_radio_prop)
 set_prop(vendor_mdm_helper, vendor_modem_prop)
+allow vendor_mdm_helper tmpfs:dir { write };
+allow vendor_mdm_helper mnt_vendor_file:dir { write };
