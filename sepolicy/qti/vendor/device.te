@@ -15,3 +15,6 @@ type ultrasound_device, dev_type;
 
 # Wlchgmonitor
 type wlchg_device, dev_type;
+
+# Modem
+type efs_boot_device, dev_type;

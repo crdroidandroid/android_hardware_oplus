@@ -1,5 +1,15 @@
 allow vendor_mdm_helper vendor_modem_efs_partition_device:blk_file rw_file_perms;
 
+# Allow mdm_helper to execute /vendor/bin/ks
+allow vendor_mdm_helper ks_exec:file execute_no_trans;
+
+# Needed to allow boot over PCIe
+allow vendor_mdm_helper vendor_mhi_device:chr_file rw_file_perms;
+
+#Needed by ks in order to access the efs sync partitions
+allow vendor_mdm_helper block_device:dir r_dir_perms;
+allow vendor_mdm_helper efs_boot_device:blk_file r_file_perms;
+
 r_dir_file(vendor_mdm_helper, mnt_vendor_file)
 r_dir_file(vendor_mdm_helper, vendor_proc_engineer)
 r_dir_file(vendor_mdm_helper, vendor_proc_oplus_version)
