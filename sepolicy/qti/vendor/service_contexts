@@ -16,3 +16,9 @@ OplusResourceManagerService                 u:object_r:oem_service:s0
 
 # OPLUSoiface
 oplusoiface                                 u:object_r:oem_service:s0
+
+# OsenseAidl
+vendor.oplus.hardware.osense.client.IOsenseAidlHalReporter/default            u:object_r:oem_service:s0
+
+# Performance
+vendor.oplus.hardware.performance.IPerformance/default                        u:object_r:oem_service:s0

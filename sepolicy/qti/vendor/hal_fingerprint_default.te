@@ -9,6 +9,8 @@ allow hal_fingerprint_default fingerprint_device:chr_file rw_file_perms;
 allow hal_fingerprint_default graphics_device:chr_file rw_file_perms;
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 
+allow hal_fingerprint_default oem_service:service_manager find;
+
 hal_client_domain(hal_fingerprint_default, vendor_hal_oplusPerf)
 
 rw_dir_file(hal_fingerprint_default, vendor_proc_display)

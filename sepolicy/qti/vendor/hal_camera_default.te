@@ -11,6 +11,8 @@ allow hal_camera_default vendor_hal_midas_hwservice:hwservice_manager { add find
 allow hal_camera_default input_device:chr_file rw_file_perms;
 allow hal_camera_default vendor_tof_device:chr_file rw_file_perms;
 
+allow hal_camera_default oem_service:service_manager find;
+
 allow hal_camera_default cgroup:file rw_file_perms;
 allow hal_camera_default vendor_data_file:file rw_file_perms;
 
