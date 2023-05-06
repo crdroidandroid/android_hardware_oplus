@@ -1,5 +1,0 @@
-java_import {
-    name: "particles",
-    jars: ["LeonidsLib.jar"],
-    sdk_version: "29",
-}
