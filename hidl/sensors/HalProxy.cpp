@@ -19,6 +19,7 @@
 #include <android/hardware/sensors/2.0/types.h>
 
 #include <android-base/file.h>
+#include <android-base/properties.h>
 #include "hardware_legacy/power.h"
 
 #include <dlfcn.h>
@@ -45,6 +46,9 @@ typedef V2_0::implementation::ISensorsSubHal*(SensorsHalGetSubHalFunc)(uint32_t*
 typedef V2_1::implementation::ISensorsSubHal*(SensorsHalGetSubHalV2_1Func)(uint32_t*);
 
 static constexpr int32_t kBitsAfterSubHalIndex = 24;
+
+static std::string SENSOR_PROP_PICKUP = "vendor.sensor.hal.pickup";
+static std::string DEFAULT_PICKUP_SENSOR = "android.sensor.tilt_detector";
 
 /**
  * Set the subhal index as first byte of sensor handle and return this modified version.
@@ -82,8 +86,7 @@ int64_t msFromNs(int64_t nanos) {
 }
 
 bool patchOplusPickupSensor(V2_1::SensorInfo& sensor) {
-    if (sensor.typeAsString != "android.sensor.tilt_detector"
-                 || sensor.typeAsString != "oneplus.sensor.op_motion_detect") {
+    if (sensor.typeAsString != android::base::GetProperty(SENSOR_PROP_PICKUP, DEFAULT_PICKUP_SENSOR)) {
         return true;
     }
 
