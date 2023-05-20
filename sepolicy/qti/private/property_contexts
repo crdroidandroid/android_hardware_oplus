@@ -1,10 +1,14 @@
 # Bluetooth
 persist.sys.bt.a2dp.pendingtime                  u:object_r:exported_system_prop:s0
 
+# Autotest
+persist.sys.oplus.autotest.monkeyRunning         u:object_r:exported_system_prop:s0
+
 # Camera
 NA                                               u:object_r:exported_system_prop:s0
 oplus.camera.                                    u:object_r:exported_system_prop:s0
 oppo.camera.                                     u:object_r:exported_system_prop:s0
+persist.sys.camera.lao.enable                    u:object_r:exported_system_prop:s0
 oplus.CTP.Tunningmode                            u:object_r:exported_system_prop:s0
 persist.bps.debug                                u:object_r:exported_system_prop:s0
 persist.camera.                                  u:object_r:exported_system_prop:s0
@@ -38,6 +42,8 @@ ro.hardware.chipname            u:object_r:exported_default_prop:s0
 
 # Logging
 persist.sys.assert.panic            u:object_r:exported_system_prop:s0
+persist.sys.camera.log.scene        u:object_r:exported_system_prop:s0
+persist.sys.debuglog.config         u:object_r:exported_system_prop:s0
 persist.sys.log.                    u:object_r:exported_system_prop:s0
 sys.oppo_ftm_mode                   u:object_r:exported_system_prop:s0
 
