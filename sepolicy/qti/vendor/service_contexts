@@ -14,3 +14,10 @@ vendor.qti.hardware.radio.qtiradio.IQtiRadioStable/slot1    u:object_r:vendor_ha
 vendor.qti.hardware.radio.qtiradio.IQtiRadioStable/slot2    u:object_r:vendor_hal_telephony_service:s0
 vendor.qti.hardware.radio.am.IQcRilAudio/slot1              u:object_r:vendor_hal_telephony_service:s0
 vendor.qti.hardware.radio.am.IQcRilAudio/slot2              u:object_r:vendor_hal_telephony_service:s0
+
+# Camera
+vendor.oplus.hardware.cameraextension.ICameraExtensionService/default    u:object_r:hal_camera_service:s0
+vendor.oplus.hardware.cammidasservice.IMIDASService/default              u:object_r:hal_camera_service:s0
+
+# Fingerprint
+vendor.oplus.hardware.commondcs.ICommonDcsAidlHalService/default    u:object_r:hal_fingerprint_service:s0
