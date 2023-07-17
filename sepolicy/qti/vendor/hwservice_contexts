@@ -22,6 +22,9 @@ vendor.oplus.hardware.biometrics.fingerprint::IBiometricsFingerprint    u:object
 vendor.oplus.hardware.commondcs::ICommonDcsHalService                   u:object_r:hal_fingerprint_hwservice:s0
 vendor.oplus.hardware.touch::IOplusTouch                                u:object_r:hal_fingerprint_hwservice:s0
 
+# Health
+vendor.oplus.hardware.charger::ICharger     u:object_r:hal_health_hwservice:s0
+
 # NFC
 vendor.nxp.eventprocessor::INxpEseEvtProcessor    u:object_r:hal_nfc_hwservice:s0
 vendor.nxp.nxpese::INxpEse                        u:object_r:hal_nfc_hwservice:s0
