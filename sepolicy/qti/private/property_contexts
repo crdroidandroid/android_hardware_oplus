@@ -32,6 +32,7 @@ sys.oplus.high.performance  u:object_r:exported_system_prop:s0
 
 # Radio
 ro.sys.reserve.integrate    u:object_r:exported_system_prop:s0
+sys.oplus_boot_mode         u:object_r:exported_system_prop:s0
 
 # SVN
 ro.build.version.svn      u:object_r:exported_system_prop:s0
