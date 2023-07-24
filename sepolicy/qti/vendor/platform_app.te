@@ -18,3 +18,5 @@ allow platform_app vendor_sysfs_msm_subsys:dir search;
 r_dir_file(platform_app, sysfs_dm)
 
 r_dir_file(platform_app, vendor_sysfs_sde_crtc)
+
+allow platform_app selinuxfs:file r_file_perms;
