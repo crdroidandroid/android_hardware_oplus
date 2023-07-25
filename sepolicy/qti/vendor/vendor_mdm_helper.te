@@ -1,5 +1,7 @@
 allow vendor_mdm_helper vendor_modem_efs_partition_device:blk_file rw_file_perms;
 
+allow vendor_mdm_helper vendor_sysfs_soc_sensitive:file r_file_perms;
+
 # Needed to allow boot over PCIe
 allow vendor_mdm_helper vendor_mhi_device:chr_file rw_file_perms;
 
