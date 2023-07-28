@@ -1,6 +1,9 @@
 # Alert Slider
 genfscon proc /tristatekey    u:object_r:vendor_proc_tri_state_key:s0
 
+# Audio
+genfscon proc /mm_fb    u:object_r:vendor_proc_audio:s0
+
 # Camera
 genfscon proc /boost_pool    u:object_r:vendor_proc_camera:s0
 
