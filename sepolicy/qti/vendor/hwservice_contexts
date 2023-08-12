@@ -9,6 +9,9 @@ vendor.oplus.hardware.sendextcamcmd::ISendExtCamCmdService             u:object_
 vendor.qti.hardware.camera.cameraextension::ICameraExtensionService    u:object_r:vendor_hal_camera_extension_hwservice:s0
 vendor.zeku.hardware.explorer::IMmsProvider                            u:object_r:vendor_hal_explorer_hwservice:s0
 
+# Charger
+vendor.oplus.hardware.charger::ICharger             u:object_r:vendor_hal_charger_hwservice:s0
+
 # CommonDcs
 vendor.oplus.hardware.commondcs::ICommonDcsHalService    u:object_r:vendor_hal_commondcs_hwservice:s0
 
