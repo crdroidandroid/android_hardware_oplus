@@ -42,6 +42,14 @@ constexpr int ALS_POS_X = 650;
 constexpr int ALS_POS_Y = 40;
 constexpr int ALS_RADIUS = 64;
 
+// See frameworks/base/services/core/jni/com_android_server_display_DisplayControl.cpp and
+// frameworks/base/core/java/android/view/SurfaceControl.java
+static sp<IBinder> getInternalDisplayToken() {
+    const auto displayIds = SurfaceComposerClient::getPhysicalDisplayIds();
+    sp<IBinder> token = SurfaceComposerClient::getPhysicalDisplayToken(displayIds[0]);
+    return token;
+}
+
 static Rect screenshot_rect_0(ALS_POS_X - ALS_RADIUS, ALS_POS_Y - ALS_RADIUS, ALS_POS_X + ALS_RADIUS, ALS_POS_Y + ALS_RADIUS);
 static Rect screenshot_rect_land_90(ALS_POS_Y - ALS_RADIUS, 1080 - ALS_POS_X - ALS_RADIUS, ALS_POS_Y + ALS_RADIUS, 1080 - ALS_POS_X + ALS_RADIUS);
 static Rect screenshot_rect_180(1080-ALS_POS_X - ALS_RADIUS, 2400-ALS_POS_Y - ALS_RADIUS, 1080-ALS_POS_X + ALS_RADIUS, 2400-ALS_POS_Y + ALS_RADIUS);
@@ -64,7 +72,7 @@ class TakeScreenshotCommand : public FrameworkCommand {
     };
 
     screenshot_t takeScreenshot() {
-        sp<IBinder> display = SurfaceComposerClient::getInternalDisplayToken();
+ sp<IBinder> display = getInternalDisplayToken();
 
         android::ui::DisplayState state;
         SurfaceComposerClient::getDisplayState(display, &state);
@@ -97,10 +105,6 @@ class TakeScreenshotCommand : public FrameworkCommand {
         captureArgs.height = screenshot_rect.getHeight();
         captureArgs.useIdentityTransform = false;
         status_t ret = ScreenshotClient::captureDisplay(captureArgs, captureListener);
-        if (ret == NO_ERROR) {
-            captureResults = captureListener->waitForResults();
-            if (captureResults.result == NO_ERROR)  outBuffer = captureResults.buffer;
-        }
 
         uint8_t *out;
         auto resultWidth = outBuffer->getWidth();
