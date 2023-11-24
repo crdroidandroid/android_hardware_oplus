@@ -13,3 +13,6 @@ allow platform_app hal_dms_hwservice:hwservice_manager find;
 binder_call(platform_app, hal_dms_default)
 
 allow platform_app vendor_sysfs_msm_subsys:dir search;
+
+# OPlusExtras
+r_dir_file(platform_app, sysfs_dm)
