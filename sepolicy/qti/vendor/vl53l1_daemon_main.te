@@ -10,7 +10,7 @@ allow vl53l1_daemon_main self:{
 } create_socket_perms_no_ioctl;
 
 allow vl53l1_daemon_main self:netlink_iscsi_socket { read write create bind };
-
+allow vl53l1_daemon_main self:capability net_admin;
 allow vl53l1_daemon_main sysfs:file r_file_perms;
 
 r_dir_file(vl53l1_daemon_main, vendor_persist_camera_file)
