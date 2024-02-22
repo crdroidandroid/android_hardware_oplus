@@ -28,3 +28,4 @@ rw_dir_file(system_app, vendor_sysfs_graphics)
 rw_dir_file(system_app, vendor_sysfs_kgsl)
 rw_dir_file(system_app, vendor_sysfs_msm_perf)
 allow system_app vendor_sysfs_msm_subsys:dir search;
+allow system_app vendor_sysfs_sde_crtc:dir search;
