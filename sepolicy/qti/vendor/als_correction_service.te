@@ -1,2 +1,0 @@
-allow als_correction_service gpu_device:chr_file rw_file_perms;
-allow als_correction_service vendor_sysfs_msm_subsys:dir search;
