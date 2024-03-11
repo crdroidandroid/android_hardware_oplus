@@ -89,7 +89,7 @@ class TakeScreenshotCommand : public FrameworkCommand {
         }
 
         sp<SyncScreenCaptureListener> captureListener = new SyncScreenCaptureListener();
-        gui::ScreenCaptureResults captureResults;        
+        gui::ScreenCaptureResults captureResults;
 
         static sp<GraphicBuffer> outBuffer = new GraphicBuffer(
         screenshot_rect.getWidth(), screenshot_rect.getHeight(),
@@ -103,7 +103,6 @@ class TakeScreenshotCommand : public FrameworkCommand {
         captureArgs.sourceCrop = screenshot_rect;
         captureArgs.width = screenshot_rect.getWidth();
         captureArgs.height = screenshot_rect.getHeight();
-        captureArgs.useIdentityTransform = false;
         status_t ret = ScreenshotClient::captureDisplay(captureArgs, captureListener);
 
         uint8_t *out;
