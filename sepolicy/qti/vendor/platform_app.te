@@ -16,3 +16,5 @@ allow platform_app vendor_sysfs_msm_subsys:dir search;
 
 # OPlusExtras
 r_dir_file(platform_app, sysfs_dm)
+
+r_dir_file(platform_app, vendor_sysfs_sde_crtc)
