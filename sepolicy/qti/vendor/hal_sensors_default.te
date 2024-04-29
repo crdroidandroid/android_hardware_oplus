@@ -7,6 +7,8 @@ get_prop(hal_sensors_default, vendor_sensors_als_prop)
 
 hal_client_domain(hal_sensors_default, hal_lineage_oplus_als)
 
+binder_call(hal_sensors_default, system_server)
+
 r_dir_file(hal_sensors_default, vendor_proc_eng_cali_file)
 r_dir_file(hal_sensors_default, vendor_proc_oplus_als_file)
 r_dir_file(hal_sensors_default, vendor_proc_ultrasound)
