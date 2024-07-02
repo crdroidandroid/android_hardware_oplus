@@ -1,0 +1,2 @@
+allow vendor_hal_usb_qti vendor_sysfs_usb_controller:dir search;
+allow vendor_hal_usb_qti vendor_sysfs_usb_controller:file r_file_perms;
