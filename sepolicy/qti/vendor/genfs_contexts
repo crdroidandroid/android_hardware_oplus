@@ -76,8 +76,6 @@ genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-7/7-005a/leds/vibrator    u:
 
 # Wakeup (https://lkml.org/lkml/2019/8/6/1275)
 genfscon sysfs /devices/0306_02.01.00/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/dummy_hcd.0/usb1/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys6/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/188101c.qcom,spss/subsys5/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/188101c.qcom,spss/wakeup u:object_r:sysfs_wakeup:s0
@@ -133,15 +131,4 @@ genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys0/wakeup u:object_r:
 genfscon sysfs /devices/platform/soc/soc:qcom,ipa_uc/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys3/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink_log/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-dsps/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-modem/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-npu/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-nsp/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-cdsp/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys2/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/virtual/diag/diag/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/virtual/fastrpc/adsprpc-smd-secure/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/virtual/fastrpc/adsprpc-smd/wakeup u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/vendor/vendor:extcon_usb1/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/wakeup/wakeup u:object_r:sysfs_wakeup:s0
