@@ -18,3 +18,5 @@ r_dir_file(vendor_hal_oplusSensor_default, vendor_persist_sensors_file)
 r_dir_file(vendor_hal_oplusSensor_default, vendor_proc_oplus_version)
 rw_dir_file(vendor_hal_oplusSensor_default, vendor_proc_eng_cali_file)
 rw_dir_file(vendor_hal_oplusSensor_default, vendor_proc_oplus_als_file)
+
+allow vendor_hal_oplusSensor_default block_device:dir search;
