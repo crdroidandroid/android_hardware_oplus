@@ -1,4 +1,5 @@
 # Autotest
+oplus.autotest.                             u:object_r:exported_system_prop:s0
 persist.sys.oplus.autotest.monkeyRunning    u:object_r:exported_system_prop:s0
 
 # Bluetooth
