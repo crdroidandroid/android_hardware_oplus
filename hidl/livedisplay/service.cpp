@@ -20,6 +20,7 @@
 #include <binder/ProcessState.h>
 #include <hidl/HidlTransportSupport.h>
 #include <livedisplay/oplus/SunlightEnhancement.h>
+#include <livedisplay/oplus/AntiFlicker.h>
 #include <livedisplay/sdm/PictureAdjustment.h>
 #include <vendor/lineage/livedisplay/2.1/IPictureAdjustment.h>
 
@@ -34,6 +35,8 @@ using ::vendor::lineage::livedisplay::V2_0::sdm::SDMController;
 using ::vendor::lineage::livedisplay::V2_1::IPictureAdjustment;
 using ::vendor::lineage::livedisplay::V2_1::ISunlightEnhancement;
 using ::vendor::lineage::livedisplay::V2_1::implementation::SunlightEnhancement;
+using ::vendor::lineage::livedisplay::V2_1::IAntiFlicker;
+using ::vendor::lineage::livedisplay::V2_1::implementation::AntiFlicker;
 
 int main() {
     status_t status = OK;
@@ -46,6 +49,7 @@ int main() {
 
     sp<PictureAdjustment> pa = new PictureAdjustment(controller);
     sp<SunlightEnhancement> se = new SunlightEnhancement();
+    sp<AntiFlicker> af = new AntiFlicker();
 
     configureRpcThreadpool(1, true /*callerWillJoin*/);
 
@@ -59,6 +63,12 @@ int main() {
     status = se->registerAsService();
     if (status != OK) {
         LOG(WARNING) << "Could not register service for LiveDisplay HAL SunlightEnhancement Iface ("
+                     << status << ")";
+    }
+
+    status = af->registerAsService();
+    if (status != OK) {
+        LOG(WARNING) << "Could not register service for AntiFlicker HAL SunlightEnhancement Iface ("
                      << status << ")";
     }
 
