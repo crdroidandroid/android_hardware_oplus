@@ -15,7 +15,7 @@
  */
 
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.oplus"
-
+#include <android-base/logging.h>
 #include "BiometricsFingerprint.h"
 
 namespace android {
@@ -44,6 +44,7 @@ Return<uint64_t> BiometricsFingerprint::preEnroll() {
 
 Return<RequestStatus> BiometricsFingerprint::enroll(const hidl_array<uint8_t, 69>& hat,
                                                     uint32_t gid, uint32_t timeoutSec) {
+    setDimlayerHbm(1);                                                   
     return mOplusBiometricsFingerprint->enroll(hat, gid, timeoutSec);
 }
 
