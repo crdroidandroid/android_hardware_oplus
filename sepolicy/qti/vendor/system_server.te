@@ -1,2 +1,3 @@
 rw_dir_file(system_server, vendor_proc_oplus_scheduler)
 rw_dir_file(system_server, vendor_proc_tri_state_key)
+allow system_server vendor_proc_charger:dir search;
