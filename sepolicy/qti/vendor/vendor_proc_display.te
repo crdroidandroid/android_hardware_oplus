@@ -1,0 +1,1 @@
+allow vendor_proc_display proc:filesystem associate;
