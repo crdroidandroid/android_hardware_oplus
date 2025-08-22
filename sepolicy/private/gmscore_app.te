@@ -1,0 +1,1 @@
+dontaudit gmscore_app system_adbd_prop:file { read open getattr map };
