@@ -82,6 +82,17 @@ genfscon sysfs /module/stmvl53l1      u:object_r:vendor_sysfs_tof:s0
 # Touch
 genfscon proc /bus/input/devices    u:object_r:proc_bus_input:s0
 
+# Torch
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:torch_0/brightness          u:object_r:sysfs_torch:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:torch_0/max_brightness      u:object_r:sysfs_torch:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:torch_1/brightness          u:object_r:sysfs_torch:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:torch_1/max_brightness      u:object_r:sysfs_torch:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:switch_0/brightness         u:object_r:sysfs_torch:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:switch_1/brightness         u:object_r:sysfs_torch:s0
+
+# FPS info
+genfscon sysfs /class/drm/card0/sde-crtc-0/measured_fps    u:object_r:vendor_sysfs_graphics:s0
+
 # Ultrasound
 genfscon proc /ultrasound    u:object_r:vendor_proc_ultrasound:s0
 
