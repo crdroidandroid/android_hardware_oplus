@@ -1,6 +1,9 @@
 # Battery Health
 r_dir_file(system_app, vendor_sysfs_usb_supply)
 
+# LTPO Settings
+rw_dir_file(system_app, vendor_sysfs_graphics)
+
 # Gamespace
 r_dir_file(system_app, vendor_sysfs_sde_crtc)
 
