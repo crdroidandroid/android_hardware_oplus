@@ -1,0 +1,24 @@
+//
+// Copyright (C) 2025 crDroid Android Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "OplusLtpo",
+
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    certificate: "platform",
+    platform_apis: true,
+    system_ext_specific: true,
+    privileged: true,
+
+    static_libs: [
+        "SettingsLib",
+    ],
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+}
