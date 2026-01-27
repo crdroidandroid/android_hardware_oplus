@@ -9,6 +9,12 @@ type vendor_hal_commondcs_hwservice, hwservice_manager_type, protected_hwservice
 # Dolby
 type hal_dms_hwservice, hwservice_manager_type;
 
+# NFC
+type hal_nxpnfc_hwservice, hwservice_manager_type;
+type hal_nxpese_hwservice, hwservice_manager_type;
+type nxpnfc_hwservice, hwservice_manager_type;
+type nxpese_hwservice, hwservice_manager_type;
+
 # ORMS
 type vendor_hal_orms_hwservice, hwservice_manager_type, protected_hwservice;
 
