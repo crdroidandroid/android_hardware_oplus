@@ -27,6 +27,10 @@ vendor.oplus.hardware.biometrics.face::IBiometricsFace    u:object_r:vendor_hal_
 # Fingerprint
 vendor.oplus.hardware.biometrics.fingerprint::IBiometricsFingerprint    u:object_r:hal_fingerprint_hwservice:s0
 
+# NFC
+vendor.nxp.nxpnfc::INxpNfc    u:object_r:hal_nfc_hwservice:s0
+vendor.nxp.nxpese::INxpEse    u:object_r:hal_nxpese_hwservice:s0
+
 # ORMS
 vendor.oplus.hardware.orms::IOrmsHalProxy    u:object_r:vendor_hal_orms_hwservice:s0
 
