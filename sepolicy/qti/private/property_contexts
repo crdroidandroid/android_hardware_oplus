@@ -1,4 +1,7 @@
 # Audio
+audio.sys.mute.latency.factor           u:object_r:exported_system_prop:s0
+audio.sys.noisy.broadcast.delay         u:object_r:exported_system_prop:s0
+audio.sys.offload.pstimeout.secs        u:object_r:exported_system_prop:s0
 ro.oplus.audio.aidl_volume    u:object_r:exported_system_prop:s0
 sys.oplus_ftm_mode            u:object_r:exported_system_prop:s0
 
