@@ -31,7 +31,25 @@ public class OplusFeatureConfigManager {
         return !TextUtils.isEmpty(SystemProperties.get("ro.oplus.version.base"));
     }
 
+    public boolean registerFeatureActionObserver(OnFeatureActionObserver observer) {
+        return false;
+    }
+
+    public boolean unregisterFeatureActionObserver(OnFeatureActionObserver observer) {
+        return false;
+    }
+
     public interface OnFeatureObserver {
         default void onFeatureUpdate(List<String> features) {}
     }
+
+    public interface OnFeatureActionObserver {
+        default void onFeaturesActionUpdate(String action, String actionValue, int featureID) {}
+    }
+
+    public interface OnFeatureMapObserver {
+        default void onFeatureUpdate(List<String> list, int featureID) {}
+    }
+
+
 }
