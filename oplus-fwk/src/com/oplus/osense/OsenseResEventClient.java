@@ -2,6 +2,7 @@ package com.oplus.osense;
 
 import com.oplus.osense.eventinfo.EventConfig;
 import com.oplus.osense.eventinfo.OsenseEventCallback;
+import android.os.Bundle;
 
 public class OsenseResEventClient {
 
@@ -20,5 +21,9 @@ public class OsenseResEventClient {
 
     public int unregisterEventCallback(OsenseEventCallback callback, EventConfig eventConfig) {
         return 0;
+    }
+
+    public void requestSceneAction(Bundle bundle) {
+        return;
     }
 }
