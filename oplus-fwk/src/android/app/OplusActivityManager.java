@@ -95,4 +95,38 @@ public class OplusActivityManager extends OplusBaseActivityManager implements IO
             reply.recycle();
         }
     }
+
+    public java.util.List<String> getGlobalPkgWhiteList(int type) throws android.os.RemoteException {
+        return new java.util.ArrayList<>();
+    }
+
+    public java.util.List<String> getStageProtectListFromPkg(String callerPkg, int type) throws android.os.RemoteException {
+        return new java.util.ArrayList<>();
+    }
+
+    public java.util.List<String> getStageProtectListFromPkgAsUser(String callerPkg, int type, int userId) throws android.os.RemoteException {
+        return new java.util.ArrayList<>();
+    }
+
+    public java.util.List<String> getStageProtectList(int type) throws android.os.RemoteException {
+        return new java.util.ArrayList<>();
+    }
+
+    public java.util.List<String> getStageProtectListAsUser(int type, int userId) throws android.os.RemoteException {
+        return new java.util.ArrayList<>();
+    }
+
+    public java.util.List<String> getGlobalProcessWhiteList() throws android.os.RemoteException {
+        return new java.util.ArrayList<>();
+    }
+
+    public void addStageProtectInfo(String callerPkg, String pkg, java.util.List<String> processList, String reason, long timeout, com.oplus.app.IOplusProtectConnection connection) throws android.os.RemoteException {
+    }
+
+    public void removeStageProtectInfo(String pkg, String callerPkg) throws android.os.RemoteException {
+    }
+
+    public boolean registerTaskInfoChangeListener(com.oplus.app.OplusTaskInfoChangeListener listener, int arg1, int arg2) {
+        return true;
+    }
 }
