@@ -184,7 +184,6 @@ public final class OplusCameraManager implements IOplusCameraManager {
         if (context == null) {
             throw new IllegalArgumentException("context was null");
         }
-        context.enforceCallingOrSelfPermission(PERMISSION_SAFE_CAMERA, TAG);
         try {
             OplusCameraManagerGlobal.get().sendOplusExtCamCmd(context.getOpPackageName(), cmd, param);
         } catch (CameraAccessException e) {
