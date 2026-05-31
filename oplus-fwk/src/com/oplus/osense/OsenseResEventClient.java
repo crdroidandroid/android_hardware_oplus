@@ -26,4 +26,8 @@ public class OsenseResEventClient {
     public void requestSceneAction(Bundle bundle) {
         return;
     }
+
+    public int requestInstantCpuLoad() {
+        return 0;
+    }
 }
