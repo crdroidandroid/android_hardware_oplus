@@ -397,29 +397,26 @@ public final class OplusCameraManager implements IOplusCameraManager {
     }
 
     public static <T> T metaDataValueConvert(CaptureResult.Key<T> key, int i, byte[] bArr) {
-        final String TAG = "OplusCameraManagerExt";
-        android.util.Log.d(TAG, "metaDataValueConvert: key=" + (key != null ? key.getName() : "null")
-                + " nativeType=" + i + " data.length=" + (bArr != null ? bArr.length : 0));
+        final String TAG = "OplusCameraManager";
         try {
             T result = (T) MarshalRegistry.getMarshaler(key.getNativeKey().getTypeReference(), i)
                     .unmarshal(ByteBuffer.wrap(bArr).order(ByteOrder.nativeOrder()));
-            android.util.Log.d(TAG, "metaDataValueConvert OK key=" + key.getName() + " result=" + result);
+            android.util.Log.d(TAG, "metaDataValueConvert OK");
             return result;
         } catch (Throwable t) {
-            android.util.Log.e(TAG, "metaDataValueConvert FAIL key=" + (key != null ? key.getName() : "null"), t);
+            android.util.Log.e(TAG, "metaDataValueConvert FAIL");
             throw t; // rethrow the original exception
         }
     }
 
     public static int getMetadataTag(CaptureResult.Key key) {
-        final String TAG = "OplusCameraManagerExt";
-        android.util.Log.d(TAG, "getMetadataTag: key=" + (key != null ? key.getName() : "null"));
+        final String TAG = "OplusCameraManager";
         try {
             int tag = key.getNativeKey().getTag();
-            android.util.Log.d(TAG, "getMetadataTag OK key=" + key.getName() + " tag=" + tag);
+            android.util.Log.d(TAG, "getMetadataTag OK");
             return tag;
         } catch (Throwable t) {
-            android.util.Log.e(TAG, "getMetadataTag FAIL key=" + (key != null ? key.getName() : "null"), t);
+            android.util.Log.e(TAG, "getMetadataTag FAIL");
             throw t;
         }
     }
