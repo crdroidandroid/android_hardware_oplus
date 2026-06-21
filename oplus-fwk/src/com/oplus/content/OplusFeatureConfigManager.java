@@ -4,10 +4,13 @@ import android.os.SystemProperties;
 import android.text.TextUtils;
 
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class OplusFeatureConfigManager {
 
     public static OplusFeatureConfigManager sOplusFeatureConfigManager = null;
+
+    public final List<OnFeatureActionObserver> observers = new CopyOnWriteArrayList<>();
 
     public static OplusFeatureConfigManager getInstance() {
         if (sOplusFeatureConfigManager == null) {
@@ -32,11 +35,15 @@ public class OplusFeatureConfigManager {
     }
 
     public boolean registerFeatureActionObserver(OnFeatureActionObserver observer) {
+        if (observer != null) {
+            observers.add(observer);
+            return true;
+        }
         return false;
     }
 
     public boolean unregisterFeatureActionObserver(OnFeatureActionObserver observer) {
-        return false;
+        return observers.remove(observer);
     }
 
     public interface OnFeatureObserver {
@@ -50,6 +57,4 @@ public class OplusFeatureConfigManager {
     public interface OnFeatureMapObserver {
         default void onFeatureUpdate(List<String> list, int featureID) {}
     }
-
-
 }
