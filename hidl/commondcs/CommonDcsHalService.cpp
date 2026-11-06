@@ -12,7 +12,9 @@ namespace commondcs {
 namespace V1_0 {
 namespace implementation {
 
-Return<int32_t> CommonDcsHalService::notifyMsgToCommonDcs(const hidl_vec<::vendor::oplus::hardware::commondcs::V1_0::StringPair>& data, const hidl_string& logTag, const hidl_string& eventId) {
+Return<int32_t> CommonDcsHalService::notifyMsgToCommonDcs(
+        const hidl_vec<::vendor::oplus::hardware::commondcs::V1_0::StringPair>& data,
+        const hidl_string& logTag, const hidl_string& eventId) {
     return 0;
 }
 

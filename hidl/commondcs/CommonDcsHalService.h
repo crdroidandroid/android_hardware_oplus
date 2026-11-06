@@ -5,9 +5,9 @@
 
 #pragma once
 
-#include <vendor/oplus/hardware/commondcs/1.0/ICommonDcsHalService.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
+#include <vendor/oplus/hardware/commondcs/1.0/ICommonDcsHalService.h>
 
 namespace vendor {
 namespace oplus {
@@ -21,7 +21,9 @@ using ::android::hardware::hidl_vec;
 using ::android::hardware::Return;
 
 struct CommonDcsHalService : public ICommonDcsHalService {
-    Return<int32_t> notifyMsgToCommonDcs(const hidl_vec<::vendor::oplus::hardware::commondcs::V1_0::StringPair>& data, const hidl_string& logTag, const hidl_string& eventId) override;
+    Return<int32_t> notifyMsgToCommonDcs(
+            const hidl_vec<::vendor::oplus::hardware::commondcs::V1_0::StringPair>& data,
+            const hidl_string& logTag, const hidl_string& eventId) override;
 };
 
 }  // namespace implementation
