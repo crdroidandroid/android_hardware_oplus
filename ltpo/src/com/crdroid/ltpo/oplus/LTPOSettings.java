@@ -44,6 +44,7 @@ public class LTPOSettings extends SettingsBasePreferenceFragment
     private static final String KEY_LTPO_SWITCH = "ltpo_enabled";
 
     private static final String FILE_LTPO = "/sys/kernel/oplus_display/adfr_config";
+    private static final String FILE_MIN_FPS = "/sys/kernel/oplus_display/min_fps";
 
     private SwitchPreferenceCompat mLTPOSwitch;
 
@@ -71,7 +72,10 @@ public class LTPOSettings extends SettingsBasePreferenceFragment
             boolean enabled = (Boolean) newValue;
             SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());
             sharedPrefs.edit().putBoolean(KEY_LTPO_SWITCH, enabled).apply();
-    	    Utils.writeValue(FILE_LTPO, enabled ? "0x109f" : "0x0");
+            Utils.writeValue(FILE_LTPO, enabled ? "0x109f" : "0x0");
+            if (Utils.fileWritable(FILE_MIN_FPS)) {
+                Utils.writeValue(FILE_MIN_FPS, enabled ? "1" : "120");
+            }
             return true;
         }
 
@@ -85,6 +89,9 @@ public class LTPOSettings extends SettingsBasePreferenceFragment
             boolean enabled = !"0x0".equals(current != null ? current.trim() : null);
             boolean value = sharedPrefs.getBoolean(KEY_LTPO_SWITCH, enabled);
             Utils.writeValue(FILE_LTPO, value ? "0x109f" : "0x0");
+            if (Utils.fileWritable(FILE_MIN_FPS)) {
+                Utils.writeValue(FILE_MIN_FPS, value ? "1" : "120");
+            }
         }
     }
 }
